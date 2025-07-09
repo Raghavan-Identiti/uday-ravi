@@ -1,0 +1,767 @@
+.heroSection {
+  background-color: #edebff;
+  background-image: radial-gradient(circle, #fff8ff, #ebe6ff);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  overflow: hidden;
+  border-radius: 0 0 50px 50px;
+  z-index: 0;
+}
+
+/* Ensure inner carousel items take full height */
+.carousel-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.heroTitle {
+  color: #615efc;
+  font-family: var(--font-dm-serif);
+  font-weight: 500;
+  /* letter-spacing: -0.5px; */
+  font-size: 54px;
+  z-index: 2 !important;
+}
+
+.HeroSectionPara {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  max-width: 600px;
+  margin: 30px 0 60px 0px;
+}
+
+/* Keep your keyframes as they are */
+@keyframes floatUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes floatDownUp {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(12px);
+  }
+}
+
+@keyframes floatWobble {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-10px, 8px);
+  }
+}
+
+
+.infoBubble {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  gap: 10px;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  position: absolute;
+  background-color: white;
+  color: #000;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 19px;
+  line-height: 21px;
+  box-shadow: 0 5px 10px #d6d2ff;
+  z-index: 2;
+  /* above the background text */
+  transition: transform 0.3s ease;
+
+}
+
+.topRight {
+  top: 37%;
+  right: 13%;
+  animation: floatDownUp 3.2s ease-in-out infinite;
+  /* animation-delay: 0.3s; */
+}
+
+.bottomLeft {
+  bottom: 35%;
+  left: 2.5%;
+  animation: floatDownUp 2.9s ease-in-out infinite;
+  /* animation-delay: 1.2s; */
+}
+
+.bottomRight {
+  bottom: 15.7%;
+  right: 16%;
+  animation: floatDownUp 2.2s ease-in-out infinite;
+  /* animation-delay: 0.8s; */
+}
+
+.btnPrimary {
+  background-color: #5E4AE3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 39px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btnPrimary:hover {
+  background-color: #382d83 !important;
+  color: white;
+}
+
+.bgText {
+  position: absolute;
+  top: -17%;
+  left: -44%;
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-size: 400px;
+  background: linear-gradient(180deg, #d6d2ff 0%, #f5f4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* optional fallback */
+  color: transparent;
+  z-index: -1 !important;
+  /* transform: translate(-50%, -50%); */
+}
+
+.bgText2 {
+  top: -10%;
+  left: -105%;
+}
+
+.HeroSectionImage {
+  position: relative;
+  height: 686px;
+  /* or any fixed height you want */
+  width: 100%;
+  /* max-width: 100%; */
+  /* object-fit: cover; */
+  display: block;
+  margin-left: -100px;
+  margin-bottom: -30px;
+}
+
+.HeroSectionImagealt {
+  width: 100%;
+  height: 686px;
+  /* or any fixed height you want */
+  object-fit: cover;
+  margin-left: 0px !important;
+  max-width: 1200px;
+}
+
+.selectWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.HeroSectiondropdown {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 80px 10px 20px;
+  /* Adjust right padding for icon */
+  border-radius: 39px;
+  appearance: none;
+  /* Removes default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: white;
+  border: none;
+  /* ensure background stays white if needed */
+}
+
+.customIcon {
+  position: absolute;
+  color: #223645;
+  right: 55px;
+  top: 48%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.Herobtn {
+  margin-left: -40px;
+  z-index: 2;
+}
+
+.Herobtn:hover {
+  background-color: #5E4AE3;
+  color: white;
+}
+
+.carouselIndicators {
+  position: absolute;
+  bottom: 40px;
+  left: -4%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carouselIndicators>button {
+  width: 45px !important;
+  height: 6px !important;
+  border-radius: 100px !important;
+  background-color: #5E4AE3 !important;
+  border: 1px solid #5E4AE3 !important;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@keyframes scalePulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .heroTitle {
+    height: auto;
+    margin-left: 0 ;
+    margin-bottom: 0;
+  }
+
+  .HeroSectionImagealt {
+    width: 100%;
+    /* height: auto ; */
+    margin-left: 0 !important;
+  }
+
+  .bgText {
+    font-size: 180px;
+    top: -27%;
+    left: -5%;
+  }
+
+  .bgText2 {
+    font-size: 140px;
+    top: -20%;
+    left: -10%;
+  }
+
+  .infoBubble {
+    font-size: 15px;
+    padding: 6px 12px;
+    line-height: 18px;
+    gap: 6px;
+  }
+
+  .topRight {
+    top: 33%;
+    right: -7%;
+    animation: floatDownUp 3.2s ease-in-out infinite;
+  }
+
+  .bottomLeft {
+    bottom: 33%;
+    left: -10%;
+    animation: floatDownUp 3.2s ease-in-out infinite;
+  }
+
+  .bottomRight {
+    bottom: 15%;
+    right: -7%;
+    animation: floatDownUp 3.2s ease-in-out infinite;
+  }
+
+  .heroTitle {
+    font-size: 38px;
+  }
+
+  .HeroSectionPara {
+    font-size: 16px;
+    white-space: normal;
+    /* ensures breaking */
+    word-break: break-word;
+    /* optional for long words */
+    margin: 20px 0 40px 0px;
+  }
+
+  .btnPrimary {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .HeroSectiondropdown {
+    font-size: 14px;
+    padding: 8px 60px 8px 16px;
+  }
+
+  .customIcon {
+    right: 45px;
+    font-size: 14px;
+  }
+
+  .HeroSectionImage {
+    position: relative;
+    height: auto;
+    /* or any fixed height you want */
+    width: 100%;
+    /* max-width: 100%; */
+    /* object-fit: cover; */
+    display: block;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: -20px !important;
+
+  }
+
+  .carouselLaptop {
+    display: none !important;
+  }
+
+  .carouselMobile {
+    display: flex !important;
+  }
+
+}
+
+@media (min-width : 450px) and (max-width: 576px) {
+  .carouselIndicators2 {
+    position: absolute;
+    top: -30%;
+    left: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carouselIndicators2>button {
+    width: 10px ;
+    height: 10px ;
+    border-radius: 100px ;
+    background-color: #5E4AE3 ;
+    border: 1px solid rgb(94, 74, 227) ;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .infoBubble {
+    box-shadow: 0 5 10px #d6d2ff;
+    z-index: 100;
+    transition: transform 0.3s ease;
+    animation: none;
+    width: 180px;
+    padding: 8px 16px;
+  }
+  .HeroSectionImage {
+    position: relative;
+    height: auto;
+    width: 80%;
+    display: block;
+    margin-left: -60px;
+    margin-bottom: -15px;
+  }
+
+  .Slide1topRight {
+    top: 10%;
+    right: 0%;
+    font-size: 12px;
+  }
+
+  .Slide1bottomLeft {
+    bottom: 45%;
+    left: 50%;
+    font-size: 12px;
+  }
+
+  .Slide1bottomRight {
+    font-size: 12px;
+    bottom: 20%;
+    right: 0%;
+  }
+
+  .Slide2bottomLeft {
+    bottom: 60% ;
+    left: 55%;
+    font-size: 12px;
+  }
+  .Slide2bottomLeft>img{
+    width: 20px;
+    height: 20px;
+  }
+  .Slide2bottomRight {
+    bottom: 30%;
+    right: -5% ;
+    font-size: 12px;
+  }
+
+  .Slide3bottomLeft {
+    bottom: 50% ;
+    left: 50% ;
+    font-size: 12px;
+  }
+  .Slide3bottomLeft>img {
+    width: 20px;
+    height: 20px;
+  } 
+
+  .Slide3bottomRight {
+    text-wrap: nowrap;
+    width: 200px;
+    bottom: 25% ;
+    right: 0% ;
+    font-size: 12px;
+  }
+  .Slide3bottomRight>img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Slide2bottomRight>img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Slide1topRight>img {
+    width: 20px;
+    height: 25px;
+  }
+
+  .Slide1bottomLeft>img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .Slide1bottomRight>img {
+    width: 20px;
+    height: 25px;
+  }
+
+  .heroSection {
+    height: 85vh;
+  }
+
+  .HeroSectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-color: #edebff;
+    z-index: 2;
+    box-shadow: -10px -80px 80px 20px #edebff; /* Y-axis only, upward spread */
+    border-bottom: #5E4AE3 3px solid;
+    border-top: #5E4AE3 3px solid;
+    margin-top: 0px;
+  }
+
+  .heroTitle {
+    font-size: 37px;
+  }
+  .carouselMobile{
+    position: relative;
+  }
+  .carouselControlNextCustom{
+  margin-right: 10px;
+}
+.carouselControlPrevCustom{
+  margin-left: 10px;
+}
+.carouselControlPrevCustom,
+.carouselControlNextCustom {
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  box-shadow: 0 5 10px #d6d2ff;
+  z-index: 10;
+  opacity: 1 !important;
+}
+}
+
+@media (min-width: 300px) and (max-width :449px){
+    .heroSection {
+      max-height: auto;
+    height: auto;
+  }
+    .heroTitle {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .HeroSectionImage {
+    position: relative;
+    height: auto;
+    width: 80%;
+    display: block;
+    margin-left: -60px;
+    margin-bottom: -15px;
+  }
+
+  .infoBubble {
+    box-shadow: 0 5 10px #d6d2ff;
+    z-index: 100;
+    transition: transform 0.3s ease;
+    animation: none;
+    width: 150px;
+    padding: 4px 16px;
+    font-size: 10px;
+  }
+
+    .bgText {
+    font-size: 150px;
+    top: -25%;
+    left: 0%;
+  }
+
+  .bgText2 {
+    font-size: 110px;
+    top: -15%;
+    left: 0%;
+  }
+ 
+  .HeroSectionPara {
+    font-size: 15px;
+    white-space: normal;
+    margin-top: 0px;
+  }
+
+  .Slide1topRight {
+    top: 20%;
+    right: -5%;
+  }
+
+  .Slide1bottomLeft {
+    bottom: 35%;
+    left: 56%;
+  }
+
+  .Slide1bottomRight {
+    bottom: 10%;
+    right: -5%;
+  }
+
+  .Slide2bottomLeft {
+    bottom: 30%;
+    left: 57%;
+  }
+  .Slide2bottomLeft>img{
+    width: 20px;
+    height: 20px;
+  }
+  .Slide2bottomRight {
+    bottom: 5% ;
+    right: -4% ;
+  }
+
+  .Slide3bottomLeft {
+    bottom: 35% ;
+    left: 56% ;
+  }
+  .Slide3bottomLeft>img {
+    width: 20px;
+    height: 20px;
+  } 
+
+  .Slide3bottomRight {
+    text-wrap: nowrap;
+    width: 170px;
+    bottom: 10% ;
+    right: -5% ;
+  }
+
+   .Slide3bottomRight>img {
+    width: 15px;
+    height: 20px;
+  }
+
+  .Slide2bottomRight>img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Slide1topRight>img {
+    width: 20px;
+    height: 25px;
+  }
+
+  .Slide1bottomLeft>img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .Slide1bottomRight>img {
+    width: 20px;
+    height: 25px;
+  }
+
+  .heroSection {
+    height: 85vh;
+  }
+
+  .HeroSectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-color: #edebff;
+    z-index: 2;
+    box-shadow: -10px -80px 80px 20px #edebff; 
+    border-bottom: #5E4AE3 3px solid;
+    border-top: #5E4AE3 3px solid;
+    margin-top: 0px;
+    z-index: 10 !important;
+  }
+
+  .carouselControlNextCustom{
+    margin-right: 10px;
+  }
+  .carouselControlPrevCustom{
+    margin-left: 10px;
+  }
+  .carouselControlPrevCustom,
+  .carouselControlNextCustom {
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 57%;
+    transform: translateY(-50%);
+    box-shadow: 0 5 10px #d6d2ff;
+    z-index: 10;
+    opacity: 1 !important;
+  }
+
+  .arrowIcon{
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Show only on desktop (laptop and above) */
+@media (min-width: 992px) {
+  .carouselLaptop {
+    display: flex !important;
+  }
+
+  .carouselMobile {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .heroTitle{
+    font-size: 35px;
+  }
+  .HeroSectionPara{
+    font-size: 15px;
+  }
+.HeroSectionImage {
+  position: relative;
+  height: 500px;
+  /* or any fixed height you want */
+  width: auto;
+  /* max-width: 100%; */
+  /* object-fit: cover; */
+  display: block;
+  margin-left: -70px;
+  margin-bottom: -30px;
+}
+  .bgText{
+  position: absolute;
+  top: -22%;
+  left: -48%;
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-size: 300px;
+
+}
+.infoBubble {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  gap: 10px;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  position: absolute;
+  background-color: white;
+  color: #000;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  box-shadow: 0 5 10px #d6d2ff;
+  z-index: 2;
+  /* above the background text */
+  transition: transform 0.3s ease;
+
+}
+.HeroSectiondropdown{
+  font-size: 12px;
+}
+.customIcon{
+  top: 45%;
+  right: 60px;
+  font-size: 13px;
+}
+.Herobtn{
+  font-size: 12px;
+  margin-left: -50px;
+}
+.carouselIndicators{
+     gap: 10px;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: -2.5%;
+    transform: translateX(-50%);
+}
+.carouselIndicators>button {
+  width: 35px !important;
+  height: 4px !important;
+  border-radius: 100px !important;
+  background-color: #5E4AE3 !important;
+  border: 1px solid #5E4AE3 !important;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+}

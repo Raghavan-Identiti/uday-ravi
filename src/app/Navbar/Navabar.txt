@@ -1,0 +1,248 @@
+"use client";
+import logo from '../../../public/Logo.svg';
+import Link from 'next/link';
+import Image from 'next/image';
+import { FaChevronDown } from 'react-icons/fa';
+import styles from './Navbar.module.css';
+import NavbarIcon1 from '../assets/Navicon1.svg'
+import NavbarIcon2 from '../assets/Navicon2.svg'
+import NavbarIcon3 from '../assets/Navicon3.svg'
+import NavbarIcon4 from '../assets/Navicon4.svg'
+import NavbarIcon5 from '../assets/Navicon5.svg'
+import NavbarIcon6 from '../assets/Navicon6.svg'
+import NavbarIcon7 from '../assets/Navicon7.svg'
+import NavbarIcon8 from '../assets/Navicon8.svg'
+import NavbarIcon9 from '../assets/Navicon9.svg'
+import NavbarIcon10 from '../assets/Navicon10.svg'
+import NavbarIcon11 from '../assets/Navicon11.svg'
+import NavbarIcon12 from '../assets/Navicon12.svg'
+import NavbarIcon13 from '../assets/Navicon13.svg'
+import { useState } from 'react';
+import PopupForm from '../PopupModal/popupmodal';
+import { usePathname } from 'next/navigation';
+
+export default function Navbar() {
+  const [showPopup, setShowPopup] = useState(false);
+  const pathname = usePathname();
+
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'About Me', path: '/about-me' },
+    { name: 'Specialities', path: '/specialities' },
+    {
+      name: 'Services',
+      submenu: [
+        {
+          name: 'Proctology',
+          path: '/services/piles',
+          icon: NavbarIcon1,
+        },
+        {
+          name: 'Weight Loss & Metabolic Surgery',
+          path: '/services/weight-loss',
+          icon: NavbarIcon2,
+        },
+        {
+          name: 'Vascular Surgery',
+          path: '/services/vascular',
+          icon: NavbarIcon3,
+        },
+        {
+          name: 'Digestive & Stomach Surgery',
+          path: '/services/digestive',
+          icon: NavbarIcon4,
+        },
+        {
+          name: 'Cosmetic & Reconstructive Surgery',
+          path: '/services/cosmetic',
+          icon: NavbarIcon5,
+        },
+        {
+          name: 'Hernia Surgery',
+          path: '/services/hernia',
+          icon: NavbarIcon6,
+        },
+        {
+          name: "Men's Health & Urology",
+          path: '/services/urology',
+          icon: NavbarIcon7,
+        },
+        {
+          name: 'Breast & Thyroid Health',
+          path: '/services/breast-thyroid',
+          icon: NavbarIcon8,
+        },
+        {
+          name: 'Removal of Lumps, Cysts & Growths',
+          path: '/services/lumps-cysts',
+          icon: NavbarIcon9,
+        },
+        {
+          name: 'Diabetic foot, wound care and podiatry',
+          path: '/services/diabetic-foot',
+          icon: NavbarIcon10,
+        },
+        {
+          name: 'Diabetic foot, wound care and podiatry',
+          path: '/services/diabetic-foot',
+          icon: NavbarIcon11,
+        },
+        {
+          name: 'Diabetic foot, wound care and podiatry',
+          path: '/services/diabetic-foot',
+          icon: NavbarIcon12,
+        },
+        {
+          name: 'Diabetic foot, wound care and podiatry',
+          path: '/services/diabetic-foot',
+          icon: NavbarIcon13,
+          description: 'Specialized diabetic wound care.'
+        }
+      ]
+    },
+    { name: 'Blog', path: '/blog' },
+    { name: 'Get in Touch', path: '/contact' }
+  ];
+
+  return (
+    <div>
+      <nav className={`navbar navbar-expand-lg bg-white d-lg-flex flex-lg-row justify-content-between px-lg-5 p-3 ${styles.navbar}`}>
+        <Link className="navbar-brand" href="/">
+          <Image src={logo} alt="Logo" className={`d-inline-block align-text-top ${styles.NavLogo}`} />
+        </Link>
+
+        <div className={`d-none d-lg-flex flex-row align-items-center gap-lg-4 ${styles.NavbarItemsdiv}`}>
+          {navItems.map((item, i) => (
+            item.name === "Services" ? (
+              <div key={i} className={styles.dropdownWrapper}>
+                <span className={`${styles.navLink} ${styles.dropdownToggle}`}>
+                  {item.name} <span className={styles.dropdownArrow}><FaChevronDown /></span>
+                </span>
+                <div className={styles.navcustomMegaMenu}>
+                  <div className={`${styles.navThreeColumn}`}>
+                    {/* Core Surgeries */}
+                    <div className={styles.navColumn}>
+                      <h6 className={styles.navColumnTitle}>CORE SURGERIES</h6>
+                      <div className={styles.navmegaMenuItems}>
+                      {[
+                        { name: 'Proctology', icon: NavbarIcon1, path: '/services/piles' },
+                        { name: 'Anal Fistula', icon: NavbarIcon2, path: '/services/anal-fistula' },
+                        { name: 'Fissure', icon: NavbarIcon3, path: '/services/fissure' },
+                        { name: 'Weight Loss (Intragastric Balloon)', icon: NavbarIcon4, path: '/services/weight-loss' },
+                        { name: 'Thyroid Disease', icon: NavbarIcon5, path: '/services/thyroid' },
+                      ].map((item, i) => (
+                        <Link key={i} href={item.path}   className={`${styles.navmegaMenuItem} ${pathname === item.path ? styles.activeMegaItem : ''}`}>
+                          <div className={styles.naviconBox}>
+                            <Image src={item.icon} alt={item.name} />
+                          </div>
+                          <span className={styles.navLabel}>{item.name}</span>
+                        </Link>
+                      ))}
+                      </div>
+                    </div>
+
+                    {/* Specialized Treatments */}
+                    <div className={styles.navColumn}>
+                      <h6 className={styles.navColumnTitle}>SPECIALIZED TREATMENTS</h6>
+                      <div className={styles.navmegaMenuItems}>
+                      {[
+                        { name: 'Varicose veins', icon: NavbarIcon6, path: '/services/varicose' },
+                        { name: 'Fibroadenoma', icon: NavbarIcon7, path: '/services/fibroadenoma' },
+                        { name: 'Hydrocele', icon: NavbarIcon8, path: '/services/hydrocele' },
+                        { name: 'Reconstructive Surgery', icon: NavbarIcon9, path: '/services/reconstructive' },
+                      ].map((item, i) => (
+                        <Link key={i} href={item.path} className={styles.navmegaMenuItem}>
+                          <div className={styles.naviconBox}>
+                            <Image src={item.icon} alt={item.name} />
+                          </div>
+                          <span className={styles.navLabel}>{item.name}</span>
+                        </Link>
+                      ))}
+                      </div>
+                    </div>
+
+                    {/* Supportive Treatments */}
+                    <div className={styles.navColumn}>
+                      <h6 className={styles.navColumnTitle}>SUPPORTIVE TREATMENTS</h6>
+                      <div className={styles.navmegaMenuItems}>
+                      {[
+                        { name: 'Diabetic & Ulcer', icon: NavbarIcon10, path: '/services/diabetic-foot' },
+                        { name: 'Gallbladder Stones', icon: NavbarIcon11, path: '/services/gallstones' },
+                        { name: 'Appendicitis', icon: NavbarIcon12, path: '/services/appendix' },
+                        { name: 'Circumcision', icon: NavbarIcon13, path: '/services/circumcision' },
+                      ].map((item, i) => (
+                        <Link key={i} href={item.path} className={styles.navmegaMenuItem}>
+                          <div className={styles.naviconBox}>
+                            <Image src={item.icon} alt={item.name} />
+                          </div>
+                          <span className={styles.navLabel}>{item.name}</span>
+                        </Link>
+                      ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            ) : (
+              <Link key={i} className={`nav-link ${styles.navLink}`} href={item.path}>
+                {item.name}
+              </Link>
+            )
+          ))}
+        </div>
+
+        <div className="d-none d-lg-block">
+          <button type="button" className={`${styles.navbarbtnPrimary}`}
+            onClick={() => {
+              setShowPopup(true);
+            }}
+          >
+            Book Appointment
+          </button>
+        </div>
+
+        <button className="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+
+      <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+        <div className={`offcanvas-header px-4 py-4 ${styles.NavLogo}`}>
+          <Image src={logo} alt="Logo" />
+          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div className={`offcanvas-body d-flex flex-column gap-4 ${styles.offcanvasBodyMobile}`}>
+          {navItems.map((item, i) => (
+            item.submenu ? (
+              <div key={i} className="dropdown">
+                <button className="btn dropdown-toggle w-100 text-start" data-bs-toggle="dropdown">
+                  {item.name}
+                </button>
+                <ul className="dropdown-menu w-100">
+                  {item.submenu.map((subItem, j) => (
+                    <li key={j}>
+                      <Link className="dropdown-item" href={subItem.path}>{subItem.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <Link key={i} className={`nav-link ${styles.navLink}`} href={item.path}>
+                {item.name}
+              </Link>
+            )
+          ))}
+          <button type="button" className={`btn ${styles.btnPrimary} mt-3`}
+            onClick={() => {
+              setShowPopup(true);
+            }}
+          >
+            Book Appointment
+          </button>
+        </div>
+      </div>
+      <PopupForm showPopup={showPopup} setShowPopup={setShowPopup} />
+    </div>
+  );
+}

@@ -1,0 +1,480 @@
+.Section5 {
+    border-radius: 50px 50px 0px 0px;
+    background-color: hsl(245, 100%, 91%, 0.4);
+    padding: 90px 150px;
+}
+
+.Section5container {
+    padding: 0px;
+}
+
+.Section5Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.Section5colmd6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.Section5secondcolmd6 {
+    gap: 20px;
+    padding: 10px 10px;
+}
+
+.Section5Title {
+    font-family: var(--font-dm-serif);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: -1px;
+    color: #615efc;
+    margin-bottom: 30px;
+}
+
+.Section5Para {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -3%;
+    line-height: 25px;
+    padding: 0px 50px 0px 0px;
+    color: #000;
+}
+
+.Section5Para2 {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -3%;
+    line-height: 19px;
+    color: #000;
+}
+
+.Section5Para2>span {
+    font-family: var(--font-dm-serif);
+    font-weight: 500;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -1%;
+    line-height: 45px;
+    color: #000000;
+}
+
+.Section5Button {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    background-color: transparent;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid #5E4AE3;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.Section5Button:hover {
+    background-color: transparent;
+    cursor: default;
+    color: black;
+}
+
+.Section5Image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.Section5Image2 {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .Section5eclipseContainer {
+  position: relative;
+} */
+
+.face1 {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+.face2 {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+
+.face3 {
+    position: absolute;
+    bottom: 70%;
+    left: 76.5%;
+}
+
+.face4 {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+
+@media (max-width: 768px) {
+
+    .face1,
+    .face2,
+    .face3,
+    .face4 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .face1 {
+        width: 30px;
+        height: 30px;
+        top: 20%;
+        left: 5%;
+    }
+
+    .face2 {
+        width: 40px;
+        height: 40px;
+        top: 35%;
+        right: 15%;
+    }
+
+    .face3 {
+        bottom: 70%;
+        left: 87%;
+    }
+
+    .face4 {
+        bottom: 20%;
+        right: -2%;
+    }
+
+    .Section5Para2 {
+        font-family: var(--font-inter);
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: -3%;
+        line-height: 19px;
+        color: #000;
+    }
+
+    .Section5Para2>span {
+        font-family: var(--font-dm-serif);
+        font-weight: 500;
+        text-align: center;
+        font-size: 35px;
+        letter-spacing: -1%;
+        line-height: 45px;
+        color: #000000;
+    }
+
+    .Section5 {
+        padding: 90px 20px;
+    }
+
+    .Section5Row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Section5colmd6 {
+        padding: 20px 0px;
+    }
+
+    .Section5colmd5 {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .Section5Image,
+    .Section5Image2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .Section5Row3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Section5Title {
+        padding-right: 20px;
+        font-size: 1.75rem;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+
+    .Section5Para {
+        /* padding-right: 20px ; */
+        font-size: 15px;
+    }
+}
+
+.Section5colmd5 {
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+
+.Section5card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 40px 25px 15px 25px;
+    position: relative;
+    /* padding: 20px; */
+    box-shadow: 0 4px 30px rgb(224, 229, 255, 1);
+}
+
+.Section5cardtitle {
+    font-family: var(--font-inter);
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: -3%;
+    color: #615efc !important;
+    margin: 0px !important;
+}
+
+.Section5cardpara {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -2%;
+    color: #223645;
+    margin-bottom: 40px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Section5cardbtn {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    background-color: #fff;
+    color: #A0A0A0;
+    border-radius: 3px;
+    padding: 5px 20px;
+    border: 1px solid #B2EEFF !important;
+    font-size: 16px;
+    letter-spacing: -2%;
+    line-height: 25px;
+}
+
+.Section5Row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.Section5Row3firstcolmd6 {
+    padding: 0px;
+}
+
+.Section5Row3colmd6 {
+    background-color: #615efc;
+    border-top-right-radius: 20px;
+    padding: 40px 30px 0px 50px !important;
+}
+
+.Section5Row3cardbody {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Section5Row3cardtitle {
+    font-family: var(--font-radio-canada-big);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    color: gold !important;
+    margin-bottom: 15px;
+}
+
+.Section5Row3cardpara {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -3%;
+    color: #fff;
+}
+
+.Section5Row3cardImge {
+    width: 100%;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+}
+
+.Section5cardHeading {
+    font-family: var(--font-dm-serif);
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 45px;
+    letter-spacing: -1%;
+    color: rgb(214, 210, 255);
+}
+
+.Section5customerImage {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rating {
+    color: gold;
+    font-size: 16px;
+}
+
+.customCarouselContainer {
+    padding-right: 20px;
+    overflow: visible;
+}
+
+.arrowContainer {
+  position: absolute;
+  bottom: -60px;
+  left: 5px;
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+.arrowIcon {
+    width: 10px;
+    height: 15px;
+    color: #615efc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.customArrow {
+  background-color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 5 10px #d6d2ff;
+  font-size: 20px;
+  font-weight: 900;
+  color: #615efc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Section5{
+        padding: 50px 50px 80px 50px;
+    }
+    .Section5Title{
+        font-size: 30px;
+    }
+    .Section5Para{
+        font-size: 13px;
+    }
+    .Section5Image2{
+        width: 80%;
+        height: 40%;
+    }
+
+.face2 {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    width: 10%;
+    height: auto;
+}
+
+.face3 {
+    position: absolute;
+    bottom: 80%;
+    left: 82%;
+    width: 12%;
+    height: auto;
+}
+
+.face4 {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 15%;
+    height: auto;
+}
+
+}
+
+.fallbackAvatar {
+  width: 40px;
+  height: 40px;
+  background-color: #d6d6d6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+}
+
+.Section5truncateWrapper {
+  position: relative;
+}
+
+.Section5truncatedText {
+  max-height: 4.5em;
+  overflow: hidden;
+  font-size: 0.95rem;
+  line-height: 1.5em;
+  position: relative;
+  white-space: normal;
+}
+
+.Section5ellipsisHover {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.Section5fullFeedbackCard {
+  position: absolute;
+  top: 100%;          /* position below the ellipsis */
+  left: -100px;
+  z-index: 9999;
+  background-color: #fff;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 16px 20px;
+  width: 280px;        /* fixed width for consistency */
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: normal;
+  display: none;       /* hidden by default */
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none; /* prevents flicker */
+}
+
+.Section5ellipsisHover:hover .Section5fullFeedbackCard {
+  display: block;
+  opacity: 1;
+  pointer-events: auto; /* enable interaction on hover */
+}

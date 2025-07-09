@@ -1,0 +1,191 @@
+.Section4{
+    display: flex;
+      background-color: rgb(94, 74, 227,0.10);
+}
+.Section4container{
+    padding: 30px 50px;
+}
+.Section4Row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    /* padding: 50px; */
+}
+.Section4colmd6{
+    padding: 50px 50px;
+}
+
+.Section4colmd6Right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 10px; */
+    margin-top: -17px;
+    gap: 20px;
+}
+
+.Section4Title{
+    font-family: var(--font-dm-serif);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: -1%;
+    color: #615efc;
+    margin-bottom: 20px;
+}
+.Section4Para{
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;    
+}
+.Section4Button {
+font-family: var(--font-inter);
+  font-weight: 400;
+  background-color: rgb(214, 210, 255,0.4);
+  color: black;
+  padding: 5px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: auto;
+  margin-bottom: 20px;
+}
+.Section4Button:hover{
+    background-color:rgb(214, 210, 255,0.4);
+    cursor: default;
+    color: black;
+}
+
+
+.Section4colmd5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+}
+.Section4row1cardContainer {
+  border-radius: 1rem;
+  /* padding: 1rem; */
+  background: white;
+  max-width: 500px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 25px #D5D2EC;
+}
+.Section4row1textwrapper{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.Section4row1imageWrapper {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+.Section4row1image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+    
+}
+.Section4row1cardTitle {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.faqCard {
+  background: white;
+  box-shadow: 0px 4px 25px #D5D2EC;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.faqHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.faqBody {
+  margin-top: 10px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.faqCard.active {
+  border: 1px solid #7456ff;
+  border-top-width: 7px; /* Only top border is thicker */
+  box-shadow: 0 10px 30px rgba(116, 86, 255, 0.15);
+}
+
+
+.plus {
+  font-size: 20px;
+  color: #7456ff;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .Section4container{
+        padding: 20px;
+    }
+    .Section4Row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Section4colmd6{
+        padding: 20px;
+    }
+    .Section4colmd6Right{
+        margin: 50px 0px;
+        padding: 0px 20px;
+    }
+    .Section4Title {
+    padding-right: 20px ;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  .Section4Para{
+    /* padding-right: 20px ; */
+    font-size: 15px;
+  }
+    .Section4colmd5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        padding: 0;
+    }
+    .Section4row1textwrapper{
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.faqBodyWrapper {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.faqBody {
+  margin: 0;
+  padding: 0.75rem 0;
+  color: #333;
+}

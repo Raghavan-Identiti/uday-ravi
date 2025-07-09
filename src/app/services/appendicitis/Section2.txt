@@ -1,0 +1,669 @@
+"use client";
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import styles from './Section2.module.css';
+import pilesImage1 from '../assets/PilesImage1.png';
+import pilesImage2 from '../assets/PilesImage2.png';
+import pilesclassify from '../assets/piles-classification-image.png';
+import HemorrhoidLigation from '../assets/Hemorrhoid-ligation.png';
+
+const sectionData = [
+  {
+    id: 'what-is-piles',
+    title: 'What are Piles?',
+    type: 'textWithImages',
+    content: [
+      "Piles, also known as hemorrhoids, are swollen blood vessels and bloated clumps of tissue located in the lower rectum or anus. They occur in a variety of sizes and can be internal or external."
+    ],
+    images: [
+      { src: pilesImage1, caption: 'Fig 1. Normal Rectum' },
+      { src: pilesImage2, caption: 'Fig 2. Hemorrhoid' }
+    ],
+  },
+  {
+    id: 'classification',
+    title: 'What are the Classifications of Piles, or Hemorrhoids?',
+    type: 'list',
+    content: [
+      {
+        heading: 'Internal Hemorrhoids :',
+        text: 'Internal hemorrhoids develop deep inside the rectum and may not be visible to the naked eye. They usually do not cause any pain, but you may notice slight bleeding through your anus.'
+      },
+      {
+        heading: 'External Hemorrhoids :',
+        text: 'External hemorrhoids develop on the outer edge of your anus. They may not be visible in some cases, but in other cases, they may look like lumps. External hemorrhoids cause severe pain and discomfort.'
+      },
+      {
+        heading: 'Thrombosed Hemorrhoids :',
+        text: 'Sometimes, blood clots develop within the hemorrhoid tissue. These are known as thrombosed hemorrhoids. They cut off the blood supply to the rectal tissue, causing extreme pain. If left untreated, thrombosed hemorrhoids can cause severe complications.'
+      },
+      {
+        heading: 'Prolapsed Hemorrhoids :',
+        text: 'Prolapsed hemorrhoids develop when the internal hemorrhoids swell and start to bulge outside the anus. They can cause itchiness, pain, discomfort, and a burning sensation.'
+      }
+    ]
+  },
+    {
+    id: 'symptoms',
+    title: 'What are the signs and symptoms of piles?',
+    type: 'list',
+    content: [
+      {
+        heading: 'Bleeding',
+        text: 'Bright red blood during or after a bowel movement.'
+      },
+      {
+        heading: 'Itching or Irritation',
+        text: 'Around the anal area due to mucus discharge.'
+      },
+      {
+        heading: 'Pain and Discomfort',
+        text: 'Particularly with external or thrombosed piles.'
+      },
+      {
+        heading: 'Swelling or Lumps',
+        text: 'Near the anus, especially in external piles.'
+      },
+      {
+        heading: 'Prolapse',
+        text: 'Bulging of internal hemorrhoids outside the anus.'
+      }
+    ]
+  },
+  {
+    id: 'causes',
+    title: 'What Causes Piles?',
+    type: 'list',
+    content: [
+      {
+        heading: 'Chronic Constipation or Diarrhea',
+        text: 'Straining during bowel movements increases pressure on rectal veins.'
+      },
+      {
+        heading: 'Prolonged Sitting',
+        text: 'Especially on the toilet, this can hinder circulation and contribute to pile formation.'
+      },
+      {
+        heading: 'Low-Fiber Diet',
+        text: 'Lack of fiber can lead to hard stools and straining.'
+      },
+      {
+        heading: 'Obesity and Pregnancy',
+        text: 'Increased abdominal pressure can affect rectal veins.'
+      },
+      {
+        heading: 'Aging',
+        text: 'Tissue in the rectum and anus weakens with age, increasing pile risk.'
+      }
+    ]
+  },
+    {
+    id: 'classification-of-piles ',
+    title: 'Classification of Piles :',
+    type: 'textWithImages',
+    content: [
+      "Piles are categorized into four different grades:"
+    ],
+    contentList: [
+      {
+        heading: 'Lifestyle and Dietary Changes',
+        text: 'Eating a high-fiber diet, drinking plenty of water, and avoiding straining during bowel movements can help reduce symptoms.'
+      },
+      {
+        heading: 'Medications',
+        text: 'Over-the-counter creams, ointments, and suppositories may relieve itching and inflammation.'
+      },
+      {
+        heading: 'Minimally Invasive Procedures',
+        text: 'Rubber band ligation, sclerotherapy, and infrared coagulation are commonly used for internal hemorrhoids.'
+      },
+      {
+        heading: 'Surgical Treatments',
+        text: 'Hemorrhoidectomy or stapled hemorrhoidopexy may be needed for severe or persistent piles.'
+      }
+    ],
+    images: [
+      { src: pilesclassify, caption: ' ' },
+    ],
+  },
+  {
+    id: 'Piles-during-Pregnancy',
+    title: 'Why Do Piles May Occur During Pregnancy?',
+    type: 'list',
+     content: [
+      {
+        heading: 'During pregnancy,',
+        text: 'During pregnancy, the body goes through several hormonal changes. These hormonal changes cause the veins to relax as well as lead to constipation. Constipation is one of the leading reasons for piles development due to the pressure and straining during the bowel movements. This pressure can cause tearing, bulging and even lump formation around and in the anus and lead to piles.'
+      },
+      {
+        heading: 'Other than constipation',
+        text: 'Other than constipation, the growing size of the uterus increased progesterone level, and the baby’s positioning can also play a significant role in piles development among the expected women. Also, giving birth while in the second stage of labour can develop the issue of piles.'
+      },
+      {
+        heading: 'pileshemmoroids',
+        text: 'If you suffer from piles/hemmoroids during pregnancy, get your appointment now for consultation and treatment with Dr. Uday Ravi for the best hemmoroids treatment in Bangalore.'
+      }
+    ]
+  },
+  {
+    id: 'diagnosis',
+    title: 'How are Piles Diagnosed?',
+    type: 'text',
+    content: [
+      "Diagnosis typically involves a physical examination by a healthcare provider. For internal hemorrhoids, a digital rectal exam or anoscopy may be performed. In some cases, sigmoidoscopy or colonoscopy might be recommended to rule out other causes of bleeding or discomfort."
+    ]
+  },
+   
+  {
+    id: 'treatment',
+    title: 'How are Piles Treated?',
+    type: 'list',
+    content: [
+      {
+        heading: 'Lifestyle and Dietary Changes',
+        text: 'Eating a high-fiber diet, drinking plenty of water, and avoiding straining during bowel movements can help reduce symptoms.'
+      },
+      {
+        heading: 'Medications',
+        text: 'Over-the-counter creams, ointments, and suppositories may relieve itching and inflammation.'
+      },
+      {
+        heading: 'Minimally Invasive Procedures',
+        text: 'Rubber band ligation, sclerotherapy, and infrared coagulation are commonly used for internal hemorrhoids.'
+      },
+      {
+        heading: 'Surgical Treatments',
+        text: 'Hemorrhoidectomy or stapled hemorrhoidopexy may be needed for severe or persistent piles.'
+      }
+    ]
+  },
+  {
+    id: 'prevention',
+    title: 'How to Prevent Piles?',
+    type: 'list',
+    content: [
+      {
+        heading: 'Eat a High-Fiber Diet',
+        text: 'Include fruits, vegetables, and whole grains to soften stools.'
+      },
+      {
+        heading: 'Stay Hydrated',
+        text: 'Drink at least 8 glasses of water daily.'
+      },
+      {
+        heading: 'Exercise Regularly',
+        text: 'Physical activity helps bowel function and reduces pressure on veins.'
+      },
+      {
+        heading: 'Avoid Straining',
+        text: 'Use the toilet when you feel the urge, and avoid sitting too long.'
+      },
+      {
+        heading: 'Maintain Healthy Weight',
+        text: 'Reduces pressure on the pelvic area.'
+      }
+    ]
+  },
+  // {
+  //   id: 'when-to-see-doctor',
+  //   title: 'When to See a Doctor?',
+  //   type: 'text',
+  //   content: [
+  //     "If you experience persistent bleeding, severe pain, or discomfort during bowel movements, or if home remedies don’t improve your symptoms, you should consult a healthcare provider. In some cases, piles can mimic symptoms of more serious conditions like colorectal cancer, so prompt evaluation is important."
+  //   ]
+  // }
+];
+
+export default function Section2() {
+  const [activeId, setActiveId] = useState('');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 200;
+      for (let section of sectionData) {
+        const el = document.getElementById(section.id);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            setActiveId(section.id);
+            break;
+          }
+        }
+      } 
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <section className={styles.Section2}>
+      <div className="container">
+        <div className="row">
+          <div className="col-12 px-5">
+            <p className={styles.Section2Header}>
+              {"Home > Services > "}
+              <span>Laser Piles / Hemorrhoid Treatment</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="row d-flex flex-lg-row flex-column-reverse">
+          <div className="col-lg-8 col-md-12 mb-4 px-5">
+            <div className={styles.Section2content}>
+              <h1 className={styles.Section2Title}>Best Piles Treatment In Bangalore</h1>
+
+              {sectionData.map((section) => (
+                <div key={section.id} id={section.id} className={`mt-5 ${styles.Section2Question}`}>
+                  <h2>{section.title}</h2>
+
+                  {section.type === 'textWithImages' && (
+                    <>
+                      {section.content.map((para, index) => <p key={index}>{para}</p>)}
+                      <div className={`d-flex flex-column flex-lg-row gap-5 ${styles.Section2PilesImgdiv}`}>
+                        {section.images?.map((img, idx) => (
+                          <div key={idx} className="d-flex flex-column align-items-center">
+                            <Image src={img.src} alt={img.caption} width={300} height={200} />
+                            <p>{img.caption}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  )}
+
+                  {section.type === 'list' && (
+                    <ul>
+                      {section.content.map((item, idx) => (
+                        <li key={idx}>
+                          {item.heading && <strong>{item.heading}: </strong>}
+                          {item.text && <span>{item.text}</span>}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {section.type === 'text' && section.content.map((para, idx) => (
+                    <p key={idx}>{para}</p>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-12">
+            <div className={styles.Section2sidebar}>
+              <h5 className={styles.Section2sidebarTitle}>Table Of Contents</h5>
+              <ul className={styles.Section2tocList}>
+                {sectionData.map(({ id, title }) => (
+                  <li key={id}>
+                    <a href={`#${id}`} className={activeId === id ? styles.active : ''}>
+                      {title.length > 50 ? title.slice(0, 50) + '...' : title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+"use client";
+
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import styles from './Section2.module.css';
+import pilesImage1 from '../assets/PilesImage1.png';
+import pilesImage2 from '../assets/PilesImage2.png';
+import pilesclassify from '../assets/piles-classification-image.png';
+import HemorrhoidLigation from '../assets/Hemorrhoid-ligation.png';
+
+export default function Section2() {
+  const [activeId, setActiveId] = useState('');
+
+  useEffect(() => {
+const sectionIds = [
+  'what-is-piles',
+  'classification',
+  'symptoms',
+  'causes',
+  'classificationofpiles',
+  'piles-during-pregnancy',
+  'diagnosis',
+  'treatment',
+  'preventpiles',
+  'foods',
+  'faqs',
+  'about-doctor',
+];
+
+
+ const handleScroll = () => {
+  const scrollPosition = window.scrollY + 200;
+  let found = false;
+
+  for (let id of sectionIds) {
+    const element = document.getElementById(id);
+    if (element) {
+      const offsetTop = element.offsetTop;
+      const offsetHeight = element.offsetHeight;
+      if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+        setActiveId(id);
+        found = true;
+        break;
+      }
+    }
+  }
+
+  if (!found && sectionIds.length > 0) {
+    setActiveId(sectionIds[sectionIds.length - 1]); // fallback to last section
+  }
+};
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // run on load
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <section className={styles.Section2}>
+      <div className="container">
+        {/* Header */}
+        <div className="row">
+          <div className="col-12 px-5">
+            <p className={styles.Section2Header}>
+              {"Home > Services > "}
+              <span>{"Laser Piles / Hemorrhoid Treatment"}</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="row d-flex flex-lg-row flex-column-reverse">
+          {/* Left Content */}
+          <div className="col-lg-8 col-md-12 mb-4 px-5">
+            <div className={styles.Section2content}>
+              <h1 className={styles.Section2Title}>Best Piles Treatment In Bangalore</h1>
+              <div id="what-is-piles" className={styles.Section2Question1}>
+                <h2 >What are Piles?</h2>
+                <p>Piles, also known as hemorrhoids, are swollen blood vessels and bloated clumps of tissue located in the lower rectum or anus. They occur in a variety of sizes and can be internal or external.</p>
+
+                <div className={`d-flex flex-column flex-lg-row gap-5 ${styles.Section2PilesImgdiv}`}>
+                  <div className='d-flex flex-column align-items-center'>
+                    <Image src={pilesImage1} alt="Piles Treatment" className={styles.Section2PilesImage1} />
+                    <p>Fig 1. Normal Rectum</p>
+                  </div>
+                  <div className='d-flex flex-column align-items-center'>
+                    <Image src={pilesImage2} alt="Piles Treatment" className={styles.Section2PilesImage2} />
+                    <p>Fig 2. Hemorrhoid</p>
+                  </div>
+                </div>
+              </div>
+              <div id="classification" className={styles.Section2Question2}>
+
+                <h2 className="mt-5">What are the Classifications of Piles, or Hemorrhoids?</h2>
+                <ul className="">
+                  <li>
+                    <p><strong>Internal hemorrhoids:</strong> Internal hemorrhoids develop deep inside the rectum and may not be visible to the naked eye. They usually do not cause any pain, but you may notice slight bleeding through your anus.</p>
+                  </li>
+                  <li>
+                    <p><strong>External hemorrhoids:</strong>External hemorrhoids develop on the outer edge of your anus. They may not be visible in some cases, but in other cases, they may look like lumps. External hemorrhoids cause severe pain and discomfort.</p>
+                  </li>
+                  <li>
+                    <p><strong>Thrombosed hemorrhoids</strong> Sometimes, blood clots develop within the hemorrhoid tissue. These are known as thrombosed hemorrhoids. They cut off the blood supply to the rectal tissue, causing extreme pain. If left untreated, thrombosed hemorrhoids can cause severe complications.</p>
+                  </li>
+                  <li>
+                    <p><strong>Prolapsed hemorrhoids:</strong> Prolapsed hemorrhoids develop when the internal hemorrhoids swell and start to bulge outside the anus. They can cause itchiness, pain, discomfort, and a burning sensation.</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="symptoms" className={styles.Section2Question3}>
+                <h2 className="mt-5">What are the signs and symptoms of piles?</h2>
+                <p>
+                  The signs and symptoms of piles, or hemorrhoids, can vary depending on the type and severity of the condition. Common signs and symptoms include:
+                </p>
+                <ul className="">
+                  <li>
+                    <p>Bleeding during and after bowel movements.</p>
+                  </li>
+                  <li>
+                    <p>In the anal region, a feeling of a hard lump.</p>
+                  </li>
+                  <li>
+                    <p>Feelings of satiety following bowel movements.</p>
+                  </li>
+                  <li>
+                    <p>Around the anus, there is redness, swelling, and irritation.</p>
+                  </li>
+                  <li>
+                    <p>During bowel movements, there is pain and discomfort.</p>
+                  </li>
+                  <li>
+                    <p>Mucus discharge after bowel movements</p>
+                  </li>
+                  <li>
+                    <p>Fecal Incontinence</p>
+                  </li>
+                  <li>
+                    <p>Painful hard lump in the anus</p>
+                  </li>
+                  <li>
+                    <p>The sensation of fullness in the bowels even after passing a stool</p>
+                  </li>
+                </ul>
+                <p>
+                  If you're experiencing rectal bleeding, pain, or persistent discomfort it's important to consult with a healthcare professional for an accurate diagnosis and appropriate treatment plan.
+                </p>
+              </div>
+              <div id="causes" className={styles.Section2Question4}>
+                <h2 className="mt-5">What causes piles?</h2>
+                <p>
+                  Piles can be caused by various factors. Here are some common causes of piles:
+                </p>
+                <ul className="">
+                  <li>
+                    <p>Chronic constipation</p>
+                  </li>
+                  <li>
+                    <p>Chronic diarrhea</p>
+                  </li>
+                  <li>
+                    <p>Sitting for longer periods</p>
+                  </li>
+                  <li>
+                    <p>Dietary imbalance or a Sedentary lifestyle</p>
+                  </li>
+                  <li>
+                    <p>Tearing or straining during childbirth</p>
+                  </li>
+                  <li>
+                    <p>The habit of inappropriate stool excretion</p>
+                  </li>
+                  <li>
+                    <p>Excessive eating of junk food and less water intake</p>
+                  </li>
+                  <li>
+                    <p>Low fibre intake</p>
+                  </li>
+                  <li>
+                    <p>Straining during bowel movements</p>
+                  </li>
+                  <li>
+                    <p>Obesity</p>
+                  </li>
+                  <li>
+                    <p>Aging</p>
+                  </li>
+                  <li>
+                    <p>Heavy lifting</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="classificationofpiles" className={styles.Section2Question5}>
+                <h2 className="mt-5">Classification of Piles :</h2>
+                <p>
+                  Piles are categorized into four different grades:
+                </p>
+                <Image src={pilesclassify} alt="Piles Classification" className={styles.Section2PilesClassification} />
+                <ul className="">
+                  <li>
+                    <p><strong>Grade I:</strong>There are minor inflammations, mainly within the anus lining. They can’t be seen.</p>
+                  </li>
+                  <li>
+                    <p><strong>Grade II:</strong>These piles are larger than grade I piles. But they remain within the anus. They may be pushed out during stool passing, but they will return on their own.</p>
+                  </li>
+                  <li>
+                    <p><strong>Grade III:</strong>These are commonly known as prolapsed hemorrhoids and appear outside the anus. They may feel like they are hanging from the rectum, but they are easy to re-insert.</p>
+                  </li>
+                  <li>
+                    <p><strong>Grade IV:</strong>These are unable to be put back in and need treatment. They are big and do not enter the anus.</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="piles-during-pregnancy" className={styles.Section2Question6}>
+                <h2 className="mt-5">Why Do Piles May Occur During Pregnancy?</h2>
+                <ul className="">
+                  <li>
+                    <p>During pregnancy, the body goes through several hormonal changes. These hormonal changes cause the veins to relax as well as lead to constipation. Constipation is one of the leading reasons for piles development due to the pressure and straining during the bowel movements. This pressure can cause tearing, bulging and even lump formation around and in the anus and lead to piles.</p>
+                  </li>
+                  <li>
+                    <p>Other than constipation, the growing size of the uterus increased progesterone level, and the baby’s positioning can also play a significant role in piles development among the expected women. Also, giving birth while in the second stage of labour can develop the issue of piles.</p>
+                  </li>
+                  <li>
+                    <p>If you suffer from piles/hemmoroids during pregnancy, get your appointment now for consultation and treatment with Dr Uday Ravi for the best hemmoroids treatment in Bangalore. </p>
+                  </li>
+                </ul>
+              </div>
+              <div id="diagnosis" className={styles.Section2Question7}>
+                <h2 className="mt-5">How are piles diagnosed?</h2>
+                <p>
+                  The best doctor for piles in Bengaluru, Dr. Uday Ravi diagnoses through a combination of medical history evaluation, physical examination and occasionally, additional diagnostic tests. Here’s an overview of the diagnostic process for piles:
+                </p>
+                <ul className="">
+                  <li>
+                    <p><strong>Medical history:</strong>Dr. Uday Ravi will start by asking you questions about your symptoms, such as the duration, severity, and frequency of pain, itching, or bleeding. He may also ask about your bowel habits, dietary habits, and any family history of hemorrhoids.</p>
+                  </li>
+                  <li>
+                    <p><strong>Physical examination:</strong>Dr Uday Ravi will do physical examination of the anus and rectum. This usually involves visually inspecting the area for external piles or using a gloved finger to feel for internal piles. Dr. Uday Ravi may use an anoscope, a short tube-like instrument, to examine the inside of the rectum.</p>
+                  </li>
+                  <li>
+                    <p><strong>{"Digital rectal examination (DRE):"}</strong>The doctor inserts a lubricated, gloved finger into the rectum to feel for any abnormalities or growths.</p>
+                  </li>
+                  <li>
+                    <p><strong>Sigmoidoscopy or colonoscopy:</strong>{"These methods involve using a flexible tube with a camera (sigmoidoscope or colonoscope) to examine the rectum and the lower part of the colon. It assists in evaluating the whole length of the rectum and colon to check for other potential causes of signs."}</p>
+                  </li>
+                  <li>
+                    <p><strong>Anoscopy or proctoscopy:</strong>{"These procedures involve using a short, rigid, or flexible tube with a light source (anoscope or proctoscope) to examine the interior of the anus and lower rectum."}</p>
+                  </li>
+                  <li>
+                    <p><strong>Barium enema X-ray: </strong>{"This test may be recommended to evaluate the whole colon and rectum if other tests are inconclusive. It concerns the insertion of a contrast material (barium) into the rectum, observed by X-rays to visualize the gastrointestinal tract."}</p>
+                  </li>
+                  <li>
+                    <p><strong>Colon transit study:</strong>This test is used to assess how well stool moves via the colon. It aids in evaluating the functioning of the colon and determining any possible underlying causes of constipation or other signs.</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="treatment" className={styles.Section2Question8}>
+                <h2 className="mt-5">How are piles treated?</h2>
+                <p>
+                  Dr. Uday Ravi provides wide range of safe and efficient methods for the treatment of both external and internal hemorrhoids. His aim is to alleviate the discomfort and itching associated with hemorrhoids. Dr. Uday Ravi, a highly regarded senior surgeon who is a piles specialist doctor in Bengaluru is dedicated to offering the best possible options for piles treatment to his patients. Here are some of the treatment options he recommends:
+                </p>
+                <Image src={HemorrhoidLigation} alt="Hemorrhoid ligation with elastic band." className={styles.Section2PilesClassification} />
+                <ul className="">
+                  <li>
+                    <p><strong>Lifestyle modifications:</strong>As an initial step, we emphasize the significance of adopting certain lifestyle modifications. These include increasing dietary fiber intake, staying well-hydrated by consuming ample amounts of water, and limiting the consumption of liquids containing caffeine, such as tea, coffee, and carbonated drinks. These dietary adjustments can help prevent straining during bowel movements</p>
+                  </li>
+                  <li>
+                    <p><strong>Rubber band ligation:</strong>This treatment is commonly suggested for people with grade 1 to 3 hemorrhoids. It concerns the application of elastic bands around internal hemorrhoids, at least 1 cm above the dentate line, to cut off their blood supply.</p>
+                  </li>
+                  <li>
+                    <p><strong>{"Sclerotherapy:"}</strong>This procedure involves injecting a sclerosing agent, such as phenol, directly into the piles. The key causes the walls of the veins to collapse, leading to the shrinkage of piles.</p>
+                  </li>
+                  <li>
+                    <strong>Surgical Piles Treatment:</strong>
+                      <ul>
+                        <li>
+                          <p><strong>Hemorrhoidectomy :</strong>This surgical procedure involves the removal of large external or internal hemorrhoids using laser.</p>
+                        </li>
+                        <li>
+                          <p><strong>Internal hemorrhoid stapling:</strong>In this method, internal hemorrhoids are either removed using a stapling device or gently moved back into the anus and tied there.</p>
+                        </li>
+                      </ul>
+                  </li>
+                </ul>
+                <p>
+                  Dr. Uday Ravi, a highly skilled piles doctor in Bengaluru, possesses extensive expertise in providing exceptional care to his patients. Dr Uday Ravi provides the best laser treatment for piles in Bengaluru. He prioritizes safety, ethical practices, and confidentiality, employing state-of-the-art technology and innovative approaches to ensure optimal outcomes for every individual he treats
+                </p>
+                <Image src={HemorrhoidLigation} alt="Hemorrhoid ligation with elastic band." className={styles.Section2PilesClassification} />
+              </div>
+              <div id="preventpiles" className={styles.Section2Question9}>
+                <h2 className="mt-5">How to prevent Piles?</h2>
+                <p>
+                  Preventing hemorrhoids involves adopting healthy lifestyle habits and making certain changes in your daily routine. Here are some effective tips to help you prevent hemorrhoids:
+                </p>
+                <ul className="">
+                  <li>
+                    <p>Eat High-Fiber Diet</p>
+                  </li>
+                  <li>
+                    <p>Stay Hydrated</p>
+                  </li>
+                  <li>
+                    <p>Exercise Regularly</p>
+                  </li>
+                  <li>
+                    <p>Avoid Straining</p>
+                  </li>
+                  <li>
+                    <p>Maintain Good Hygiene</p>
+                  </li>
+                  <li>
+                    <p>Manage Weight</p>
+                  </li>
+                  <li>
+                    <p>Be Mindful of Medications.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Sticky Right Sidebar */}
+          <div className="col-lg-4 col-md-12">
+            <div className={`${styles.Section2sidebar} `}>
+              <h5 className={styles.Section2sidebarTitle}>Table Of Contents</h5>
+              <ul className={styles.Section2tocList}>
+                {[
+                  { id: 'what-is-piles', label: 'What Is Piles' },
+                  { id: 'classification', label: 'Classifications of Piles, or Hemorrhoids?' },
+                  { id: 'symptoms', label: 'Signs & Symptoms' },
+                  { id: 'causes', label: 'Causes Of Piles' },
+                  { id: 'classificationofpiles', label: 'Classification of Piles' },
+                  { id: 'piles-during-pregnancy', label: 'Why Do Piles May Occur During Pregnancy ?' },
+                  { id: 'diagnosis', label: 'How are piles diagnosed ?' },
+                  { id: 'treatment', label: 'Treatment Options' },
+                  { id: 'preventpiles', label: 'How To Prevent Piles' },
+                  { id: 'foods', label: 'Foods To Avoid & Include' },
+                  { id: 'faqs', label: 'FAQs' },
+                  { id: 'about-doctor', label: 'About Dr. Uday Ravi' },
+                ].map(({ id, label }) => (
+                  <li key={id}>
+                    <a
+                      href={`#${id}`}
+                      className={activeId === id ? styles.active : ''}
+                    >
+                      {label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
