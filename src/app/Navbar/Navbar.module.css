@@ -180,8 +180,8 @@
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
   z-index: 1050; /* Bootstrap default is 1045–1060 */
   min-width: 1000px;
-  opacity: 1;
-  visibility: visible; /* Fix the typo from 'hiddem' */
+  opacity: 0;
+  visibility: hidden; /* Fix the typo from 'hiddem' */
   transition: all 0.3s ease;
   border-radius: 0 0 15px 15px;
   transform: translateY(-10px);
