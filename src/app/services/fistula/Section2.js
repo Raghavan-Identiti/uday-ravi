@@ -3,7 +3,8 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
-import AnalFistulaImg1 from '../../assets/AnalFistulaImg1.png';
+import AnalFistulaImg1New from '../../assets/AnalFistulaImg1New.png';
+import AnalFistulaImg2New from '../../assets/AnalFistulaImg2New.png';
 import pilesImage2 from '../../assets/Group167.png';
 import AnalFistula from '../../assets/AnalFistula.png';
 import AnalFistula2 from '../../assets/AnalFistula2.png';
@@ -108,8 +109,8 @@ export default function Section2() {
 
                 <div className={`d-flex flex-column flex-lg-row justify-content-center gap-5 ${styles.Section2PilesImgdiv}`}>
                   <div className='d-flex flex-column align-items-center'>
-                    <Image src={AnalFistulaImg1} alt="Piles Treatment" className={styles.Section2PilesImage1} />
-                    <p>Fig 1. Anal Fistula</p>
+                    <Image src={AnalFistulaImg1New} alt="Piles Treatment" className={styles.Section2PilesImage1} />
+                    <p>Fig 1. Fistula</p>
                   </div>
                   
                 </div>
@@ -208,6 +209,10 @@ export default function Section2() {
                     <p>Fever, chills, and a general feeling of fatigue</p>
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center my-4'>
+                  <Image src={AnalFistulaImg2New} alt="Anal fistula" className={`${styles.Section2PilesImage1} mb-3 `} />
+                  <p>Fig 2. Anal Fissure</p>
+                </div>
                 <p>Anal fistula surgery aims to correct an anal fistula and treat all of its associated symptoms. If you have any of the above symptoms or you’re concerned about having an anal infection, abscess or fistula, speak with
                   <strong> Dr. UDAY RAVI, the best fistula specialist in BENGALURU.</strong>
                 </p>
@@ -257,11 +262,7 @@ export default function Section2() {
                     <p><strong>Fistulotomy : </strong></p>
                     <p>This involves cutting along the whole length of the fistula to open it up so it heals as a flat scar. A fistulotomy is usually done in simple fistula where the risk of incontinence is less. It is not suitable for complex fistula</p>
                     <p>Dr. Uday Ravi Fistula Specialist Surgeon in Bengaluru uses a LASER as an adjunct to Fistulectomy to minimize the risk of damage to the sphincter muscle. Thus, with the added advantage of Laser, the chances of post-operative pain will be negligible.</p>
-                    <div className='d-flex flex-column align-items-center'>
-                      <Image src={AnalFistula} alt="Anal Fistula" className={styles.Section2PilesTreatment} />
-                      <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 2. Fistulotomy</p>
-                      {/* <p>Dr. Uday Ravi<strong> Fistula Specialist Surgeon in Bengaluru</strong> uses a LASER as an adjunct to Fistulectomy to minimize the risk of damage to the sphincter muscle. Thus, with the added advantage of Laser, the chances of post-operative pain will be negligible.</p> */}
-                    </div>
+                    
                   </li>
                   <li>
                     <p><strong>{"Ligation of the intersphincteric Fistula Tract (LIFT)"} : </strong></p>

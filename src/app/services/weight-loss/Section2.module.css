@@ -69,9 +69,8 @@
     margin-top: 20px;
 }
 .Section2PilesImage1{
-    width: 244px;
-    height: 227px;
-    border-radius: 20px;
+    width: 50%;
+    height: auto;
     /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 }
 .Section2PilesImage2{
@@ -393,7 +392,6 @@
   counter-increment: number-counter;
   list-style: none;
   position: relative;
-  margin-bottom: 1.5rem;
   padding-left: 2.5rem;
 }
 .numberlist > li > p > strong{

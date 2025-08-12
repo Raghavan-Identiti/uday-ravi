@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from './Section2.module.css';
 import reconstructiveSurgeryImg1 from '../../assets/reconstructiveSurgeryImg1.png';
 import reconstructiveSurgeryImg2 from '../../assets/reconstructiveSurgeryImg2.png';
+import reconstructiveSurgeryImg2New from '../../assets/reconstructiveSurgeryImg2New.png';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
 import Section3 from "./Section3";
@@ -146,44 +147,44 @@ export default function Section2() {
                 </p>
                 <div className={` ${styles.Section2PilesImgdiv}`}>
                   <div className='d-flex flex-column align-items-center'>
-                    <Image src={reconstructiveSurgeryImg2} alt="reconstructiveSurgeryImg1" className={styles.Section2PilesImage1} />
+                    <Image src={reconstructiveSurgeryImg2New} alt="reconstructiveSurgeryImg1" className={styles.Section2PilesImage1New} />
                     <p>Fig 2. Liposuction</p>
                   </div>
                 </div>
                 <p>Most common body parts where liposuction is carried out:</p>
-                <ul >
+                <ul className='d-flex flex-column row-gap-2'>
                   <li>
-                    <p>Abdomen</p>
+                    Abdomen
                   </li>
                   <li>
-                    <p>Hips</p>
+                    Hips
                   </li>
                   <li>
-                    <p>Outer thighs</p>
+                    Outer thighs
                   </li>
                   <li>
-                    <p>Flanks</p>
+                    Flanks
                   </li>
                   <li>
-                    <p>Back</p>
+                    Back
                   </li>
                   <li>
-                    <p>Inner thighs</p>
+                    Inner thighs
                   </li>
                   <li>
-                    <p>Inner knees</p>
+                    Inner knees
                   </li>
                   <li>
-                    <p>Upper arms</p>
+                    Upper arms
                   </li>
                   <li>
-                    <p>Chin, neck</p>
+                    Chin, neck
                   </li>
                   <li>
-                    <p>Male Breast Tissue</p>
+                    Male Breast Tissue
                   </li>
                   <li>
-                    <p>Female genital area</p>
+                    Female genital area
                   </li>
                 </ul>
                 <p>
@@ -219,7 +220,7 @@ export default function Section2() {
                 <p>
                   The Liposuction Procedure Includes The Following Steps:
                 </p>
-                <ul className="">
+                <ul className="d-flex flex-column row-gap-3">
                   <li>
                     <strong>Step 1 -<span style={{color:"#5c47dc"}}> Anesthesia :</span></strong> During the operation, medications will be given for your comfort. Local anesthetic, intravenous sedation, and general anesthesia are the options. Dr. Uday Ravi will advise you on the best decision.
                   </li>

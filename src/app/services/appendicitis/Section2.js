@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import AppendicitisImg1 from '../../assets/AppendicitisImg1.png';
+import AppendicitisImg1New from '../../assets/AppendicitisImg1New.png';
 import AppendicitisImg2 from '../../assets/AppendicitisImg2.png';
 import AOS from 'aos';             // Import AOS
 import 'aos/dist/aos.css';        // Import AOS styles
@@ -103,13 +104,13 @@ const tocItems = [
                 <p>Since the appendix may burst or rupture, allowing infectious contents to penetrate the abdominal cavity, doctors consider appendicitis a medical emergency. To avoid complications, the doctor removes the appendix before it ruptures.</p>
                 <div className={` ${styles.Section2PilesImgdiv}`}>
                   <div className='d-flex flex-column align-items-center'>
-                    <Image src={AppendicitisImg1} alt="AppendicitisImg1" className={styles.Section2PilesImage1} />
+                    <Image src={AppendicitisImg1New} alt="AppendicitisImg1" className={styles.Section2PilesImage1New} />
                     <p>Fig 1. Appendicitis</p>
                   </div>
                 </div>
               </div>
               <div id="symptoms" className={styles.Section2Question7} data-aos="fade-up">
-                <h2 className="mt-5">What are the symptoms of appendicitis?</h2>
+                <h2>What are the symptoms of appendicitis?</h2>
                 <p>Appendicitis causes abdominal pain, which is most often felt around the bellybutton. The pain could also spread to the lower right side of your abdomen. Additional signs and symptoms of appendicitis include:</p>
                 <ul className='d-flex flex-column row-gap-2'>
                   <li>

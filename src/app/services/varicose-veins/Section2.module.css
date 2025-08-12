@@ -51,10 +51,9 @@
     font-weight: 500;
     margin-top: 20px;
 }
-.Section2PilesImage1{
-    width: 583px;
-    height: 341.86px;
-    border-radius: 20px;
+.Section2PilesImage1New{
+    width: 50%;
+    height: auto;
     margin-bottom: 20px;
     /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 }

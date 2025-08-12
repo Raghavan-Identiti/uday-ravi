@@ -31,10 +31,9 @@ export default function Navbar({ setShowPopup = () => {} }) {
 const navItems = [
   { name: 'Home', path: '/' },
   { name: 'About Me', path: '/#about-doctor' },
-  { name: 'Specialities', path: '/#about-doctor' },
 
   {
-    name: 'Services',
+    name: 'Specialities',
     submenu: {
       core: [
         {
@@ -139,7 +138,7 @@ const navItems = [
 
         <div className={`d-none d-lg-flex flex-row align-items-center gap-lg-4 ${styles.NavbarItemsdiv}`}>
           {navItems.map((item, i) => (
-            item.name === "Services"? (
+            item.name === "Specialities"? (
               <div key={i} className={styles.dropdownWrapper}>
                 <span className={`${styles.navLink} ${styles.dropdownToggle}`}>
                   {item.name} <span className={styles.dropdownArrow}><FaChevronDown /></span>
@@ -157,8 +156,8 @@ const navItems = [
                                 src={subItem.icon}
                                 alt={subItem.name}
                                 className={`
-                                  ${item.name === 'Services' ? styles.iconSmall : styles.iconLarge}
-                                  ${item.name === 'Services' && (subItem.name === 'Weight Loss (Intra-gastric Balloon)' || subItem.name === 'Proctology' || subItem.name === 'Anal Fistula' || subItem.name === 'Fissure') ? styles.customIcon1 : ''}
+                                  ${item.name === 'Specialities' ? styles.iconSmall : styles.iconLarge}
+                                  ${item.name === 'Specialities' && (subItem.name === 'Weight Loss (Intra-gastric Balloon)' || subItem.name === 'Proctology' || subItem.name === 'Anal Fistula' || subItem.name === 'Fissure') ? styles.customIcon1 : ''}
                                 `}
                               />
                             </div>
@@ -180,7 +179,7 @@ const navItems = [
                                 src={subItem.icon}
                                 alt={subItem.name}
                                 className={`
-                                  ${item.name === 'Services' ? styles.iconSmall : styles.iconLarge}
+                                  ${item.name === 'Specialities' ? styles.iconSmall : styles.iconLarge}
                                 `}
                               />
                           </div>

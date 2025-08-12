@@ -5,6 +5,11 @@ import Image from 'next/image';
 import styles from './Section2.module.css';
 import VaricoseVeinsImg1 from '../../assets/VaricoseVeinsImg1.png';
 import VaricoseVeinsImg2 from '../../assets/VaricoseVeinsImg2.png';
+import VaricoseVeinsImg1New from '../../assets/VaricoseVeinsImg1New.png';
+import VaricoseVeinsImg2New from '../../assets/VaricoseVeinsImg2New.png';
+import VaricoseVeinsImg3New from '../../assets/VaricoseVeinsImg3New.png';
+import VaricoseVeinsImg4New from '../../assets/VaricoseVeinsImg4New.png';
+import VaricoseVeinsImg5New from '../../assets/VaricoseVeinsImg5New.png';
 import { FaChevronDown } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
@@ -102,13 +107,13 @@ export default function Section2() {
                 <p>{"Varicose veins are veins seen under the skin that have become swollen, twisted and bulging. They are usually seen in the legs and feet. They are quite common, and most of the time do not cause any problems. However, they can be disfiguring and be a cause for cosmetic concern in females. Varicose vein of legs is common, affecting 1-15% of adult men and 20-25% of adult women."}</p>
                 <p>{"The veins of the lower limb have one way valves that keep the blood moving towards the heart and prevent its backflow. When these valves are damaged, blood starts pooling in the legs causing swelling of the legs, aching pain, heaviness, fatigue, skin discoloration, itching, varicosities (prominent vein) and if not treated it may develop non-healing ulcers in leg. Over time, the continuous pooling cause the veins to become stretched, swollen and tortuous. Raised pressure in these veins also causes development of spider veins and discoloured areas which look like bruises."}</p>
                 <div className='d-flex flex-column align-items-center'>
-                  <Image src={VaricoseVeinsImg1} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1} />
-                  <p>Fig 1. Varicose Vien</p>
+                  <Image src={VaricoseVeinsImg1New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1New} />
+                  <p>Fig 1. Endovenous Laser Treatment</p>
                 </div>
               </div>
-              <div id="" className={styles.Section2Question7} data-aos="fade-up">
-                <strong style={{color:"#5c47dc"}} className="mt-5">The varicose vein consists of :</strong>
-                <ul>
+              <div className={styles.Section2Question7} data-aos="fade-up">
+                <h2>The varicose vein consists of :</h2>
+                <ul className='d-flex flex-column row-gap-2'>
                   <li>
                     Venous insufficiency or venous reflux at groin.
                   </li>
@@ -140,6 +145,10 @@ export default function Section2() {
                   <li>{"Bleeding from leg"}</li>
                   <li>{"Non-healing ulcer of the leg"}</li>
                 </ul>
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={VaricoseVeinsImg2New} alt="Varicose Veins" className={styles.Section2PilesImage1New} />
+                  <p>Fig 2. Stages of Varicose</p>
+                </div>
               </div>
               <div id="causes" className={styles.Section2Question3} data-aos="fade-up">
                 <h2 className="mt-5">Causes of varicose veins?</h2>
@@ -152,8 +161,8 @@ export default function Section2() {
                   <li>{"Due to advanced age, overweight and lack of exercise veins of legs become very weak and, therefore, develop into varicose veins."}</li>
                 </ul>
                 <div className='d-flex flex-column align-items-center my-4'>
-                  <Image src={VaricoseVeinsImg2} alt="VaricoseVeinsImg4" className={`${styles.Section2PilesImage1} mb-3 `} />
-                  <p>Fig 4. Untreated varicose vein with ulcer and pigmentation.</p>
+                  <Image src={VaricoseVeinsImg3New} alt="Varicose Veins" className={`${styles.Section2PilesImage1New} mb-3 `} />
+                  <p>Fig 3. Risk Factors of Varicose.</p>
                 </div>
               </div>
               <div id="risk" className={styles.Section2Question3} data-aos="fade-up">
@@ -179,7 +188,10 @@ export default function Section2() {
                 <p>
                   Dr Uday Ravi who is one of the best varicose veins doctor in Bengaluru. He will take detailed history with symptoms and do the physical examination andlook for swelling, skin colour changes, tenderness or any tortuous veins on lower limbs. He will advice ultrasound Doppler study which can show the exact site of disease in the form of damaged valves & dilatation of veins.
                 </p>
-                
+                <div className='d-flex flex-column align-items-center my-4'>
+                  <Image src={VaricoseVeinsImg4New} alt="Varicose Veins" className={`${styles.Section2PilesImage1New} mb-3 `} />
+                  <p>Fig 4. Prevention of Varicose</p>
+                </div>
               </div>
               <div id="complications" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">Complications of varicose veins</h2>
@@ -246,6 +258,10 @@ export default function Section2() {
                     <p>The recurrence rate is almost negligible and the pain associated with the procedure is much less as compared to other procedures</p>
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={VaricoseVeinsImg5New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1New} />
+                  <p>Fig 5. Treatment of Varicose</p>
+                </div>
                 <div>
                   <strong>Advantages of EVLA</strong>
                   <ul className={styles.sublistAlphabets}>

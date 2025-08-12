@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import ThyroidImg1 from '../../assets/ThyroidImg1.png';
+import ThyroidImg1New from '../../assets/thyroidImg1New.png';
 
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
@@ -198,6 +199,10 @@ export default function Section2() {
                 <h2>Hyperthyroidism <span style={{ fontWeight: "100" }}>{"(Overactive Thyroid):"}</span></h2>
                 <p>Occurs when the thyroid gland produces excessive thyroid hormones, speeding up body functions.
                 </p>
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={ThyroidImg1New} alt="Thyroid" className={styles.Section2PilesImage1} />
+                  <p>Fig 1. Hyperthyroidism</p>
+                </div>
                 <div className='d-flex flex-column justify-content-center px-lg-4'>
                   <h4 className='mb-3'>Causes : </h4>
                   <ul className="">

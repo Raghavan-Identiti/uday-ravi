@@ -5,6 +5,8 @@ import Image from 'next/image';
 import styles from './Section2.module.css'; 
 import { FaChevronDown } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
+import CircumcisionImg1 from '../../assets/Circumcision-service-img1.png'; // Use your actual SVG or PNG
+import CircumcisionImg2 from '../../assets/Circumcision-service-img2.png'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
 import Section5 from "./Section5";
 import PopupForm from '@/app/PopupModal/popupmodal';
@@ -65,6 +67,7 @@ export default function Section2() {
     { id: 'benefits', label: 'Benefits',type:"subheading" },
     { id: 'conditions', label: 'Conditions',type:"subheading" },
     { id: 'diagnosis', label: 'Diagnosis',type:"subheading" },
+    { id: 'treatment', label: 'Treatment',type:"subheading" },
     { id: 'advantages', label: 'Advantages',type:"subheading" },
   ];
 
@@ -96,6 +99,10 @@ export default function Section2() {
                 <p>{"The sleeve of skin and mucosal tissue that covers the glans (head) of the penis is surgically removed. The foreskin is a double layer that is sometimes referred to as the foreskin. Circumcision is a prevalent practice in many regions of the globe. Circumcision practice is followed for many beneficial reasons like personal hygiene to lower the risk of disease. Circumcision is a religious ritual that is carried in several parts of the world."}</p>
                 <p><strong>Foreskin: </strong>{"It is a piece of skin that covers the penis’s circular tip. The foreskin is entirely attached to the penis when an infant is born. The foreskin separates from the tip of the penis over time and can be retracted."}</p>
                 <p>Dr. Uday Ravi is one of the <strong> best doctor for circumcision treatment in Bangalore. </strong> We provide the most advanced and painless circumcision surgery in Bangalore.</p>
+                <div className={`${styles.Section2Question1Imgdiv} d-flex flex-column align-items-center`}>
+                  <Image src={CircumcisionImg1} alt='Circumcision' className={styles.Section2CircumcisionImg1}/>
+                  <p>Fig 1. Circumcision</p>
+                </div>
               </div>
               <div id="benefits" className={styles.Section2Question2} data-aos="fade-up">
                 <h2 className="mt-5">Benefits of Circumcision Treatment</h2>
@@ -147,6 +154,14 @@ export default function Section2() {
               </div>
               <div id="diagnosis" className={styles.Section2Question4} data-aos="fade-up">
                 <h2 className="mt-5">Diagnosis for Circumcision</h2>
+                <p>During the diagnosis, the doctor will ask a few questions about the patient’s medical history and any prior infections or injuries to the penis, that would help for circumcision surgery. The doctor additionally inquires whether the patient’s sexual life has been impacted by foreskin-related issues such as phimosis, balanitis, paraphimosis, etc. Doctor then does a thorough physical examination of the foreskin and penis. To rule out the presence of urinary tract infections, the doctor may additionally order urine tests or a swab from the foreskin.</p>
+                <div className='d-flex flex-column align-items-center'>
+                    <Image src={CircumcisionImg2} alt="Circumcision" className={styles.Section2CircumcisionImg1} />
+                    <p>Fig 2. Phimosis</p>
+                  </div>
+              </div>
+              <div id="treatment" className={styles.Section2Question4} data-aos="fade-up">
+                <h2 className="mt-5">Treatment</h2>
                 <strong>Laser Circumcision in Bangalore</strong>
                 <ul className={`${styles.sublistAlphabets}`}>
                   <li>

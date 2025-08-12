@@ -4,8 +4,11 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import HerniaImg1 from '../../assets/HerniaImg1.png';
+import HerniaImg1New from '../../assets/HerniaImg1New.png';
+import HerniaImg2New from '../../assets/HerniaImg2New.png';
+import HerniaImg3New from '../../assets/HerniaImg3New.png';
 
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
+import { FaChevronDown } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
 import Section5 from "./Section5";
@@ -102,7 +105,7 @@ export default function Section2() {
                 <p>When an organ or a portion of tissue protrudes through a weakened section of the muscular structure, it gives rise to a noticeable swelling in the abdominal wall, medically referred to as a hernia. Hernias can manifest in various anatomical regions, encompassing the upper abdominal region, the navel area, and the groin.</p>
                 <div className={` ${styles.Section2PilesImgdiv}`}>
                   <div className='d-flex flex-column align-items-center'>
-                    <Image src={HerniaImg1} alt="HerniaImg1" className={styles.Section2PilesImage1} />
+                    <Image src={HerniaImg1New} alt="HerniaImg1" className={styles.Section2PilesImage1New} />
                     <p>Fig 1. Types of hernias</p>
                   </div>
                 </div>
@@ -126,6 +129,10 @@ export default function Section2() {
                     <strong style={{color:"#5c47dc"}}>Incisional hernia: </strong><p>An incisional hernia is a unique type of hernia which happens at previous sites of surgery. They are most commonly found in the abdomen as a lump at the site. They can be tender and painful. After undergoing a surgery of the abdomen, sometimes the cut muscles do not heal well together and have an area of weakness at the site of the incision (the cut). This area of weakness can now be pushed into by the organs and tissues of the abdomen, even causing an outward bulge on the outside of the abdominal wall. In mild cases, it is only a thin tissue layer pushed out into the weak space but it is not uncommon for organs to be pushed out as well.</p>
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center'>
+                    <Image src={HerniaImg2New} alt="Hernia" className={styles.Section2PilesImage2New} />
+                    <p>Fig 2. Types of Abdominal Hernias</p>
+                </div>
                 <strong >Am I at a Risk of Developing a Hernia?</strong>
                 <p>
                   You have a higher risk of developing it:
@@ -253,6 +260,10 @@ export default function Section2() {
                     <p>This innovative approach has gained significant traction due to its numerous advantages when compared to conventional techniques.</p>
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center'>
+                    <Image src={HerniaImg3New} alt="Hernia" className={styles.Section2PilesImage3New} />
+                    <p>Fig 2. Umbilical Hernia</p>
+                </div>
               </div>
               <div id="benefits" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">Benefits of Robotic-Assisted Hernia Surgery:</h2>

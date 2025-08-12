@@ -18,9 +18,9 @@ export default function SectionAbout() {
                             has many fellowships <strong>FARIS, FMAS, FALS, FIAGES, FISCP and DMAS(France)</strong>.
                         </p>
                         <p className="text-white mb-3">
-                            Dr. Uday Ravi has been performing circumcisions for the last 15 years. He is able to perform male circumcisions in all age groups from newborns right through to adults. When it comes to circumcisions, Dr. Uday Ravi is one of the experienced surgeons in Bangalore. You couldn’t be in safer hands.
+                            Dr Uday Ravi has been performing circumcisions for the last 15 years. He is able to perform male circumcisions in all age groups from newborns right through to adults. When it comes to circumcisions, Dr Uday Ravi is one of the experienced surgeons in Bangalore. You couldn’t be in safer hands.
                         </p>
-                        <p>
+                        <p className="text-white">
                             He offers circumcision surgery that is scarless and gives the best results after healing.
                         </p>
                     </div>

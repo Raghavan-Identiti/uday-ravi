@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import pilonidalSinusImg1 from '../../assets/pilonidalSinusImg1.png';
+import pilonidalSinusImg1New from '../../assets/pilonidalSinusImg1New.png';
 
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
@@ -101,7 +102,7 @@ export default function Section2() {
                 <p>A pilonidal sinus is a small opening or a tunnel found in the skin in the sacrococcygeal area (the area on the top of your buttocks where they divide). Pilonidal sinuses are harmless and cause symptoms only if they become infected with hair follicles. The condition is known as pilonidal sinus disease. The area where the pilonidal sinus develops appears swollen, tender, and red, with pus draining out. Treatment consists of antibiotics to treat the infection. Repeated infections require the removal of the sinus surgically.</p>
                 <div className={` ${styles.Section2PilesImgdiv}`}>
                   <div className='d-flex flex-column align-items-center'>
-                    <Image src={pilonidalSinusImg1} alt="pilonidalSinusImg1" className={styles.Section2PilesImage1} />
+                    <Image src={pilonidalSinusImg1New} alt="pilonidal Sinus" className={styles.Section2PilesImage1} />
                     <p>Fig 1. Pilonidal Sinus</p>
                   </div>
                 </div>
@@ -130,7 +131,7 @@ export default function Section2() {
                 <p>
                   The pilonidal sinus is a small tunnel under the skin at the top of your butt, where the butt divides. It generally does not cause any symptoms. Pilonidal sinus disease is an inflammatory condition when hair follicles are entrapped inside it. The symptoms are seen as the body’s response to the hair as a foreign body. You may notice the following symptoms
                 </p>
-                <ul>
+                <ul className='d-flex flex-column row-gap-3'>
                   <li>
                     Fever- The body temperature is raised due to the immune response
                   </li>
@@ -195,7 +196,7 @@ export default function Section2() {
                 </ul>
                 <p>Pilonidal cyst treatment can also be done with the help of laser.
                 <br/>You can generally go home on the same day as the procedure. To facilitate faster healing, you can do the following things.</p>
-                <ul>
+                <ul className='d-flex flex-column row-gap-2'>
                   <li>Keep the wound area clean and dry at all times.</li>
                   <li>Avoid sitting for a long time at a stretch.</li>
                   <li>Wear loose-fitting undergarments that are comfortable.</li>
@@ -206,7 +207,7 @@ export default function Section2() {
                 <p>Complications Associated With Pilonidal Sinus<br/>
                    Several complications arise with pilonidal sinus. 
                 </p>
-                 <ul>
+                 <ul className='d-flex flex-column row-gap-2'>
                   <li>Recurrence of the infection and abscess is the most common complication.</li>
                   <li>Re-infection at the scar on the midline is frequently seen.</li>
                   <li>A surgical wound that has not healed properly would require further surgery and excision.</li>
@@ -218,7 +219,7 @@ export default function Section2() {
                 <p>
                   {"Pilonidal sinus can be prevented by ensuring good hygiene. Here are the steps that you can take to prevent pilonidal sinus"}
                 </p>
-                 <ul>
+                 <ul className='d-flex flex-column row-gap-3'>
                   <li>Ensure the cleanliness of the region.</li>
                   <li>Wash the area with soap daily while bathing.</li>
                   <li>Wipe the area well. Do not let moisture accumulate.</li>

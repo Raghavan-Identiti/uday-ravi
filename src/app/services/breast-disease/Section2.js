@@ -4,6 +4,14 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import fibroadenomaImg1 from '../../assets/fibroadenomaImg1.png';
+import fibroadenomaImg2New from '../../assets/fibroadenomaImg2New.png';
+import fibroadenomaImg3New from '../../assets/fibroadenomaImg3New.png';
+import fibroadenomaImg4New from '../../assets/fibroadenomaImg4New.png';
+import fibroadenomaImg5New from '../../assets/fibroadenomaImg5New.png';
+import fibroadenomaImg6New from '../../assets/fibroadenomaImg6New.png';
+import fibroadenomaImg7New from '../../assets/fibroadenomaImg7New.png';
+import fibroadenomaImg8New from '../../assets/fibroadenomaImg8New.png';
+import fibroadenomaImg9New from '../../assets/fibroadenomaImg9New.png';
 import AOS from 'aos';             // Import AOS
 import 'aos/dist/aos.css';        // Import AOS styles
 import { FaChevronDown } from 'react-icons/fa'; // Custom icon
@@ -104,10 +112,16 @@ export default function Section2() {
                 <p>{"They are pretty small and mostly 1 or 2 centimetres. It's rare that the lumps get larger than 5 centimetres."}</p>
                 <p>{"Usually, a fibroadenoma doesn't cause pain. Generally it feels like a marble that moves around beneath our breast's skin. It is described as a firm, rubbery or smooth."}</p>
                 <p>It is one of the most common non-cancerous tumours, basically they are lumps that generally happen in the young women of having age in between 15 to 25 years. Mostly they shrink by the time and disappear but if they won&apos;t <strong>Dr. Uday Ravi can take help through fibroadenoma treatment in Bangalore.</strong></p>
-                
+                <div className='d-flex flex-column align-items-center'>
+                  <div className='d-flex mb-5'>
+                  <Image src={fibroadenomaImg2New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
+                  <Image src={fibroadenomaImg3New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
+                  </div>
+                  <p>Fig 1. Breast disease</p>
+                </div>
               </div>
               <div id="symptoms" className={styles.Section2Question7} data-aos="fade-up">
-                <h2 className="mt-5">What are the fibroadenoma symptoms?</h2>
+                <h2>What are the fibroadenoma symptoms?</h2>
                 <p>Symptoms of fibroadenoma of the breast are</p>
                 <ul className='d-flex flex-column row-gap-2'>
                   <li>
@@ -127,8 +141,8 @@ export default function Section2() {
                   If you have any of these symptoms, get the immediate help from the Fibroadenoma Specialist in Bangalore, Dr. day Ravi.
                 </p>
                 <div className='d-flex flex-column align-items-center'>
-                  <Image src={fibroadenomaImg1} alt="fibroadenomaImg1" className={styles.Section2PilesImage1} />
-                  <p>Fig 1. Types of Cysts</p>
+                  <Image src={fibroadenomaImg4New} alt="fibroadenomaImg1" className={styles.Section2PilesImage1New} />
+                  <p>Fig 2. An Abscess in the breast</p>
                 </div>
                 <p>
                   All fibroadenomas doesn&apos;t requires surgical treatments but there might be certain indications when surgery should be done and they are as follows:
@@ -154,7 +168,7 @@ export default function Section2() {
               </div>
               <div id="diagnosis" className={styles.Section2Question2} data-aos="fade-up">
                 <h2 className="mt-5">Diagnosis</h2>
-                <p>IDoctor will first make a basic physical exam. He will check both your breasts for any abnormalities or tumours. Depending on factors such as your age,doctor may prescribe the following tests:
+                <p>Doctor will first make a basic physical exam. He will check both your breasts for any abnormalities or tumours. Depending on factors such as your age,doctor may prescribe the following tests:
                 </p>
                 <ul className='d-flex flex-column row-gap-2'>
                   <li>
@@ -185,6 +199,10 @@ export default function Section2() {
                 <p>
                   If you are searching for the best doctor to get <strong>fibroadenoma treatment in Bangalore,</strong> then Dr. Uday Ravi is one of the leading and reliable doctor for all your medical requirements.
                 </p>
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={fibroadenomaImg5New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
+                  <p>Fig 3. Fibrocystic Breast Diseases</p>
+                </div>
               </div>
               <div id="what-is-breast-Cancer" className={styles.Section2Question4} data-aos="fade-up">
                 <h2 className="mt-5" style={{color:"#5a4ae3",fontSize:"30px"}}>Breast Cancer</h2>
@@ -192,7 +210,10 @@ export default function Section2() {
                 <p>
                   {"Breast cancer is a disease in which cells in the breast grow out of control. Breast cancer cells usually form a tumor that can often be seen on an x-ray or felt as a lump. Breast cancer is the second most common cancer in women after skin cancer. Rarely, it can also affect men."}
                 </p>
-                
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={fibroadenomaImg6New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
+                  <p>Fig 4. Mastitis</p>
+                </div>
               </div>
               <div id="symptoms-of-breast-cancer" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">What are the symptoms of Breast cancer?</h2>
@@ -228,6 +249,10 @@ export default function Section2() {
                     Swelling of the breast
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={fibroadenomaImg7New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
+                  <p>Fig 5. Symptoms of Breast Cancer</p>
+                </div>
                 <p>
                   {"Breast cancer is categorized into different stages depending on how far the cancer has spread. Dr. Uday Ravi utilizes the widely recognized TNM staging system, which assesses the size and extent of the primary tumor (T), whether cancer has reached nearby lymph nodes (N), and if it has metastasized to other parts of the body (M)."}
                 </p>
@@ -295,6 +320,13 @@ export default function Section2() {
                 <p>
                   Doctor will do physical examination of the breast to look for any skin changes over the breast/nipple or if there is any discharge. Doctor will palpate to look for any lump in the breast or in the axilla. Doctor will then advise few tests depending on the patients symptoms and physical examination findings.
                 </p>
+                <div className='d-flex flex-column align-items-center'>
+                  <div className='d-flex'>
+                  <Image src={fibroadenomaImg8New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
+                  <Image src={fibroadenomaImg9New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
+                  </div>
+                  <p>Fig 6. Breast Cancer Diagnosed</p>
+                </div>
                 <p>
                   <strong>Imaging tests : </strong>This procedure will use these to learn more about your breast.
                 </p>

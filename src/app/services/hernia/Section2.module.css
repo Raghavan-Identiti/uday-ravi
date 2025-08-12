@@ -51,6 +51,18 @@
     font-weight: 500;
     margin-top: 20px;
 }
+.Section2PilesImage1New{
+      width: 100%;
+    height: auto;
+}
+.Section2PilesImage2New{
+        width: 80%;
+    height: 80%;
+}
+.Section2PilesImage3New{
+  width: 50%;
+  height: 50%;
+}
 .Section2PilesImage1{
     border-radius: 20px;
     /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
@@ -353,6 +365,10 @@
   }
   .Section2PilesImage1, .Section2PilesImage2 {
     width: 100%;
+    height: auto;
+  }
+  .Section2PilesImage1New,.Section2PilesImage2New,.Section2PilesImage3New{
+        width: 100%;
     height: auto;
   }
   .Section2PilesClassificationContainer {

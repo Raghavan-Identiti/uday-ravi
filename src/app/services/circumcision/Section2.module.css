@@ -348,10 +348,15 @@
 .Section2PilesTreatmentImages{
   text-align: center;
 }
+
 @media (max-width: 768px) {
-  .Section2PilesImgdiv {
+  .Section2PilesImgdiv, .Section2Question1Imgdiv{
     flex-direction: column;
     align-items: center;
+  }
+  .Section2CircumcisionImg1{
+    width: 100% !important;
+    height: auto !important;
   }
   .Section2PilesImage1, .Section2PilesImage2 {
     width: 100%;
@@ -548,4 +553,13 @@
 
 .Section2Foods{
   width: 100% !important;
+}
+.Section2Question1Imgdiv{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Section2CircumcisionImg1{
+  width: 65%;
+  height: 65%;
 }

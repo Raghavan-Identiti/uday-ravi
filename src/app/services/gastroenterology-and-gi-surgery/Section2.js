@@ -9,7 +9,9 @@ import Section4 from "./Section4";
 import Section5 from "./Section5";
 import PopupForm from '@/app/PopupModal/popupmodal';
 import Link from 'next/link';
-import gallbladderImg1 from '../../assets/gallbladderImg1.png'
+import gallbladderImg1New from '../../assets/gallbladderImg1New.png'
+import gallbladderImg2New from '../../assets/gallbladderImg2New.png'
+import gallbladderImg3New from '../../assets/gallbladderImg3New.png'
 import gallbladderImg2 from '../../assets/gallbladderImg2.png'
 import gallbladderImg3 from '../../assets/gallbladderImg3.png'
 import AOS from 'aos';             // Import AOS
@@ -104,7 +106,7 @@ export default function Section2() {
                 <p>Gallbladder stones, also known as<strong> gallstones or cholelithiasis.</strong> Gallstones (cholelithiasis) are hard deposits that form in the gallbladder. The gallbladder is a small organ located below the liver that stores bile, a fluid that helps digest fats. Gallstones can be made of bilirubin, cholesterol, or a combination of both. These stones can vary in size and composition, and they can develop for several reasons. Gallbladder stones do not disappear by themselves.</p>
                 <p> <strong> Dr. Uday Ravi,</strong> a leading surgeon in Bengaluru <strong>who does Best Gallstone Surgery in Bengaluru </strong>may decide to remove your gallbladder if it begins to pain or causes other symptoms. Around 80% of people with gallbladder stones will require surgery. Cholecystectomy is one of the most common procedures performed by doctors to remove gallbladder stones.</p>
                 <div className='d-flex flex-column align-items-center'>
-                    <Image src={gallbladderImg1} alt="gallbladderImg1" className={styles.Section2PilesImage1} />
+                    <Image src={gallbladderImg1New} alt="gallbladderImg1" className={styles.Section2PilesImage1New} />
                     <p>Fig 1. Gallbladder Stones</p>
                   </div>
               </div>
@@ -224,37 +226,45 @@ export default function Section2() {
                 <p>
                   If you have gallstones, book an appointment soon with Dr. Uday Ravi for gallbladder stones treatment. These complications can be serious & even life-threatening.
                 </p>
+                <div className='d-flex flex-column align-items-center'>
+                    <Image src={gallbladderImg2New} alt="gallbladder" className={styles.Section2PilesImage1New} />
+                    <p>Fig 2. Anatomy of Pancreas</p>
+                </div>
               </div>
               <div id="diagnosis" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">How are gallbladder stones diagnosed?:</h2>
                 <p> <strong>Dr. Uday Ravi,</strong> the best doctor for <strong>gallbladder stone treatment in Bengaluru,</strong> will examine you and evaluate your eyes and skin for color changes caused by too much bilirubin in your system.</p>
                 <p>For an exact diagnosis, he may ask you to undergo a few tests, such as:</p>
-                <ul className="">
+                <ul className="d-flex flex-column row-gap-2">
                   <li>
-                    <p>Blood tests</p>
+                    Blood tests
                   </li>
                   <li>
-                    <p>Abdominal CT scan</p>
+                    Abdominal CT scan
                   </li>
                   <li>
-                    <p>Ultrasound</p>
+                    Ultrasound
                   </li>
                   <li>
-                    <p>Hepatobiliary iminodiacetic acid (HIDA) scan</p>
+                    {"Hepatobiliary iminodiacetic acid (HIDA) scan"}
                   </li>
                   <li>
-                    <p>Magnetic resonance imaging (MRI)</p>
+                    {"Magnetic resonance imaging (MRI)"}
                   </li>
                   <li>
-                    <p>Endoscopic ultrasound</p>
+                    Endoscopic ultrasound
                   </li>
                   <li>
-                    <p>Magnetic resonance cholangiopancreatography (MRCP)</p>
+                    {"Magnetic resonance cholangiopancreatography (MRCP)"}
                   </li>
                   <li>
-                    <p>Endoscopic retrograde cholangiopancreatography (ERCP)</p>
+                    {"Endoscopic retrograde cholangiopancreatography (ERCP)"}
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center mt-5'>
+                    <Image src={gallbladderImg3New} alt="gallbladder" className={styles.Section2PilesImage1New} />
+                    <p className='mt-4'>Fig 2. Galbladder Stones</p>
+                </div>
               </div>
               <div id="treatment" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">Gallbladder Stones treatment :</h2>
@@ -264,7 +274,7 @@ export default function Section2() {
                 <strong>Open cholecystectomy:</strong>
                 <div className='d-flex flex-column align-items-center'>
                     <Image src={gallbladderImg2} alt="gallbladderImg2" className={styles.Section2PilesImage2} />
-                    <p>Fig 2. Open Cholecystectomy</p>
+                    <p>Fig 3. Open Cholecystectomy</p>
                 </div>
                 <p>Open cholecystectomy is a surgery to remove the gallbladder stones. It is a larger incision than laparoscopic cholecystectomy, and it is typically used when laparoscopic surgery is not possible or when there are difficulties with laparoscopic surgery. During an open cholecystectomy, the surgeon makes a 4- to 6-inch incision in the abdomen below the ribs on the right side. The muscle and tissue are pulled back to show the liver and gallbladder.</p>
                 <p>The surgeon then removes the gallbladder and any gallstones that are present. The surgery typically takes about 2 hours and most individuals stay in the clinic for 1-2 days. Open cholecystectomy is a safe and adequate treatment for gallbladder stones. However, it is associated with a longer recovery time and more pain than laparoscopic cholecystectomy. In addition to surgery, there are some other treatment for gallbladder stones that may be considered in certain cases.</p>
@@ -280,7 +290,7 @@ export default function Section2() {
               <div id="benefits" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">Benefits of Laparoscopic Gallstone Surgery vs Open Surgery:</h2>
                 <p>Here are some of the benefits of laparoscopic cholecystectomy over open cholecystectomy:</p>
-                <ul>
+                <ul className='d-flex flex-column row-gap-2'>
                   <li>Lower risk of complications</li>
                   <li>Faster recovery</li>
                   <li>Shorter hospital stay</li>
@@ -292,7 +302,7 @@ export default function Section2() {
               <div id="prevention" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">How to prevent Gallstones?:</h2>
                 <p>There is no sure way to prevent gallstones, but there are some things you can do to reduce your risk:</p>
-                <ul>
+                <ul className='d-flex flex-column row-gap-2'>
                   <li>Maintain a healthy weight</li>
                   <li>Eat a healthy diet</li>
                   <li>Lose weight if you are obese</li>

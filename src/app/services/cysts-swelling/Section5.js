@@ -18,9 +18,7 @@ export default function SectionAbout() {
                             has many fellowships <strong>FARIS, FMAS, FALS, FIAGES, FISCP and DMAS(France)</strong>.
                         </p>
                         <p className="text-white mb-3">
-                           Dr. Uday Ravi is well-versed in the skills required for 
-                           <strong> Minimal Invasive/Keyhole Surgeries i.e Laparoscopic/Robotic Surgeries.</strong> 
-                           He is renowned as a top doctor for Appendix surgery, who can give almost painless Appendix surgery. Dr. Uday Ravi, a seasoned appendectomy specialist in Bangalore, has performed many appendix removal surgeries through laparoscopy/Robotic, the most preferred and advanced surgical method.
+                            Dr Uday Ravi offers the<strong> best treatment for cysts and swellings in Bangalore.</strong> His vast experience and expertise to perform complete range of procedures makes him one of the best specialist surgeon in Bangalore.
                         </p>
                     </div>
                 </div>

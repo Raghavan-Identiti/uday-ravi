@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import Fissuresection1img1 from '../../assets/Fissuresection1img1.png';
+import Fissuresection1img1New from '../../assets/Fissuresection1img1New.png';
 import Fissuresection1img2 from '../../assets/Fissuresection1img2.png';
 import FissureSymtomsimg from '../../assets/FissureSymtomsimg.png';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
@@ -103,9 +104,9 @@ export default function Section2() {
               <div id="fissure" className={styles.Section2Question1} data-aos="fade-up">
                 <h2 >What is Fissure?</h2>
                 <p>{"Fissures are defined as any break, tear, or discontinuity in the usual tissue lining in your body. An anal fissure is the most common type of fissure that causes a small cut in the thin, moist tissue (mucosa) of the anal lining. "}</p>
+                <p>{"The mucosa forms the inner lining of the anal canal, consisting of several mucous glands that secrete mucus to keep the lining moist. This mucosal layer can get damaged or injured due to wear and tear caused by repeated friction, which results in an abnormal slit."}</p>
                 <div className={`d-flex flex-column flex-lg-row justify-content-center gap-5 ${styles.Section2PilesImgdiv}`}>
-                  <Image src={Fissuresection1img1} alt="Piles Treatment" className={styles.Section2PilesImage1} />
-                  <Image src={Fissuresection1img2} alt="Piles Treatment" className={styles.Section2PilesImage2} />
+                  <Image src={Fissuresection1img1New} alt="Piles Treatment" className={styles.Section2PilesImage1} />\
                 </div>
                 <div className='d-flex flex-column align-items-center mt-4'>
                   <p>
@@ -129,7 +130,6 @@ export default function Section2() {
                     <p><strong>Secondary Anal Fissures : </strong>{"These develop secondary to other underlying medical conditions like Crohn's disease (inflammatory bowel disease)."}</p>
                   </li>
                 </ul>
-                <p>Intersphincteric is the most common and Extrasphincteric is the least common. These classifications are important in helping the surgeon make treatment decisions.</p>
               </div>
               <div id="causes" className={styles.Section2Question3} data-aos="fade-up">
                 <h2 className="mt-5">What Causes A Fissure?</h2>

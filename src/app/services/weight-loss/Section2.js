@@ -4,9 +4,15 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import weightLossmindmapimg1 from '../../assets/weightLossmindmapimg1.png';
+import weightLossmindmapimg1New from '../../assets/weightLossmindmapimg1New.png';
 import weightLossmindmapimg2 from '../../assets/weightLossmindmapimg2.png';
+import weightLossmindmapimg2New from '../../assets/weightLossmindmapimg2New.png';
 import weightLossmindmapimg3 from '../../assets/weightLossmindmapimg3.png';
+import weightLossmindmapimg3New from '../../assets/weightLossmindmapimg3New.png';
 import weightLossmindmapimg4 from '../../assets/weightLossmindmapimg4.png';
+import weightLossmindmapimg4New from '../../assets/weightLossmindmapimg4New.png';
+import weightLossmindmapimg5New from '../../assets/weightLossmindmapimg5New.png';
+import weightLossmindmapimg6New from '../../assets/weightLossmindmapimg6New.png';
 import weightLossmindmapimg5grp1 from '../../assets/weightLossmindmapimg5grp1.png';
 import weightLossmindmapimg5grp2 from '../../assets/weightLossmindmapimg5grp2.png';
 import weightLossmindmapimg5grp3 from '../../assets/weightLossmindmapimg5grp3.png';
@@ -82,10 +88,11 @@ export default function Section2() {
     { id: 'intragastric-balloon-work', label: 'Intragastric Balloon Work' ,type:"subheading"},
     { id: 'how-balloon-is-placed', label: 'How Balloon Is Placed',type:"subheading" },
     { id: 'bariatric-surgery', label: 'Bariatric Surgery',type:"heading" },
-    { id: 'bariatric-surgery-Mechanism', label: 'Bariatric Surgery Mechanism' ,type:"subheading"},
-    { id: 'eligibility', label: 'Eligibility For Bariatric Surgery' ,type:"subheading"},
-    { id: 'sleeve-sastrectomy', label: 'Sleeve Gastrectomy' ,type:"subheading"},
-    { id: 'counselling', label: 'Counselling' ,type:"subheading"},
+    { id: 'pathology', label: 'Pathology' ,type:"subheading"},
+    { id: 'outcome', label: 'Outcome' ,type:"subheading"},
+    { id: 'bariatric-surgery-mechanism', label: 'Mechanism' ,type:"subheading"},
+    { id: 'types-bariatric', label: 'Types' ,type:"subheading"},
+    { id: 'investigations', label: 'Investigations' ,type:"subheading"},
   ];
 useEffect(() => {
   const element = document.querySelector(`.${styles.Section2Header}`);
@@ -120,6 +127,10 @@ useEffect(() => {
                 <p>The intragastric balloon for weight loss has emerged as one of the most promising and efficient solutions for weight loss in the past few years. This non-surgical weight loss treatment in Bangalore offers an effective solution for individuals struggling with obesity.</p>
                 
                 <p>It is also recommended for patients who are super obese and need to cut their weight to become fit to undergo bariatric surgery. Intragastric balloon is the most preferred option for obesity treatment without surgery.</p>
+                <div className='d-flex flex-column align-items-center my-4'>
+                  <Image src={weightLossmindmapimg1New} alt="Weight Loss" className={`${styles.Section2PilesImage1} mb-3 `} />
+                  <p>Fig 1. Intragastric balloon</p>
+                </div>
               </div>
               <div id="benefits" className={styles.Section2Question2} data-aos="fade-up">
                 <h2>Benefits of an intra gastric balloon</h2>
@@ -150,8 +161,16 @@ useEffect(() => {
                   <li>
                     <p><strong>Willingness to commit to lifestyle changes: </strong>Individual commitments to adopt and maintain healthy eating and lifestyle habits form the core of a successful weight loss program following balloon therapy. Candidates should be motivated and prepared to make these long-term adjustments.</p>
                   </li>
+                  <li>
+                    <p><strong>Absence of gastrointestinal disorders: </strong>Candidates should be free from active gastrointestinal disorders, such as ulcers, strictures, or bleeding disorders.</p>
+                  </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center my-4'>
+                  <Image src={weightLossmindmapimg2New} alt="Weight Loss" className={`${styles.Section2PilesImage1} mb-3 `} />
+                  <p>Fig 1. Gastric balloon</p>
+                </div>
               </div>
+              
               <div id="types" className={styles.Section2Question4} data-aos="fade-up">
                 <h2 className="mt-5">Types of intragastric balloon</h2>
                 <p>
@@ -200,6 +219,10 @@ useEffect(() => {
                     <p><strong>Inflation of balloon :</strong> the balloon is then inflated or filled with a unique solution. The volume of the solution depends upon the size of the stomach and the patient&apos;s weight loss goals.</p>
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center my-4'>
+                  <Image src={weightLossmindmapimg3New} alt="Weight Loss" className={`${styles.Section2PilesImage1} mb-3 `} />
+                  <p>Fig 2. Gastric balloon</p>
+                </div>
               </div>
               <div id="bariatric-surgery" className={styles.Section2Question7} data-aos="fade-up">
                 <h2 className="mt-5" style={{color:"#5a4ae3"}}>Bariatric surgery</h2>
@@ -207,67 +230,167 @@ useEffect(() => {
                   Obesity is a condition of excess body weight i.e., when a person is 20% or more above the ideal body weight. Obesity results from a chronic positive energy balance regulated by a complex interaction between endocrine tissues and the central nervous system.
                 </p>
                 <div className={`${weightLossmindmapimg1} d-flex flex-column align-items-center gap-3`}>
-                  <Image src={weightLossmindmapimg1} alt='weightLossmindmapimg1' className={styles.Section2PilesTreatment}/>
+                  <Image src={weightLossmindmapimg4New} alt='weightLossmindmapimg1' className={styles.Section2PilesImage1}/>
                   <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 1. Obesity pathology</p>
                 </div>
               </div>
-              <div className={styles.Section2Question8} data-aos="fade-up">
-                <h2 className="mt-5 mb-4">Weight loss activates powerful compensatory biological pathways</h2>
-                <p>
-                  Dr. Uday Ravi provides wide range of safe and efficient methods for the treatment of both external and internal hemorrhoids. His aim is to alleviate the discomfort and itching associated with hemorrhoids. Dr. Uday Ravi, a highly regarded senior surgeon who is a piles specialist doctor in Bengaluru is dedicated to offering the best possible options for piles treatment to his patients. Here are some of the treatment options he recommends:
-                </p>
-                <div className='d-flex flex-column align-items-center'>
-                  <Image src={weightLossmindmapimg2} alt="weightLossmindmapimg1" className={styles.Section2PilesTreatment} />
-                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 2. Biological pathways</p>
-                </div>
-                <p>
-                  Bariatric surgery is a last resort for those who have not responded to diet, physical activity, and other non-surgical means of weight loss.
-                </p>
-                <p>
-                  Bariatric surgery alters the gut-brain axis and allows one to lose a substantial amount of weight and at the same time switches off the hunger
-                </p>
-                <p>
-                  Bariatric surgery together with a comprehensive assessment support and follow-up program allows patients to achieve their target weight
-                </p>
-                <div className={` ${styles.Section2PilesTreatmentImages}`}>
-                    <Image src={weightLossmindmapimg3} alt="weightLossmindmapimg3" className={`${styles.Section2PilesTreatment1} img-fluid`} />
-                    <p className={`mt-3 ${styles.pilesTreatment1sub}`}>Fig 3. Bariatric surgery</p>
-                </div>
-                <p>
-                  Bariatric surgery is the most successful long-term treatment for obesity. it is nearly impossible for people with morbid obesity to sustain weight loss through diet and exercise alone. According to “Set Point Theory” once your body has registered your higher weight as “normal,” it continues to try to return to that weight.
-                </p>
-                <p>
-                  Bariatric surgery works by changing how your body manages what you eat, allowing healthy diet and lifestyle changes to be effective for sustained weight loss and health. Bariatric surgery remains the only effective and enduring treatment for morbid obesity.
-                </p>
-                <p>
-                  Bariatric surgery is a gastrointestinal surgery with an alternation in the GI tract. This surgery is a last resort for those who have not responded to nutrition, physical activity, and other non-surgical means of weight loss.
-                </p>
-                <p>
-                  Many of the hormonal signals that cause weight gain or inability to lose weight are affected by these procedures, and it becomes easier to lose weight. But this still requires a healthy diet and a good exercise routine. These procedures are tools to treat a chronic disease, and cannot work alone.
-                </p>
-                <p>
-                  Bariatric surgery in Bangalore is the last line of treatment for obesity and related diseases along with increased life expectancy and enhanced quality of life.
-                </p>
-                <p>
-                  Patients suffering from morbid obesity should undergo Bariatric Surgery to -
-                </p>
-                <ul className='d-flex flex-column row-gap-2'>
+              <div id="pathology" className={styles.Section2Question4} data-aos="fade-up">
+                <h2 className="mt-5">Obesity pathology</h2>
+                <ul className={styles.numberlist}>
                   <li>
-                    Reduce life-threatening risk factors
+                    Energy intake
+                    <ul className={styles.sublistAlphabets}>
+                      <li>Binge eating</li>
+                      <li>Food addiction</li>
+                    </ul>
                   </li>
+                  <li>
+                    Energy expenditure
+                    <ul className={styles.sublistAlphabets}>
+                      <li>Resting metabolic rate</li>
+                      <li>Activity related energy expenditure</li>
+                      <li>Thermogenesis</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Gut microbiota
+                    <ul className={styles.sublistAlphabets}>
+                      <li>Dysbiosis</li>
+                      <li>SCFAs</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Hormone imbalance
+                    <ul className={styles.sublistAlphabets}>
+                      <li>Neurotransmitters</li>
+                      <li>Leptin</li>
+                      <li>Ghrelin</li>
+                      <li>Peptide hormones</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Genetic disorders
+                    <ul className={styles.sublistAlphabets}>
+                      <li>Polygenic obesity</li>
+                      <li>Leptin melanocortin pathway</li>
+                      <li>Epigenetic disorder</li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+              <div id="outcome" className={styles.Section2Question4} data-aos="fade-up">
+                <h2 className="mt-5">Outcome of weightloss:</h2>
+                <ul >
+                  <li>
+                    Diet-Induced Weight Loss
+                    <ul className={`${styles.sublistAlphabets} d-flex flex-column row-gap-3`}>
+                      <li>
+                        Hormonal changes (with weight loss):
+                        <ul className='d-flex flex-column row-gap-2 '>
+                          <li>Ghrelin ↑ (increases hunger)</li>
+                          <li>GLP-1 ↓, PYY 3-36 ↓, Leptin ↓ (satiety hormones decrease)</li>
+                          <li>Bile acids ↓</li>
+                        </ul>
+                      </li>
+                      <li className=''>
+                        <p className='mb-2'>Gut microbiota changes</p>
+                        <b>Perceptions:</b>
+                        <ul className='d-flex flex-column row-gap-2 mt-2'>
+                          <li>Hunger ↑</li>
+                          <li>Satiety ↓</li>
+                          <li>Food aversions ↑</li>
+                        </ul>
+                        <b>Outcome:</b>
+                        <ul className='d-flex flex-column row-gap-2 mt-2'>
+                          <li>Body activates homeostatic mechanisms to defend higher weight</li>
+                          <li>80% regain of lost weight in 5 years</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Bariatric Surgery-Induced Weight Loss
+                    <ul className={styles.sublistAlphabets}>
+                      <li>
+                        Hormonal changes :
+                        <ul className='d-flex flex-column row-gap-2 '>
+                          <li>Ghrelin ↓ (reduces hunger)</li>
+                          <li>GLP-1 ↑, PYY 3-36 ↑, Leptin ↓ (but in a different pattern)</li>
+                          <li>Bile acids ↑</li>
+                        </ul>
+                      </li>
+                      <li className=''>
+                        <p className='mb-2'>Gut microbiota shifts (favorable)</p>
+                        <b>Perceptions:</b>
+                        <ul className='d-flex flex-column row-gap-2 mt-2'>
+                          <li>Hunger ↓</li>
+                          <li>Satiety ↑</li>
+                          <li>Food preferences change</li>
+                        </ul>
+                        <b>Outcome:</b>
+                        <ul className='d-flex flex-column row-gap-2 mt-2'>
+                          <li>Resets body weight “set point” to a lower weight</li>
+                          <li>Average sustained weight loss of 18% even after 20 years post-RYGB (Roux-en-Y Gastric Bypass)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>Dieting alone triggers biological mechanisms that favour weight regain. In contrast, bariatric surgery leads to favourable hormonal and metabolic changes that help maintain long-term weight loss by resetting the body's weight set point.</p>
+                <p>For those peoplewho have not responded to diet, physical activity, and other non-surgical means of weight loss, bariatric surgery is the last resort</p>
+                <p>Bariatric surgery alters the gut-brain axis and allows one to lose a substantial amount of weight and at the same time switches off the hunger</p>
+                <p>Bariatric surgery together with a comprehensive assessment support and follow-up program allows patients to achieve their target weight</p>
+                <p>Many of the hormonal signals that cause weight gain or inability to lose weight are affected by these procedures, and it becomes easier to lose weight. But this still requires a healthy diet and a good exercise routine. These procedures are tools to treat a chronic disease, and cannot work alone.</p>
+                <p><b>Bariatric surgery in Bangalore</b> is the last line of treatment for obesity and related diseases along with increased life expectancy and enhanced quality of life.</p>
+                <p>Patients suffering from morbid obesity should undergo Bariatric Surgery to -</p>
+                <ul>
+                  <li>Reduce life-threatening risk factors</li>
                   <li>Improve self-esteem</li>
                   <li>Enhance the quality of life</li>
                 </ul>
               </div>
-              <div id="bariatric-surgery-Mechanism" className={styles.Section2Question9} data-aos="fade-up">
-                <h2 >Mechanism of bariatric surgery</h2>
-                <div className={` ${styles.Section2PilesTreatmentImages}`}>
-                  <Image src={weightLossmindmapimg4} alt="weightLossmindmapimg4" className={`${styles.Section2PilesTreatment1} img-fluid`} />
-                  <p className={`mt-3 ${styles.pilesTreatment1sub}`}>Fig 4. Mechanism of Bariatric surgery</p>
+              <div id='bariatric-surgery-mechanism' className={styles.Section2Question8} data-aos="fade-up">
+                <h2 className="mt-5 mb-4">Mechanism of bariatric surgery</h2>
+                <div className='d-flex flex-column align-items-center'>
+                  <ul>
+                    <li>
+                      <strong style={{ color: "#5a4ae3" }}>Boosts Metabolism : </strong>Bariatric surgery leads to hormonal changes that can increase your resting metabolic rate. The body burns more calories even at rest, helping maintain long-term weight loss.
+                    </li>
+                    <li>
+                      <strong style={{ color: "#5a4ae3" }}>Reduces Hunger Hormones : </strong> Surgeries like gastric bypass or sleeve gastrectomy lower levels of ghrelin, the hunger hormone. You feel full sooner and reduce calorie intake naturally.
+                    </li>
+                    <li>
+                      <strong style={{ color: "#5a4ae3" }}>Improves Insulin Sensitivity : </strong>It helps reverse Type 2 Diabetes by improving how your body processes insulin. Stabilizes blood sugar levels more effectively than diet or exercise alone.
+                    </li>
+                    <li>
+                      <strong style={{ color: "#5a4ae3" }}>Long-Term Weight Management : </strong> Helps lose 60-80% of excess body weight. Prevents the body from regaining weight by altering the digestive system’s absorption capacity.
+                    </li>
+                    <li>
+                      <strong style={{ color: "#5a4ae3" }}>Resolves Obesity-Related Health Issues : </strong>Reduces the risk of heart disease, sleep apnea, hypertension, and joint problems. Improves overall quality of life and mental well-being.
+                    </li>
+                  </ul>
+                  <Image src={weightLossmindmapimg5New} alt="weightLoss" className={styles.Section2PilesImage1} />
+                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 2. Vertical Sleeve Gastrectomy</p>
                 </div>
               </div>
-              <div id="eligibility" className={styles.Section2Question9} data-aos="fade-up">
-                <h2>Eligibility Criteria for Bariatric Surgery</h2>
+              <div id="types-bariatric" className={styles.Section2Question9} data-aos="fade-up">
+                <h2 >Types of bariatric surgery</h2>
+                <ul className={`d-flex flex-column row-gap-2 ${styles.numberlist}`}>
+                  <li>Sleeve Gastrectomy.</li>
+                  <li>Roux-en Gastric Bypass.</li>
+                  <li>Mini Gastric Bypass.</li>
+                  <li>Single anastomosis sleeve ileal bypass (SASI).</li>
+                  <li>SADI- S or SIPS Surgery.</li>
+                  <li>Endoscopic Sleeve Gastroplasty (ESG).</li>
+                </ul>
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={weightLossmindmapimg6New} alt="weightLoss" className={styles.Section2PilesImage1} />
+                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 2. Bariatric surgery procedures</p>
+                </div>
+              </div>
+              {/* <div id="eligibility" className={styles.Section2Question9} data-aos="fade-up">
+                <h2>Investigations before surgery</h2>
                 <p>Today we can define the stages of obesity on the basis of body mass index, a parameter to define the stages of obesity.</p>
 
                 <div className={styles.Section2Question9Wrapper}>
@@ -320,137 +443,46 @@ useEffect(() => {
                   ))}
                 </div>
                 <p className={styles.pilesTreatment4sub}>Fig 5. Eligibility Criteria for Bariatric Surgery</p>
-              </div>
+              </div> */}
 
-              <div id="sleeve-sastrectomy" className={styles.Section2Question10} data-aos="fade-up">
-                <h2 >Sleeve Gastrectomy</h2>
-                <ul className={styles.numberlist}>
-                  <li><strong >{"Roux-en Gastric Bypass"}</strong>
-                    <p>{"Roux -en-Y Gastric Bypass is a combination of restrictive and malabsorptivetechniques that enhances the surgery outcomes. This procedure restricts calories intake (Restrictive Procedure) and at the same time limits food absorption (Malabsorptive procedure)"}</p>
-                    <ul className={`${styles.Section2Question10Innerlist} list-unstyled`}>
-                      <li>
-                        <span style={{ color: "#5a4ae3" }}>STEP 1 </span>
-                        <p>{"Roux-en-Y Gastric bypass surgery is a procedure where a small portion of the upper portion of the stomach near the esophagus is separated from the rest of the stomach and a small pouch is created by stapling (This causes food restriction)"}</p>
-                      </li>
-                      <li>
-                        <span style={{ color: "#5a4ae3" }}>STEP 2</span>
-                        <p>{"The lower segment of the intestine joined to the small pouch of the stomach (Malabsorption). The upper segment of the intestine which carries digestive juices from the remnant stomach re-attached at the distal end of the rouex limb by stapler or by suturing, thereby diverting bile as well as intestinal secretion. In this procedure depending on the BMI approx. 125 -170cm of the small intestine is bypassed"}</p>
-                      </li>
-                    </ul>
-                    <div className={` ${styles.Section2PilesTreatmentImages}`}>
-                      <Image src={weightLossmindmapimg6} alt="weightLossmindmapimg6" className={`${styles.Section2PilesTreatment1} img-fluid`} />
-                      <p className={`mt-3 ${styles.pilesTreatment1sub}`}>Fig 6. Roux-en Gastric Bypass</p>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>
-                      Mini Gastric Bypas
-                    </strong>
-                    <div className={` ${styles.Section2PilesTreatmentImages}`}>
-                      <Image src={weightLossmindmapimg7} alt="weightLossmindmapimg7" className={`${styles.Section2PilesTreatment1} img-fluid`} />
-                      <p className={`mt-3 ${styles.pilesTreatment1sub}`}>Fig 7. Mini Gastric Bypass</p>
-                    </div>
-                    <p>Mini gastric bypass is a simpler procedure as compared to Roux en gastric bypass as it involves less rerouting of the intestine, single anastomosis, and comparatively less surgery time.</p>
-                    <p>Mini Gastric Bypass procedure combines the effect of restriction and malabsorption to lose weight. The upper portion of the stomach is created into a long gastric tube and a wide loop of the small intestine is sutured with the gastric tube, bypassing approx. 150-200 cm of the intestine, which causes a malabsorption effect.</p>
-                    <p>The restrictive technique reduces the gastric capacity and induces early satiety, which causes less consumption of food</p>
-                    <p>By contrast, the malabsorptive technique involves malabsorption of the food and alteration of the gut hormones which can improve metabolic diseases like fatty liver. Insulin resistance, glycemic control</p>
-                  </li>
-                  <li>
-                    <strong>{"Single anastomosis sleeve ileal bypass (SASI)"}</strong>
-                    <p>{"SASI bypass is a novel bariatric procedure that reaches a compromise between the effect of restriction and malnutrition. This procedure utilizes neuroendocrine mechanisms that bind the alimentary tract and the nervous system. Single anastomosis sleeve ileal bypass (SASI) surgery is divided into 2 parts:"}</p>
-                    <p>{"The first stage is gastric sleeve resection, which supports weight loss by mechanism of restrictive procedure."}</p>
-                    <p>{"The second stage is the sleeve ileal bypass, where undigested aliment reaches the ileum fast and trigger the good hormone release from the distal ileum. Modification of the intestinal transit changes the concentration of orexigenic and anorexigenic hormones. When the undigested food is introduced to the lower portion of the small bowel, a hormone is produced to send the information to the brain to stop the appetite by slowing down the peristalsis and gastric emptying."}</p>
-                    <p>{"Food can pass through the duodenum and the jejunum, so this mechanism can reduce the negative effects of malabsorption. SASI-S also minimizes the risk of long-term nutritional problems and reduces reflux by dropping the pressure in stomach."}</p>
-                    <p>{"It benefits from the effect of fast transit of indigested food to the ileum, where anorexigenic intestinal hormones are released."}</p>
-                    <p>{"Apart from weight loss, the effect of SASI bypass is a rapid resolution of diabetes"}</p>
-                    <h2>The advantage of SASI bypass is more term of diabetes resolution</h2>
-                    <strong className='mb-4'>Advantages of SASI-S surgery:</strong>
-                    <ul className='d-flex flex-column row-gap-2 my-3'>
-                      <li>Early satiety and less hunger due to reduction in ghrelin production</li>
-                      <li>Food can pass through the duodenum and the jejunum, so there is less malabsorption and lower risk of nutrition deficiencies in long term</li>
-                      <li>Access to bile duct is easily available</li>
-                      <li>Modification in the intestinal transit can give extra advantages in 70-90% diabetes resolution</li>
-                      <li>Less risks of internal hernia</li>
-                      <li>Less incidence of weight regains</li>
-                      <li>Positive impact on acid reflux as pressure on the stomach is reduced</li>
-                    </ul>
-                    <strong>Advantages of SASI-S surgery:</strong>
-                    <ul className='d-flex flex-column row-gap-2 my-3'>
-                      <li>Patients with BMI greater than 40</li>
-                      <li>Patients with BMI 35 and have one or more co-morbidities such as: Type 2 diabetes, sleep apnea, insulin resistance, dyslipidaemia and cardio vascular diseases</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>SADI- S or SIPS surgery</strong>
-                    <p>SADI -S or SIPS Surgery also known as single anastomosis duodeno-ileal switch or stomach intestinal sparing surgery.</p>
-                    <p>SADI -S is a combination of sleeve gastrectomy and duodenal switch surgery. This procedure involves two steps:</p>
-                    <p>In the first step surgeon creates a sleeve like gastric sleeve gastrectomy, where 80% of the stomach is removed which reduces the food intake.</p>
-                    <p>The second step of a SADI-S procedure involves creating the bypass where the surgeon will detach the intestine below the stomach and reattach it about 2 metres down. This way, food will bypass the part of the digestive tract that absorbs most nutrients and calories, and produces malabsorptive effect for weight loss, good glycemic control which helps in diabetes resolution,</p>
-                    <h2 >Advantage of SADI-S surgery:</h2>
-                    <ul className='d-flex flex-column row-gap-2 '>
-                      <li>This procedure results into significant weight loss and results in 80-90% of excess weight loss</li>
-                      <li>Diabetes resolution.</li>
-                      <li>Low incidence of dumping syndrome </li>
-                      <li>Minimal risk of ulceration at the anastomosis site.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>{"Endoscopic Sleeve Gastroplasty (ESG)"}</strong>
-                    <p>Endoscopic sleeve gastroplasty is an innovative technique used as a bridge between conventional weight loss methods and bariatric surgery. This procedure is a non-invasive procedure for obesity treatment. In this procedure, the volume of the stomach is reduced by endoscopic suturing, which guarantees a reduced complication rate.</p>
-                    <strong>{"Mechanisms of weight loss post Endoscopic sleeve gastroplasty:"}</strong>
-                    <p>Endoscopic sleeve gastroplasty procedure generates preventive satiety due to the sewing of part of the stomach that produces hunger hormone. Endoscopic sleeve gastroplasty slows the gastric emptying of the stomach and reduces hunger.</p>
-                    <strong>{"Indications of bariatric surgery:"}</strong>
-                    <p>In morbid obese patients where, bariatric surgery in Bangalore is contraindicated can be performed as a primary procedure.</p>
-                    <p>Endoscopic surgery can be performed as a revisional surgery in patients with inadequate weight loss or patient who needs revisional bariatric surgery</p>
-                    <p>Patient with chronic diseases like liver diseases, renal diseases with obesity can undergo this procedure to reduce weight and to delay the progression of the disease</p>
-                    <div className={` ${styles.Section2PilesTreatmentImages}`}>
-                      <Image src={weightLossmindmapimg8} alt="weightLossmindmapimg8" className={`${styles.Section2PilesTreatment1} img-fluid`} />
-                      <p className={`mt-3 ${styles.pilesTreatment1sub}`}>Fig 8. Endoscopic Sleeve Gastroplasty</p>
-                    </div>
-                    <p>A comprehensive pre procedure investigation and preoperative counselling session by surgeon, dietitian, and psychologist</p>
-                    <strong>Essential steps for performing ESG</strong>
-                    <ul className='d-flex flex-column row-gap-2 my-3'>
-                      <li>Procedure is performed under general anaesthesia with endoscope and special suturing device i.e. Apollo Overstich device, which is a long and flexible tube with a camera and a set of suturing tools.</li>
-                      <li>Surgeon insert the Overstich device through the patient’s throat into the stomach and sews a series of internal sutures in the stomach wall. This reduces the size of the gastric cavity and prevents its distension Procedures takes 60-90 minutes</li>
-                      <li>One day hospitalisation for pain management, hydration and maintaining vitals</li>
-                      <li>A special diet for 1 month prescribed by qualified dietitian</li>
-                      <li>A vigorous follow up is essential</li>
-                    </ul>
-                    <strong>Advantages of endoscopic sleeve gastroplasty</strong>
-                    <ul className='d-flex flex-column row-gap-2 mt-3'>
-                      <li>Endoscopic sleeve gastroplasty ensures faster recovery and less pain</li>
-                      <li>Patient can resume their work within 3 days after procedure</li>
-                      <li>Patient can loose 25 to 30% of excess body weight</li>
-                      <li>Procedure is reversible</li>
-                    </ul>
-                      <p className='mb-2'>The protocol before the operation is:</p>
-                      <p className='m-0'>Preoperative Examination: Blood investigations, X ray, ECG, pulmonary function test, 2D Echo, Endoscopy</p>
-                  </li>
-                </ul>
-              </div>
-              <div id="counselling" className={styles.Section2Question9} data-aos="fade-up">
-                <h2>Bariatric Surgeon Counselling:</h2>
+              <div id="investigations" className={styles.Section2Question10} data-aos="fade-up">
+                <h2 >Investigations before surgery</h2>
                 <ul className='d-flex flex-column row-gap-2'>
+                  <li>
+                    Complete blood count.
+                  </li>
+                  <li>Renal function test.</li>
+                  <li>Liver function test.</li>
+                  <li>Lipid profile.</li>
+                  <li>Thyroid profile.</li>
+                  <li>HbA1c</li>
+                  <li>Vitamin B12 and folic acid.</li>
+                  <li>ECG and 2D Echo.</li>
+                  <li>Pulmonary function test.</li>
+                  <li>Sleep study.</li>
+                  <li>Upper GI endoscopy.</li>
+                  <li>Chest X-ray.</li>
+                  <li>Ultrasound abdomen.</li>
+                </ul>
+                <strong style={{color:"#5a4ae3"}}>Bariatric Surgeon Counselling:</strong>
+                <ul>
                   <li>In order to exclude contraindications, to understand the pros and cons of the procedure</li>
                   <li>To know the post procedure management, expectations, and post operative follow up protocol</li>
                   <li>Surgeon should know the medical history and associated disease condition, so that procedure should not be affected by these conditions.</li>
                 </ul>
-              </div>
-              <div id="" className={styles.Section2Question9} data-aos="fade-up">
-                <h2 >Psychiatrist Counselling:</h2>
-                <ul className='d-flex flex-column row-gap-2'>
+                <strong style={{color:"#5a4ae3"}}>Psychiatrist Counselling:</strong>
+                <ul>
                   <li>It is essential to exclude any psychiatric illness, eating disorder or substance abuse</li>
                   <li>To evaluate the willingness of the patient for lifestyle modifications to enhance the efficacy of the procedure</li>
                 </ul>
-              </div>
-              <div id="" className={styles.Section2Question9} data-aos="fade-up">
-                <h2>Bariatric Surgeon Counselling:</h2>
-                <ul className='d-flex flex-column row-gap-2'>
-                  <li>To learn the healthy way of eating, portionsize, requirements of energy and protein</li>
+                <strong style={{color:"#5a4ae3"}}>Dietitian Counselling: </strong>
+                <ul>
+                  <li>To learn the healthy way of eating, portion size , requirements of energy and protein</li>
                   <li>As this is a restrictive procedure so patient counselling is essential to avoid deficiency of any micro nutrients</li>
                   <li>Similar to any bariatric procedure, the patient should learn to do mindful eating, regular follow up for nutrition monitoring, regular physical activities and behaviour modification.</li>
                 </ul>
               </div>
+              <b>Book an appointment now with Dr Uday Ravi, the best doctor for bariatric surgery in Bangalore</b>
             </div>
           </div>
           {/* Sticky Right Sidebar */}

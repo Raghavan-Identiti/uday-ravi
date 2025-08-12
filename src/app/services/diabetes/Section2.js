@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import DiabeticFootUlcer1 from '../../assets/Diabetic_Foot_Ulcer.png';
+import DiabeticFootUlcer1New from '../../assets/Diabetic_Foot_UlcerNew.png';
 import DiabeticFootUlcer2 from '../../assets/Diabetic_foot_syndrome_stages.png';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
@@ -115,7 +116,7 @@ export default function Section2() {
                 <p>Foot ulcers are usually caused due to high blood sugar levels damaging the sensory nerves in peripheral neuropathy. This results in altered or complete loss of sensation and inability to feel pain. It is also caused by damage in the blood vessels due to the long duration of blood sugar and a decrease in the blood flow to the feet.</p>
                 <div className={` ${styles.Section2PilesImgdiv}`}>
                   <div className='d-flex flex-column align-items-center'>
-                    <Image src={DiabeticFootUlcer1} alt="Piles Treatment" className={styles.Section2PilesImage1} />
+                    <Image src={DiabeticFootUlcer1New} alt="Diabetes Treatment" className={styles.Section2PilesImage1} />
                     <p>Fig 1. Diabetic Foot Ulcer</p>
                   </div>
                 </div>
