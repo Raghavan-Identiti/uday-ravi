@@ -337,7 +337,7 @@ useEffect(() => {
                     </ul>
                   </li>
                 </ul>
-                <p>Dieting alone triggers biological mechanisms that favour weight regain. In contrast, bariatric surgery leads to favourable hormonal and metabolic changes that help maintain long-term weight loss by resetting the body's weight set point.</p>
+                <p>Dieting alone triggers biological mechanisms that favour weight regain. In contrast, bariatric surgery leads to favourable hormonal and metabolic changes that help maintain long-term weight loss by resetting the body&apos;s weight set point.</p>
                 <p>For those peoplewho have not responded to diet, physical activity, and other non-surgical means of weight loss, bariatric surgery is the last resort</p>
                 <p>Bariatric surgery alters the gut-brain axis and allows one to lose a substantial amount of weight and at the same time switches off the hunger</p>
                 <p>Bariatric surgery together with a comprehensive assessment support and follow-up program allows patients to achieve their target weight</p>
