@@ -3,9 +3,8 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
-import HerniaImg1 from '../../assets/HerniaImg1.png';
 import HerniaImg1New from '../../assets/HerniaImg1New.png';
-import HerniaImg2New from '../../assets/HerniaImg2New.png';
+import HerniaImg2New from '../../assets/HerniaImg2New.jpg';
 import HerniaImg3New from '../../assets/HerniaImg3New.png';
 
 import { FaChevronDown } from 'react-icons/fa'; // Custom icon

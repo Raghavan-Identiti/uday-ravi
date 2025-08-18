@@ -3,8 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
-import hydrocele1 from '../../assets/hydrocele-1.png';
-import hydrocele2 from '../../assets/hydrocele-2.png';
+import hydrocele1 from '../../assets/hydrocele-1.jpg';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
@@ -96,8 +95,7 @@ export default function Section2() {
                 <h2>What is Hydrocele?</h2>
                 <p>{"Hydrocele is an accumulation of fluid in the testes, which can be pus, blood, or serious fluid and cause a painless swelling. It can occur in both men and children and can often resolve on its own. However, when it persists for a long time, it can affect the testis and fertility and needs to be drained and the underlying cause treated."}</p>
                 <div className={`d-flex flex-column flex-lg-row justify-content-center gap-5 ${styles.Section2PilesImgdiv}`}>
-                  <Image src={hydrocele1} alt="Piles Treatment" className={styles.Section2hydrocele1} />
-                  <Image src={hydrocele2} alt="Piles Treatment" className={styles.Section2hydrocele2} />
+                  <Image src={hydrocele1} alt="hydrocele" className={styles.Section2hydrocele1} />
                 </div>
                 <div className='d-flex flex-column align-items-center mt-4'>
                   <p>

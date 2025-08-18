@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import ThyroidImg1 from '../../assets/ThyroidImg1.png';
-import ThyroidImg1New from '../../assets/thyroidImg1New.png';
+import ThyroidImg1New from '../../assets/thyroidImg1New.jpg';
+import ThyroidImg1New1 from '../../assets/thyroidImg1New1.jpg';
 
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
@@ -116,6 +117,10 @@ export default function Section2() {
                 <h2 className="mt-5" style={{color:"#5c47dc"}}>Types of Thyroid Disorders</h2>
                 <h4 className="" id="underactive-thyroid">Hypothyroidism <span style={{ fontWeight: "300" }}>{"(Underactive Thyroid) :"}</span></h4>
                 <p>Occurs when the thyroid gland does not produce enough thyroid hormones, leading to a slowing of body functions.</p>
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={ThyroidImg1New1} alt="Thyroid" className={styles.Section2PilesImage1} />
+                  <p>Fig 1. Hypothyroidism</p>
+                </div>
                 <div className='d-flex flex-column justify-content-center px-lg-4'>
                   <h4 className="">Causes :</h4>
                   <ul className={`${styles.numberlist}`}>
@@ -201,7 +206,7 @@ export default function Section2() {
                 </p>
                 <div className='d-flex flex-column align-items-center'>
                   <Image src={ThyroidImg1New} alt="Thyroid" className={styles.Section2PilesImage1} />
-                  <p>Fig 1. Hyperthyroidism</p>
+                  <p>Fig 2. Hyperthyroidism</p>
                 </div>
                 <div className='d-flex flex-column justify-content-center px-lg-4'>
                   <h4 className='mb-3'>Causes : </h4>

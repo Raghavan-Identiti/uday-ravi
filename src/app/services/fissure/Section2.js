@@ -3,9 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
-import Fissuresection1img1 from '../../assets/Fissuresection1img1.png';
-import Fissuresection1img1New from '../../assets/Fissuresection1img1New.png';
-import Fissuresection1img2 from '../../assets/Fissuresection1img2.png';
+import Fissuresection1img1New from '../../assets/Fissuresection1img1New.jpg';
 import FissureSymtomsimg from '../../assets/FissureSymtomsimg.png';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG

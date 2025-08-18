@@ -5,8 +5,9 @@ import Image from 'next/image';
 import styles from './Section2.module.css';
 import DiabeticFootUlcer1 from '../../assets/Diabetic_Foot_Ulcer.png';
 import DiabeticFootUlcer1New from '../../assets/Diabetic_Foot_UlcerNew.png';
-import DiabeticFootUlcer2 from '../../assets/Diabetic_foot_syndrome_stages.png';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
+import DiabeticFootUlcer1New1 from '../../assets/Diabetic_Foot_UlcerNew1.jpg';
+import DiabeticFootUlcer2New2 from '../../assets/Diabetic_Foot_UlcerNew2.jpg';
+import { FaChevronDown } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
 import Section5 from "./Section5";
@@ -117,7 +118,7 @@ export default function Section2() {
                 <div className={` ${styles.Section2PilesImgdiv}`}>
                   <div className='d-flex flex-column align-items-center'>
                     <Image src={DiabeticFootUlcer1New} alt="Diabetes Treatment" className={styles.Section2PilesImage1} />
-                    <p>Fig 1. Diabetic Foot Ulcer</p>
+                    <p>Fig 1. Diabetic Foot</p>
                   </div>
                 </div>
               </div>
@@ -157,9 +158,9 @@ export default function Section2() {
                   </li>
                 </ul>
                 <p>Sometimes, diabetic foot ulcers don&apos;t show symptoms until they become infected.</p>
-                <div className='d-flex flex-column align-items-center'>
-                  <Image src={DiabeticFootUlcer2} alt="Piles Treatment" className={styles.Section2PilesImage2} />
-                  <p>Fig 2. Stages of Diabetic Foot Syndrome</p>
+                <div className='d-flex flex-column align-items-center mt-5'>
+                  <Image src={DiabeticFootUlcer2New2} alt="Piles Treatment" className={styles.Section2PilesImage1New} />
+                  <p className='mt-3'>Fig 2. Infected wound of diabetic foot</p>
                 </div>
               </div>
               <div id="causes" className={styles.Section2Question3} data-aos="fade-up">
@@ -195,6 +196,10 @@ export default function Section2() {
                     <p>The irritation and wounds can often lead to ulcers in the feet.</p>
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center'>
+                    <Image src={DiabeticFootUlcer1New1} alt="Diabetes Treatment" className={styles.Section2PilesImage1} />
+                    <p>Fig 1. Diabetic Foot Ulcer</p>
+                </div>
               </div>
               <div id="risk-factors" className={styles.Section2Question4} data-aos="fade-up">
                 <h2 className="mt-5">The Critical Risk Factors For Diabetic Foot Ulcers</h2>

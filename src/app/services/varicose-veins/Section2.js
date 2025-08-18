@@ -5,11 +5,11 @@ import Image from 'next/image';
 import styles from './Section2.module.css';
 import VaricoseVeinsImg1 from '../../assets/VaricoseVeinsImg1.png';
 import VaricoseVeinsImg2 from '../../assets/VaricoseVeinsImg2.png';
-import VaricoseVeinsImg1New from '../../assets/VaricoseVeinsImg1New.png';
-import VaricoseVeinsImg2New from '../../assets/VaricoseVeinsImg2New.png';
-import VaricoseVeinsImg3New from '../../assets/VaricoseVeinsImg3New.png';
-import VaricoseVeinsImg4New from '../../assets/VaricoseVeinsImg4New.png';
-import VaricoseVeinsImg5New from '../../assets/VaricoseVeinsImg5New.png';
+import VaricoseVeinsImg1New from '../../assets/VaricoseVeinsImg1New.jpg';
+import VaricoseVeinsImg2New from '../../assets/VaricoseVeinsImg2New.jpg';
+import VaricoseVeinsImg3New from '../../assets/VaricoseVeinsImg3New.jpg';
+import VaricoseVeinsImg4New from '../../assets/VaricoseVeinsImg4New.jpg';
+import VaricoseVeinsImg5New from '../../assets/VaricoseVeinsImg5New.jpg';
 import { FaChevronDown } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
@@ -161,7 +161,7 @@ export default function Section2() {
                   <li>{"Due to advanced age, overweight and lack of exercise veins of legs become very weak and, therefore, develop into varicose veins."}</li>
                 </ul>
                 <div className='d-flex flex-column align-items-center my-4'>
-                  <Image src={VaricoseVeinsImg3New} alt="Varicose Veins" className={`${styles.Section2PilesImage1New} mb-3 `} />
+                  <Image src={VaricoseVeinsImg3New} alt="Varicose Veins" className={`${styles.Section2PilesImage1Newalt} mb-3 `} />
                   <p>Fig 3. Risk Factors of Varicose.</p>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default function Section2() {
                   Dr Uday Ravi who is one of the best varicose veins doctor in Bengaluru. He will take detailed history with symptoms and do the physical examination andlook for swelling, skin colour changes, tenderness or any tortuous veins on lower limbs. He will advice ultrasound Doppler study which can show the exact site of disease in the form of damaged valves & dilatation of veins.
                 </p>
                 <div className='d-flex flex-column align-items-center my-4'>
-                  <Image src={VaricoseVeinsImg4New} alt="Varicose Veins" className={`${styles.Section2PilesImage1New} mb-3 `} />
+                  <Image src={VaricoseVeinsImg4New} alt="Varicose Veins" className={`${styles.Section2PilesImage1Newalt} mb-3 `} />
                   <p>Fig 4. Prevention of Varicose</p>
                 </div>
               </div>
@@ -259,7 +259,7 @@ export default function Section2() {
                   </li>
                 </ul>
                 <div className='d-flex flex-column align-items-center'>
-                  <Image src={VaricoseVeinsImg5New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1New} />
+                  <Image src={VaricoseVeinsImg5New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1Newalt} />
                   <p>Fig 5. Treatment of Varicose</p>
                 </div>
                 <div>

@@ -354,7 +354,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .Section2CircumcisionImg1{
+  .Section2CircumcisionImg1,.Section2CircumcisionImg2{
     width: 100% !important;
     height: auto !important;
   }
@@ -560,6 +560,10 @@
   align-items: center;
 }
 .Section2CircumcisionImg1{
-  width: 65%;
-  height: 65%;
+  width: 40%;
+  height: auto;
+}
+.Section2CircumcisionImg2{
+  width: 60%;
+  height: auto; 
 }

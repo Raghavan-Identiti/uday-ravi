@@ -51,11 +51,13 @@
     font-weight: 500;
     margin-top: 20px;
 }
+.Section2PilesImage1New{
+    width: 70% !important;
+    height: auto !important;
+}
 .Section2PilesImage1{
-    width: 80%;
-    height: 80%;
-    border-radius: 20px;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+    width: 80% !important;
+    height: auto !important;
 }
 
 /* Sticky sidebar for large screens */

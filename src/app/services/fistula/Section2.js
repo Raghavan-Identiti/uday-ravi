@@ -3,14 +3,8 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
-import AnalFistulaImg1New from '../../assets/AnalFistulaImg1New.png';
-import AnalFistulaImg2New from '../../assets/AnalFistulaImg2New.png';
-import pilesImage2 from '../../assets/Group167.png';
-import AnalFistula from '../../assets/AnalFistula.png';
-import AnalFistula2 from '../../assets/AnalFistula2.png';
-import AnalFistula3 from '../../assets/AnalFistula3.png';
-import AnalFistula4 from '../../assets/The-Meinero-fistuloscope.png';
-import AnalFistula5 from '../../assets/Fistula-plug-placement.png';
+import AnalFistulaImg1New from '../../assets/AnalFistulaImg1New.jpg';
+import AnalFistulaImg2New from '../../assets/AnalFistulaImg2New.jpg';
 import { FaChevronDown } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
@@ -109,7 +103,7 @@ export default function Section2() {
 
                 <div className={`d-flex flex-column flex-lg-row justify-content-center gap-5 ${styles.Section2PilesImgdiv}`}>
                   <div className='d-flex flex-column align-items-center'>
-                    <Image src={AnalFistulaImg1New} alt="Piles Treatment" className={styles.Section2PilesImage1} />
+                    <Image src={AnalFistulaImg1New} alt="Piles Treatment" className={styles.Section2PilesImage1New} />
                     <p>Fig 1. Fistula</p>
                   </div>
                   

@@ -16,7 +16,7 @@ export default function Section4() {
                         <li>Patient complaints and history of the swelling</li>
                         <li>Clinical examination</li>
                         <li>Ultrasound testes</li>
-                        <li>Sometimes, an MRI scan of the testes./li>
+                        <li>Sometimes, an MRI scan of the testes.</li>
                     </ul>
             `,
         },
@@ -76,7 +76,10 @@ export default function Section4() {
                                         }}
 
                                     >
-                                        <p className={styles.faqBody}>{data.answer}</p>
+                                        <div className={styles.faqBody}
+                                         dangerouslySetInnerHTML={{ __html: data.answer }}
+                                         >
+                                        </div>
                                     </div>
                                 </div>
                             ))}

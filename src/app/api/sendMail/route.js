@@ -16,7 +16,7 @@ export async function POST(request) {
       body: JSON.stringify({
         sender: {
           name: 'Website Contact',
-          email: 'raghavan@identitidesign.com', // must be verified in Brevo
+          email: 'drudayravi487@gmail.com', // must be verified in Brevo
         },
         to: [
           {

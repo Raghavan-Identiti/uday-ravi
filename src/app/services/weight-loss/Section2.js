@@ -4,22 +4,13 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import weightLossmindmapimg1 from '../../assets/weightLossmindmapimg1.png';
-import weightLossmindmapimg1New from '../../assets/weightLossmindmapimg1New.png';
-import weightLossmindmapimg2 from '../../assets/weightLossmindmapimg2.png';
-import weightLossmindmapimg2New from '../../assets/weightLossmindmapimg2New.png';
-import weightLossmindmapimg3 from '../../assets/weightLossmindmapimg3.png';
-import weightLossmindmapimg3New from '../../assets/weightLossmindmapimg3New.png';
-import weightLossmindmapimg4 from '../../assets/weightLossmindmapimg4.png';
+import weightLossmindmapimg1New from '../../assets/weightLossmindmapimg1New.jpg';
+import weightLossmindmapimg2New from '../../assets/weightLossmindmapimg2New.jpg';
+import weightLossmindmapimg3New from '../../assets/weightLossmindmapimg3New.jpg';
 import weightLossmindmapimg4New from '../../assets/weightLossmindmapimg4New.png';
-import weightLossmindmapimg5New from '../../assets/weightLossmindmapimg5New.png';
-import weightLossmindmapimg6New from '../../assets/weightLossmindmapimg6New.png';
-import weightLossmindmapimg5grp1 from '../../assets/weightLossmindmapimg5grp1.png';
-import weightLossmindmapimg5grp2 from '../../assets/weightLossmindmapimg5grp2.png';
-import weightLossmindmapimg5grp3 from '../../assets/weightLossmindmapimg5grp3.png';
-import weightLossmindmapimg6 from '../../assets/weightLossmindmapimg6.png';
-import weightLossmindmapimg7 from '../../assets/weightLossmindmapimg7.png';
-import weightLossmindmapimg8 from '../../assets/weightLossmindmapimg8.png';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
+import weightLossmindmapimg5New from '../../assets/weightLossmindmapimg5New.jpg';
+import weightLossmindmapimg6New from '../../assets/weightLossmindmapimg6New.jpg';
+import { FaChevronDown } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
 import Section5 from "./Section5";

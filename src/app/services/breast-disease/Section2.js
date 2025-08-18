@@ -3,15 +3,14 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
-import fibroadenomaImg1 from '../../assets/fibroadenomaImg1.png';
-import fibroadenomaImg2New from '../../assets/fibroadenomaImg2New.png';
-import fibroadenomaImg3New from '../../assets/fibroadenomaImg3New.png';
-import fibroadenomaImg4New from '../../assets/fibroadenomaImg4New.png';
-import fibroadenomaImg5New from '../../assets/fibroadenomaImg5New.png';
-import fibroadenomaImg6New from '../../assets/fibroadenomaImg6New.png';
-import fibroadenomaImg7New from '../../assets/fibroadenomaImg7New.png';
-import fibroadenomaImg8New from '../../assets/fibroadenomaImg8New.png';
-import fibroadenomaImg9New from '../../assets/fibroadenomaImg9New.png';
+import fibroadenomaImg2New from '../../assets/fibroadenomaImg2New.jpg';
+import fibroadenomaImg3New from '../../assets/fibroadenomaImg3New.jpg';
+import fibroadenomaImg4New from '../../assets/fibroadenomaImg4New.jpg';
+import fibroadenomaImg5New from '../../assets/fibroadenomaImg5New.jpg';
+import fibroadenomaImg6New from '../../assets/fibroadenomaImg6New.jpg';
+import fibroadenomaImg7New from '../../assets/fibroadenomaImg7New.jpg';
+import fibroadenomaImg8New from '../../assets/fibroadenomaImg8New.jpg';
+import fibroadenomaImg9New from '../../assets/fibroadenomaImg9New.jpg';
 import AOS from 'aos';             // Import AOS
 import 'aos/dist/aos.css';        // Import AOS styles
 import { FaChevronDown } from 'react-icons/fa'; // Custom icon

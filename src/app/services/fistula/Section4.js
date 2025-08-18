@@ -79,7 +79,10 @@ export default function Section4() {
                                         }}
 
                                     >
-                                        <p className={styles.faqBody}>{data.answer}</p>
+                                        <div className={styles.faqBody}
+                                         dangerouslySetInnerHTML={{ __html: data.answer }}
+                                         >
+                                        </div>
                                     </div>
                                 </div>
                             ))}

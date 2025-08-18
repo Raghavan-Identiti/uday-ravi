@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import AppendicitisImg1 from '../../assets/AppendicitisImg1.png';
-import AppendicitisImg1New from '../../assets/AppendicitisImg1New.png';
+import AppendicitisImg1New from '../../assets/AppendicitisImg1New.jpg';
 import AppendicitisImg2 from '../../assets/AppendicitisImg2.png';
 import AOS from 'aos';             // Import AOS
 import 'aos/dist/aos.css';        // Import AOS styles

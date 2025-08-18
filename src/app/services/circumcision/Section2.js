@@ -5,8 +5,8 @@ import Image from 'next/image';
 import styles from './Section2.module.css'; 
 import { FaChevronDown } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
-import CircumcisionImg1 from '../../assets/Circumcision-service-img1.png'; // Use your actual SVG or PNG
-import CircumcisionImg2 from '../../assets/Circumcision-service-img2.png'; // Use your actual SVG or PNG
+import CircumcisionImg1 from '../../assets/Circumcision-service-img1.jpg'; // Use your actual SVG or PNG
+import CircumcisionImg2 from '../../assets/Circumcision-service-img2.jpg'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
 import Section5 from "./Section5";
 import PopupForm from '@/app/PopupModal/popupmodal';
@@ -101,7 +101,7 @@ export default function Section2() {
                 <p>Dr. Uday Ravi is one of the <strong> best doctor for circumcision treatment in Bangalore. </strong> We provide the most advanced and painless circumcision surgery in Bangalore.</p>
                 <div className={`${styles.Section2Question1Imgdiv} d-flex flex-column align-items-center`}>
                   <Image src={CircumcisionImg1} alt='Circumcision' className={styles.Section2CircumcisionImg1}/>
-                  <p>Fig 1. Circumcision</p>
+                  <p className='mt-3'>Fig 1. Circumcision</p>
                 </div>
               </div>
               <div id="benefits" className={styles.Section2Question2} data-aos="fade-up">
@@ -156,7 +156,7 @@ export default function Section2() {
                 <h2 className="mt-5">Diagnosis for Circumcision</h2>
                 <p>During the diagnosis, the doctor will ask a few questions about the patient’s medical history and any prior infections or injuries to the penis, that would help for circumcision surgery. The doctor additionally inquires whether the patient’s sexual life has been impacted by foreskin-related issues such as phimosis, balanitis, paraphimosis, etc. Doctor then does a thorough physical examination of the foreskin and penis. To rule out the presence of urinary tract infections, the doctor may additionally order urine tests or a swab from the foreskin.</p>
                 <div className='d-flex flex-column align-items-center'>
-                    <Image src={CircumcisionImg2} alt="Circumcision" className={styles.Section2CircumcisionImg1} />
+                    <Image src={CircumcisionImg2} alt="Phimosis" className={styles.Section2CircumcisionImg2} />
                     <p>Fig 2. Phimosis</p>
                   </div>
               </div>
