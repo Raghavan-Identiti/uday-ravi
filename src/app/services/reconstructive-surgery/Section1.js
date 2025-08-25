@@ -2,7 +2,7 @@
 import styles from './Section1.module.css';
 import Navbar from '../../Navbar/Navbar';
 import Image from 'next/image';
-import reconstructiveSurgeryCover from '../../assets/reconstructiveSurgeryCover.png'
+import reconstructiveSurgeryCover from '../../assets/reconstructiveSurgeryCoverNew.png'
 
 export default function HeroSection() {
   return (

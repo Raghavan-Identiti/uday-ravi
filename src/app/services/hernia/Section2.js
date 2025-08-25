@@ -102,12 +102,7 @@ export default function Section2() {
               <div id="gynecomastia" className={styles.Section2Question1} data-aos="fade-up">
                 <h2 >What is Hernia?</h2>
                 <p>When an organ or a portion of tissue protrudes through a weakened section of the muscular structure, it gives rise to a noticeable swelling in the abdominal wall, medically referred to as a hernia. Hernias can manifest in various anatomical regions, encompassing the upper abdominal region, the navel area, and the groin.</p>
-                <div className={` ${styles.Section2PilesImgdiv}`}>
-                  <div className='d-flex flex-column align-items-center'>
-                    <Image src={HerniaImg1New} alt="HerniaImg1" className={styles.Section2PilesImage1New} />
-                    <p>Fig 1. Types of hernias</p>
-                  </div>
-                </div>
+                
               </div>
               <div id="types" className={styles.Section2Question7} data-aos="fade-up">
                 <h2 className="mt-5 mb-3">What are the types of Hernia?</h2>
@@ -120,6 +115,10 @@ export default function Section2() {
                   </li>
                   <li>
                     <strong style={{color:"#5c47dc"}}>Umbilical hernia: </strong><p>Umbilical hernias, a distinct form of hernia, manifest in the vicinity of the belly button. They stem from a weakening of the abdominal wall near the navel.</p>
+                    <div className='d-flex flex-column align-items-center'>
+                    <Image src={HerniaImg3New} alt="Hernia" className={styles.Section2PilesImage3New} />
+                    <p>Fig 2. Umbilical Hernia</p>
+                </div>
                   </li>
                   <li>
                     <strong style={{color:"#5c47dc"}}>Hiatal hernia: </strong><p>A hiatal hernia typically occurs in the upper abdomen. It’s closely linked to the diaphragm, a muscle that acts as the boundary between the chest and abdomen. This unique anatomical connection is the key factor contributing to the development of this condition.</p>
@@ -130,7 +129,7 @@ export default function Section2() {
                 </ul>
                 <div className='d-flex flex-column align-items-center'>
                     <Image src={HerniaImg2New} alt="Hernia" className={styles.Section2PilesImage2New} />
-                    <p>Fig 2. Types of Abdominal Hernias</p>
+                    <p>Fig 1. Types of Abdominal Hernias</p>
                 </div>
                 <strong >Am I at a Risk of Developing a Hernia?</strong>
                 <p>
@@ -193,9 +192,16 @@ export default function Section2() {
               </div>
               <div id="complications" className={styles.Section2Question3} data-aos="fade-up">
                 <h2 className="mt-5">What are the Complications Associated With an Untreated Hernia?</h2>
+                
                 <p>
                   A large unrepaired hernia may disrupt your normal chores and dayto-day activities. Sometimes the hernia may become incarcerated or trapped outside the abdominal wall. Additionally, it might become tightly trapped or strangulated that it no longer receives any blood supply causing the death of the tissues trapped outside. Excruciating pain, Fever, and Inflammation of the region around are all symptoms of strangulated hernia. All these complications are often avoided by timely surgical intervention.<strong>The only treatment for a hernia is surgery</strong>
                 </p>
+                <div className={` ${styles.Section2PilesImgdiv}`}>
+                  <div className='d-flex flex-column align-items-center'>
+                    <Image src={HerniaImg1New} alt="HerniaImg1" className={styles.Section2PilesImage1New} />
+                    <p>Fig 2. Strangulated hernia</p>
+                  </div>
+                </div>
               </div>
               <div id="diagnosis" className={styles.Section2Question4} data-aos="fade-up">
                 <h2 className="mt-5">How is Hernia Diagnosed ?</h2>
@@ -259,10 +265,6 @@ export default function Section2() {
                     <p>This innovative approach has gained significant traction due to its numerous advantages when compared to conventional techniques.</p>
                   </li>
                 </ul>
-                <div className='d-flex flex-column align-items-center'>
-                    <Image src={HerniaImg3New} alt="Hernia" className={styles.Section2PilesImage3New} />
-                    <p>Fig 2. Umbilical Hernia</p>
-                </div>
               </div>
               <div id="benefits" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">Benefits of Robotic-Assisted Hernia Surgery:</h2>

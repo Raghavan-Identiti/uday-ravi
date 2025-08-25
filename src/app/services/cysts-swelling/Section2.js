@@ -255,7 +255,7 @@ export default function Section2() {
                 <p>Warts are common skin growths, and Human Papillomavirus (HPV) is one of the major causes of warts. Warts can occur anywhere on the body, with different types such as verruca plantaris on feet or verruca plana on faces, among others. Warts are relatively harmless in adults but can cause complications if spread to young children or the elderly with weak immune system. They may also get secondarily infected and become painful.</p>
                 <div className='d-flex flex-column align-items-center'>
                   <Image src={Cysts_SwellingImg3} alt="Cysts_SwellingImg3" className={styles.Section2CystsImage2} />
-                  <p>Fig 2. Sebaceous Cyst</p>
+                  <p>Fig 2. Wart</p>
                 </div>
               </div>
               <div id="treatment-warts" className={styles.Section2Question5} data-aos="fade-up">
@@ -276,7 +276,8 @@ export default function Section2() {
                 </ul>
               </div>
               <div id="abscess" className={styles.Section2Question5} data-aos="fade-up">
-                <h2 className="mt-5">What Is An Abscess?</h2>
+                <h2 className="mt-5" style={{ color: "#5a4ae3", fontSize: "33px" }}>Abscess</h2>
+                <h2 className="">What Is An Abscess?</h2>
                 <p>Abscess develops when your body encounters a pathogen&apos;s interaction (pathogens are disease-causing organisms). Whenever your body&apos;s immune system encounters a pathogen interaction, the body starts off its preparation to fight against the infection by generating primary and secondary responses. White blood cells, which are also known as the fighter cells of the human body, rush to the site and accumulate there to stop the further spread of infection. This can lead to a localized collection of pus that forms within the tissues of the body, which is called an abscess.</p>
               </div>
               <div id="types-abscesses" className={styles.Section2Question5} data-aos="fade-up">

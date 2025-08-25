@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './Section2.module.css';
 import pilonidalSinusImg1 from '../../assets/pilonidalSinusImg1.png';
-import pilonidalSinusImg1New from '../../assets/pilonidalSinusImg1New.png';
+import pilonidalSinusImg1New from '../../assets/pilonidalSinusImg1New.jpg';
 
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
@@ -112,14 +112,14 @@ export default function Section2() {
                 <p>
                   {"The pilonidal sinus is an opening in the skin on the natal cleft (the place below your lower back where the buttocks divide). These sinuses can be found anywhere in your body, but the sacrococcygeal area (at the top of your butt, where they divide) is the most common. Frequently seen as a single opening at the top of your butt, about 5 cm from the anus, these sinuses can also have multiple openings along the midline. Pilonidal sinus affects both sexes. It is seen frequently in men due to excess hair growth and in people who have to sit for long periods of time, like cab drivers. Pilonidal sinuses are harmless and do not cause any symptoms. Only when they become infected with hair follicles, is there discomfort. The condition is known as pilonidal sinus disease. Fever, swollen and tender areas, and oozing of pus from the sinus are the common symptoms. Treatment of pilonidal sinus disease consists of medicines to treat the fever and pain and antibiotics for the infection. These infections tend to recur because of hair follicles in your butt area. In such cases, Dr. Uday Ravi may recommend getting the entire sinus excised."}
                 </p>
-                <strong style={{color:"#5c47dc"}}>Bilateral Gynaecomastia</strong>
+                {/* <strong style={{color:"#5c47dc"}}>Bilateral Gynaecomastia</strong>
                 <p>
                   Gynecomastia is a benign enlargement of the male breast (typically bilateral, but sometimes unilateral) caused by proliferation of glandular components. Clinically, it is distinguished by the appearance of a rubbery or firm mass radiating concentrically from the nipples. Pseudogynecomastia (lipomastia) is characterized by fat deposition without glandular development and should be distinguished from gynecomastia.
                 </p>
                 <strong style={{color:"#5c47dc"}}>Asymmetric Gynaecomastia</strong>
                 <p>
                   Asymmetric gynecomastia was defined as gynecomastia that met both of the following criteria: on physical examination, the size of the palpable mass beneath the nipple-areolarcomplex was twice as large as the smaller one; and on ultrasonography, the depth of the glandular tissue beneath the nipple-areolar complex was twice as deep as the smaller one.
-                </p>
+                </p> */}
               </div>
               <div id="causes" className={styles.Section2Question2} data-aos="fade-up">
                 <h2 className="mt-5">What Causes Pilonidal Sinus?</h2>
@@ -204,7 +204,7 @@ export default function Section2() {
                   <li>Avoid strenuous exercises for at least 8 weeks.</li>
                   <li>Do not go cycling or swimming till the wound has healed completely.</li>
                 </ul>
-                <p>Complications Associated With Pilonidal Sinus<br/>
+                <p><b>Complications Associated With Pilonidal Sinus</b><br/>
                    Several complications arise with pilonidal sinus. 
                 </p>
                  <ul className='d-flex flex-column row-gap-2'>

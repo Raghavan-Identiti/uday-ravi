@@ -270,7 +270,7 @@ export default function Section2() {
                       <p>To detect thyroid enlargement or nodules.</p>
                     </li>
                   </ul>
-                  <h4 className='mb-3'>Hypothyroid Treatment in Bangalore:</h4>
+                  <h4 className='mb-3'>Hyperthyroid treatment in Bangalore : </h4>
                   <ul className={styles.sublistAlphabets}>
                     <li>
                       <strong style={{ color: "#5c47dc" }}>Antithyroid Medications : </strong>

@@ -14,7 +14,7 @@ export default function HeroSection() {
               Thyroid <br/> Surgery
             </h1>
             <p className={styles.HeroSectionPara} data-aos="fade-right" data-aos-delay="300">
-              Advanced thyroidectomy and breast procedures with precision treatment and aesthetic care.
+              Advanced thyroidectomy with precision treatment and aesthetic care.
             </p>
           </div>
           <div className={`col-lg-6 col-12 ${styles.HeroSectionImgdiv}`} data-aos="fade-left">

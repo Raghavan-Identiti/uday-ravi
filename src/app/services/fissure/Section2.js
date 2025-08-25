@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from './Section2.module.css';
 import Fissuresection1img1New from '../../assets/Fissuresection1img1New.jpg';
 import FissureSymtomsimg from '../../assets/FissureSymtomsimg.png';
+import AnalFistulaImg2New from '../../assets/AnalFistulaImg2New.jpg';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Custom icon
 import FaShieldAlt from '../../assets/Group158.png'; // Use your actual SVG or PNG
 import Section4 from "./Section4";
@@ -198,6 +199,10 @@ export default function Section2() {
                   <li>
                     <p>{"Burning sensation and itching in the anal area"}</p></li>
                 </ul>
+                <div className='d-flex flex-column align-items-center my-4'>
+                  <Image src={AnalFistulaImg2New} alt="Anal fistula" className={`${styles.Section2PilesImage1} mb-3 `} />
+                  <p>Fig 2. Anal Fissure</p>
+                </div>
               </div>
               <div id="" className={styles.Section2Question7} data-aos="fade-up">
                 <h2 className="mt-5">Specific symptoms of fissure in infants and older children :</h2>

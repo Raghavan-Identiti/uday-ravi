@@ -13,6 +13,8 @@ import card8 from '../assets/section3lastimage.png'; // Replace with your actual
 import card9 from '../assets/Rectangle 565.png'; // Replace with your actual image
 import card10 from '../assets/Rectangle 568.png'; // Replace with your actual image
 import card11 from '../assets/Rectangle 569.png'; // Replace with your actual image
+import card12 from '../assets/Rectangle 600.jpg'; // Replace with your actual image
+import card13 from '../assets/Rectangle 601.jpg'; // Replace with your actual image
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -72,6 +74,24 @@ const cardData = [
         img: card11,
         link : "/services/cysts-swelling"
     },
+    {
+        title: "Gallbladder Stones",
+        text: "Precision laparoscopic surgeries for gallstones, reflux, hernias, and GI cancers",
+        img: card12,
+        link : "/services/gastroenterology-and-gi-surgery"
+    },
+     {
+        title: "Breast Diseases",
+        text: "Safe removal of benign breast lumps with minimal scarring and excellent cosmetic results.",
+        img: card13,
+        link : "/services/breast-disease"
+    },
+     {
+        title: "Thyroid Health",
+        text: "Expert surgery for thyroid conditions and breast health, ensuring early diagnosis and care.",
+        img: card7,
+        link : "/services/thyroid"
+    },
 ];
 
 export default function Section3() {
@@ -120,7 +140,7 @@ export default function Section3() {
                     ))}
                 </div>
                 <div className={`row ${styles.Section3Row} mt-3`} data-aos="fade-up" data-aos-delay="300">
-                    <div className={`col-xl-4 col-lg-12 col-12 mb-4`}>
+                    {/* <div className={`col-xl-4 col-lg-12 col-12 mb-4`}>
                         <div className={` ${styles.Section3card}`}>
                             <Image src={card7} className={`${styles.Section3cardImg} card-img-top`} alt={"title"} />
                             <div className={`card-body ${styles.Section3cardbody}`}>
@@ -133,7 +153,7 @@ export default function Section3() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                         <div className={`col-xl-8 col-12 d-flex  ${styles.Section3Row4}`}>
                     <div className={`row mb-4`}>
                             <div className='row w-100'>

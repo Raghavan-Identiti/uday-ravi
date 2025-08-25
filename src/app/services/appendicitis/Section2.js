@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from './Section2.module.css';
 import AppendicitisImg1 from '../../assets/AppendicitisImg1.png';
 import AppendicitisImg1New from '../../assets/AppendicitisImg1New.jpg';
+import AppendicitisImg2New  from '../../assets/AppendicitisImg2New.png';
 import AppendicitisImg2 from '../../assets/AppendicitisImg2.png';
 import AOS from 'aos';             // Import AOS
 import 'aos/dist/aos.css';        // Import AOS styles
@@ -171,6 +172,10 @@ const tocItems = [
                   An appendectomy is a surgical procedure typically done by keyhole surgery, also known as laparoscopic surgery. Compared to open surgery, this technique is less invasive. That’s why more and more people opt for <strong>laparoscopic surgery for Appendix in Bengaluru.</strong> Dr. Uday Ravi is a well known laparoscopic surgeon in Bengaluru.
                 </p>
                 <strong style={{color:"#5c47dc"}}>Step by step procedure for laparoscopic appendectomy:</strong>
+                <div className={`mt-4 d-flex flex-column align-items-center gap-3`}>
+                  <Image src={AppendicitisImg2New} alt='weightLossmindmapimg1' className={styles.Section2PilesImage1New}/>
+                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 1. Laparoscopic Appendectomy</p>
+                </div>
                 <ul className='d-flex flex-column row-gap-2 mt-3'>
                   <li>
                     Generally, this procedure is done under general anesthesia.

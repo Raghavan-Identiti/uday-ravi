@@ -203,10 +203,7 @@ export default function Section2() {
                     <p>Fever, chills, and a general feeling of fatigue</p>
                   </li>
                 </ul>
-                <div className='d-flex flex-column align-items-center my-4'>
-                  <Image src={AnalFistulaImg2New} alt="Anal fistula" className={`${styles.Section2PilesImage1} mb-3 `} />
-                  <p>Fig 2. Anal Fissure</p>
-                </div>
+                
                 <p>Anal fistula surgery aims to correct an anal fistula and treat all of its associated symptoms. If you have any of the above symptoms or you’re concerned about having an anal infection, abscess or fistula, speak with
                   <strong> Dr. UDAY RAVI, the best fistula specialist in BENGALURU.</strong>
                 </p>
@@ -309,9 +306,7 @@ export default function Section2() {
                   </li>
                   <li>
                     <p><strong>PILTEC : </strong>A modification of the LIFT procedure</p>
-                    <p>
-                      <strong>Dr. Uday Ravi</strong> a well known <strong>fistula surgeon</strong> pioneered the <strong>LASER procedure</strong> named PILTEC having the highest cure with zero incontinence rate.
-                    </p>
+
                     <p>According to Dr. Uday Ravi, a successful fistula surgery requires proper diagnosis, a perfectly performed and reported MRI, along with the surgeon’s expertise and the method of surgery. Dr. Uday Ravi, thebest fistula surgeon in Bengaluru performs a single-setting surgery with a success rate of more than 90% including fistula with perianal abscess. It is not only about surgery Dr Uday Ravi and their team provide very good postoperative care which is one of the most important components in the complete cure of fistula.</p>
                     <div>
                       

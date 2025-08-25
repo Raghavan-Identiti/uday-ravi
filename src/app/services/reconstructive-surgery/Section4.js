@@ -10,7 +10,7 @@ export default function Section4() {
     const FAQDatas = [
         {
             question: "How much time gynecomastia surgery takes for recovery?",
-            answer: "The recovery of the gynecomastia surgery varies from person to person mostly patients return to work after a week light exercising can be resumed after two weeks of the surgery and more strenuous activities after four to six weeks of surgery.",
+            answer: `<p>Time duration for gyenecomastia surgery is around 90 to 120 min. <br/>The recovery of the gynecomastia surgery varies from person to person mostly patients return to work after a week light exercising can be resumed after two weeks of the surgery and more strenuous activities after four to six weeks of surgery.</p>`,
         },
         {
             question: "Is gynecomastia surgery long term surgery?",
@@ -29,7 +29,7 @@ export default function Section4() {
             answer: "It is an outpatient procedure. The recovery time is relatively fast compared to any other cosmetic surgery. Many patients even start working after 3 to 10 days of recovery and start their normal routine after 2 to 5 weeks.",
         },
         {
-            question: "Is this surgery permanent?",
+            question: "Is liposuction surgery permanent?",
             answer: "Liposuction is permanent fat removal surgery, but weight gain can cause the surgery to fail and need to be done again.",
         },
         {

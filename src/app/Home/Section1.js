@@ -57,7 +57,7 @@ export default function Section1() {
               <div className="row align-items-center flex-column-reverse flex-md-row mx-4">
                 <div className={`col-sm-12 col-md-6  ${styles.HeroSectionText}`}>
                   <h1 className={`${styles.heroTitle}`}>
-                    World-Class Surgical Precision Compassion In Care.
+                    World-Class Surgical Precision Compassion & Care.
                   </h1>
                   <p className={`${styles.HeroSectionPara}`} >
                     Discover the difference when precision meets empathy.Dr. Uday Ravi delivers advanced surgical care with superior outcomes and personalized support.

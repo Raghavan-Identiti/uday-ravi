@@ -30,7 +30,7 @@ export default function Section4() {
                         </div>
                     </div>
                     <div className={`col-lg-6 col-12 ${styles.Section4colmd5}`}>
-                        <Image src={sideImage} alt="Image" className={`d-inline-block ${styles.Section4colmd5Image1}`} data-aos="fade-up" data-aos-delay="100"/>
+                        {/* <Image src={sideImage} alt="Image" className={`d-inline-block ${styles.Section4colmd5Image1}`} data-aos="fade-up" data-aos-delay="100"/> */}
                         <Image src={sideImage2} alt="Image" className={`d-inline-block ${styles.Section4colmd5Image2}`} data-aos="fade-down" data-aos-delay="300"/>
                     </div>
                 </div>

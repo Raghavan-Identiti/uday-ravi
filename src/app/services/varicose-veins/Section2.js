@@ -6,6 +6,7 @@ import styles from './Section2.module.css';
 import VaricoseVeinsImg1 from '../../assets/VaricoseVeinsImg1.png';
 import VaricoseVeinsImg2 from '../../assets/VaricoseVeinsImg2.png';
 import VaricoseVeinsImg1New from '../../assets/VaricoseVeinsImg1New.jpg';
+import VaricoseVeinsImg6New from '../../assets/VaricoseVeinsImg6New.jpg';
 import VaricoseVeinsImg2New from '../../assets/VaricoseVeinsImg2New.jpg';
 import VaricoseVeinsImg3New from '../../assets/VaricoseVeinsImg3New.jpg';
 import VaricoseVeinsImg4New from '../../assets/VaricoseVeinsImg4New.jpg';
@@ -107,7 +108,7 @@ export default function Section2() {
                 <p>{"Varicose veins are veins seen under the skin that have become swollen, twisted and bulging. They are usually seen in the legs and feet. They are quite common, and most of the time do not cause any problems. However, they can be disfiguring and be a cause for cosmetic concern in females. Varicose vein of legs is common, affecting 1-15% of adult men and 20-25% of adult women."}</p>
                 <p>{"The veins of the lower limb have one way valves that keep the blood moving towards the heart and prevent its backflow. When these valves are damaged, blood starts pooling in the legs causing swelling of the legs, aching pain, heaviness, fatigue, skin discoloration, itching, varicosities (prominent vein) and if not treated it may develop non-healing ulcers in leg. Over time, the continuous pooling cause the veins to become stretched, swollen and tortuous. Raised pressure in these veins also causes development of spider veins and discoloured areas which look like bruises."}</p>
                 <div className='d-flex flex-column align-items-center'>
-                  <Image src={VaricoseVeinsImg1New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1New} />
+                  <Image src={VaricoseVeinsImg6New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1New} />
                   <p>Fig 1. Endovenous Laser Treatment</p>
                 </div>
               </div>
@@ -160,10 +161,7 @@ export default function Section2() {
                   <li>{"Prolonged sitting with legs down."}</li>
                   <li>{"Due to advanced age, overweight and lack of exercise veins of legs become very weak and, therefore, develop into varicose veins."}</li>
                 </ul>
-                <div className='d-flex flex-column align-items-center my-4'>
-                  <Image src={VaricoseVeinsImg3New} alt="Varicose Veins" className={`${styles.Section2PilesImage1Newalt} mb-3 `} />
-                  <p>Fig 3. Risk Factors of Varicose.</p>
-                </div>
+               
               </div>
               <div id="risk" className={styles.Section2Question3} data-aos="fade-up">
                 <h2 className="mt-5">Risk factors</h2>
@@ -175,6 +173,10 @@ export default function Section2() {
                   <li>{"Pregnancy"}</li>
                   <li>{"Standing or sitting for long periods of time"}</li>
                 </ul>
+                 <div className='d-flex flex-column align-items-center my-4'>
+                  <Image src={VaricoseVeinsImg3New} alt="Varicose Veins" className={`${styles.Section2PilesImage1Newalt} mb-3 `} />
+                  <p>Fig 3. Risk Factors of Varicose.</p>
+                </div>
                 
               </div>
               <div id="women-varicose-veins" className={styles.Section2Question4} data-aos="fade-up">
@@ -221,6 +223,10 @@ export default function Section2() {
               </div>
               <div id="treatment" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">Varicose veins treatment in bangalore:</h2>
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={VaricoseVeinsImg5New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1Newalt} />
+                  <p>Fig 5. Treatment of Varicose</p>
+                </div>
                 {/* <p>Dr. Uday Ravi decides the treatment option for breast cancer depending upon the cancer type and extent of spread of cancer to different organs of the body. Treatments for breast cancer include</p> */}
                 <ul className='d-flex flex-column row-gap-2 mt-3'>
                   <li>
@@ -249,6 +255,10 @@ export default function Section2() {
                   </li>
                   <li>
                     <strong style={{color:"#5c47dc"}} >Radiofrequency Ablation of varicose veins/Endovenous laser ablation (EVLA)</strong>
+                    <div className='d-flex flex-column align-items-center mt-4'>
+                  <Image src={VaricoseVeinsImg1New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1New} />
+                  <p>Fig 1. Endovenous Laser Treatment</p>
+                </div>
                     <p className='mt-3'>
                       Laser treatment for varicose veins is extremely effective: With the 2-phase radial emission of energy through the ELVeS fibers, the energy can be applied homogeneously to the vessel wall. Thus the vein is sealed accurately. The risk of perforating the vein wall is minimized, side effects of typical varicose vein treatments rarely occur. The ELVeS fiber with an atraumatic fiber tip is inserted into the affected vein through a small puncture. Due to perfect view via ultrasound the fiber can be monitored and placed perfectly well.
                     </p>
@@ -258,10 +268,7 @@ export default function Section2() {
                     <p>The recurrence rate is almost negligible and the pain associated with the procedure is much less as compared to other procedures</p>
                   </li>
                 </ul>
-                <div className='d-flex flex-column align-items-center'>
-                  <Image src={VaricoseVeinsImg5New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1Newalt} />
-                  <p>Fig 5. Treatment of Varicose</p>
-                </div>
+                
                 <div>
                   <strong>Advantages of EVLA</strong>
                   <ul className={styles.sublistAlphabets}>

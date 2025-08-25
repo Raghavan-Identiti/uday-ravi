@@ -228,7 +228,7 @@ export default function Section2() {
                 </p>
                 <div className='d-flex flex-column align-items-center'>
                     <Image src={gallbladderImg2New} alt="gallbladder" className={styles.Section2PilesImage1New} />
-                    <p>Fig 2. Anatomy of Pancreas</p>
+                    <p>Fig 2. Anatomy of liver and gall bladder</p>
                 </div>
               </div>
               <div id="diagnosis" className={styles.Section2Question5} data-aos="fade-up">
@@ -261,21 +261,22 @@ export default function Section2() {
                     {"Endoscopic retrograde cholangiopancreatography (ERCP)"}
                   </li>
                 </ul>
-                <div className='d-flex flex-column align-items-center mt-5'>
-                    <Image src={gallbladderImg3New} alt="gallbladder" className={styles.Section2PilesImage1New} />
-                    <p className='mt-4'>Fig 2. Galbladder Stones</p>
-                </div>
+                
               </div>
               <div id="treatment" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">Gallbladder Stones treatment :</h2>
                 <strong>Laparoscopic cholecystectomy:</strong>
+                <div className='d-flex flex-column align-items-center mt-5'>
+                    <Image src={gallbladderImg3New} alt="gallbladder" className={styles.Section2PilesImage1New} />
+                    <p className='mt-4'>Fig 2. Galbladder Stones</p>
+                </div>
                 <p>Laparoscopic cholecystectomy is the most common treatment for gallbladder stones. It is a minimally invasive surgery that involves making a few small incisions in the abdomen. The surgeon then inserts a laparoscope, a thin tube with a camera on the end, into one of the incisions. This permits the surgeon to see inside the abdomen and work on the gallbladder.</p>
                 <p>During a laparoscopic cholecystectomy, the surgeon will remove the gallbladder along with any gallstones. The surgery usually takes about 12 hours and most individuals are able to go home the same day. Laparoscopic cholecystectomy is a safe and adequate treatment for gallbladder stones. It has a lower risk of complications than open surgery, and most individuals recover quickly.</p>
-                <strong>Open cholecystectomy:</strong>
                 <div className='d-flex flex-column align-items-center'>
                     <Image src={gallbladderImg2} alt="gallbladderImg2" className={styles.Section2PilesImage2} />
-                    <p>Fig 3. Open Cholecystectomy</p>
+                    <p>Fig 3. Laparoscopic Cholecystectomy</p>
                 </div>
+                <strong>Open cholecystectomy:</strong>
                 <p>Open cholecystectomy is a surgery to remove the gallbladder stones. It is a larger incision than laparoscopic cholecystectomy, and it is typically used when laparoscopic surgery is not possible or when there are difficulties with laparoscopic surgery. During an open cholecystectomy, the surgeon makes a 4- to 6-inch incision in the abdomen below the ribs on the right side. The muscle and tissue are pulled back to show the liver and gallbladder.</p>
                 <p>The surgeon then removes the gallbladder and any gallstones that are present. The surgery typically takes about 2 hours and most individuals stay in the clinic for 1-2 days. Open cholecystectomy is a safe and adequate treatment for gallbladder stones. However, it is associated with a longer recovery time and more pain than laparoscopic cholecystectomy. In addition to surgery, there are some other treatment for gallbladder stones that may be considered in certain cases.</p>
                 <strong>Robotic Cholecystectomy :</strong>

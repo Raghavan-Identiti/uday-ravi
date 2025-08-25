@@ -62,7 +62,7 @@ export default function Section4() {
                     <div className={`col-lg-6 col-12 ${styles.Section4colmd6} ${styles.Section4colmd6Right}`} >
                         {/* <button className={`${styles.Section4Button} btn`}>INSIGHTS</button> */}
                         <h1 className={`${styles.Section4Title}`}>
-                            FAQ for Appendicitis
+                            FAQ for varicose vein
                         </h1>
                         <div className={`row ${styles.Section4ImageRow}`}>
                             {FAQDatas.map((data, index) => (

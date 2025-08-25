@@ -73,7 +73,7 @@ export default function Section2() {
     { id: 'symptoms', label: 'Symptoms' ,type:"subheading"},
     { id: 'diagnosis', label: 'Diagnosis',type:"subheading" },
     { id: 'treatment', label: 'Treatment',type:"subheading" },
-    { id: 'fibroadenoma-surger', label: 'Fibroadenoma Surger',type:"subheading" },
+    { id: 'fibroadenoma-surger', label: 'Fibroadenoma Surgery',type:"subheading" },
     { id: 'what-is-breast-Cancer', label: 'Breast Cancer',type:"heading" },
     { id: 'symptoms-of-breast-cancer', label: 'Symptoms of Breast Cancer',type:"subheading" },
     { id: 'breast-cancer-diagnosis', label: 'Breast Cancer Diagnosis',type:"subheading" },
@@ -139,10 +139,10 @@ export default function Section2() {
                 <p>
                   If you have any of these symptoms, get the immediate help from the Fibroadenoma Specialist in Bangalore, Dr. day Ravi.
                 </p>
-                <div className='d-flex flex-column align-items-center'>
+                {/* <div className='d-flex flex-column align-items-center'>
                   <Image src={fibroadenomaImg4New} alt="fibroadenomaImg1" className={styles.Section2PilesImage1New} />
                   <p>Fig 2. An Abscess in the breast</p>
-                </div>
+                </div> */}
                 <p>
                   All fibroadenomas doesn&apos;t requires surgical treatments but there might be certain indications when surgery should be done and they are as follows:
                 </p>
@@ -192,16 +192,16 @@ export default function Section2() {
                 
               </div>
               <div id="fibroadenoma-surger" className={styles.Section2Question3} data-aos="fade-up">
-                <h2 className="mt-5">Fibroadenoma surger includes:</h2>
+                <h2 className="mt-5">Fibroadenoma surgery includes:</h2>
                 <p><strong>Cryoablation - </strong> freezing of the breast tissue by using gas</p>
                 <p><strong> Lumpectomy or excisional biopsy - </strong> removal of the breast tissue to check for cancer</p>
                 <p>
                   If you are searching for the best doctor to get <strong>fibroadenoma treatment in Bangalore,</strong> then Dr. Uday Ravi is one of the leading and reliable doctor for all your medical requirements.
                 </p>
-                <div className='d-flex flex-column align-items-center'>
+                {/* <div className='d-flex flex-column align-items-center'>
                   <Image src={fibroadenomaImg5New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
                   <p>Fig 3. Fibrocystic Breast Diseases</p>
-                </div>
+                </div> */}
               </div>
               <div id="what-is-breast-Cancer" className={styles.Section2Question4} data-aos="fade-up">
                 <h2 className="mt-5" style={{color:"#5a4ae3",fontSize:"30px"}}>Breast Cancer</h2>
@@ -210,9 +210,13 @@ export default function Section2() {
                   {"Breast cancer is a disease in which cells in the breast grow out of control. Breast cancer cells usually form a tumor that can often be seen on an x-ray or felt as a lump. Breast cancer is the second most common cancer in women after skin cancer. Rarely, it can also affect men."}
                 </p>
                 <div className='d-flex flex-column align-items-center'>
+                  <Image src={fibroadenomaImg8New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
+                  <p>Fig 2. Breast Cancer</p>
+                </div>
+                {/* <div className='d-flex flex-column align-items-center'>
                   <Image src={fibroadenomaImg6New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
                   <p>Fig 4. Mastitis</p>
-                </div>
+                </div> */}
               </div>
               <div id="symptoms-of-breast-cancer" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">What are the symptoms of Breast cancer?</h2>
@@ -250,7 +254,7 @@ export default function Section2() {
                 </ul>
                 <div className='d-flex flex-column align-items-center'>
                   <Image src={fibroadenomaImg7New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
-                  <p>Fig 5. Symptoms of Breast Cancer</p>
+                  <p>Fig 3. Symptoms of Breast Cancer</p>
                 </div>
                 <p>
                   {"Breast cancer is categorized into different stages depending on how far the cancer has spread. Dr. Uday Ravi utilizes the widely recognized TNM staging system, which assesses the size and extent of the primary tumor (T), whether cancer has reached nearby lymph nodes (N), and if it has metastasized to other parts of the body (M)."}
@@ -319,13 +323,7 @@ export default function Section2() {
                 <p>
                   Doctor will do physical examination of the breast to look for any skin changes over the breast/nipple or if there is any discharge. Doctor will palpate to look for any lump in the breast or in the axilla. Doctor will then advise few tests depending on the patients symptoms and physical examination findings.
                 </p>
-                <div className='d-flex flex-column align-items-center'>
-                  <div className='d-flex'>
-                  <Image src={fibroadenomaImg8New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
-                  <Image src={fibroadenomaImg9New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
-                  </div>
-                  <p>Fig 6. Breast Cancer Diagnosed</p>
-                </div>
+                
                 <p>
                   <strong>Imaging tests : </strong>This procedure will use these to learn more about your breast.
                 </p>
@@ -390,6 +388,10 @@ export default function Section2() {
                     </p>
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center'>
+                  <Image src={fibroadenomaImg9New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
+                    <p>Fig 4. Breast Cancer Diagnosed</p>
+                </div>
               </div>
               <div id="risk-reduction" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">What Can I Do to Reduce My Risk of Breast Cancer?</h2>

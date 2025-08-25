@@ -7,7 +7,7 @@ import weightLossmindmapimg1 from '../../assets/weightLossmindmapimg1.png';
 import weightLossmindmapimg1New from '../../assets/weightLossmindmapimg1New.jpg';
 import weightLossmindmapimg2New from '../../assets/weightLossmindmapimg2New.jpg';
 import weightLossmindmapimg3New from '../../assets/weightLossmindmapimg3New.jpg';
-import weightLossmindmapimg4New from '../../assets/weightLossmindmapimg4New.png';
+import weightLossmindmapimg4New from '../../assets/weightLossmindmapimg4New.jpg';
 import weightLossmindmapimg5New from '../../assets/weightLossmindmapimg5New.jpg';
 import weightLossmindmapimg6New from '../../assets/weightLossmindmapimg6New.jpg';
 import { FaChevronDown } from 'react-icons/fa'; // Custom icon
@@ -156,10 +156,7 @@ useEffect(() => {
                     <p><strong>Absence of gastrointestinal disorders: </strong>Candidates should be free from active gastrointestinal disorders, such as ulcers, strictures, or bleeding disorders.</p>
                   </li>
                 </ul>
-                <div className='d-flex flex-column align-items-center my-4'>
-                  <Image src={weightLossmindmapimg2New} alt="Weight Loss" className={`${styles.Section2PilesImage1} mb-3 `} />
-                  <p>Fig 1. Gastric balloon</p>
-                </div>
+                
               </div>
               
               <div id="types" className={styles.Section2Question4} data-aos="fade-up">
@@ -175,6 +172,10 @@ useEffect(() => {
                     <p><strong>Allurion gastric Balloon :</strong> Allurion balloon has gained widespread acceptance because of their ease of insertion. It has to be simply swallowed and no endoscopy needs to be performed during insertion. It has an AI-based program that tracks your weight loss and warns you if sufficient progress has not been achieved. After four months, the balloon burst on its own and expelled from the body through stools.</p>
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center my-4'>
+                  <Image src={weightLossmindmapimg2New} alt="Weight Loss" className={`${styles.Section2PilesImage1} mb-3 `} />
+                  <p>Fig 1. Gastric balloon</p>
+                </div>
               </div>
               <div id="intragastric-balloon-work" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">How does intragastric balloon work for weight loss?:</h2>
@@ -220,7 +221,7 @@ useEffect(() => {
                 <p>
                   Obesity is a condition of excess body weight i.e., when a person is 20% or more above the ideal body weight. Obesity results from a chronic positive energy balance regulated by a complex interaction between endocrine tissues and the central nervous system.
                 </p>
-                <div className={`${weightLossmindmapimg1} d-flex flex-column align-items-center gap-3`}>
+                <div className={` d-flex flex-column align-items-center gap-3`}>
                   <Image src={weightLossmindmapimg4New} alt='weightLossmindmapimg1' className={styles.Section2PilesImage1}/>
                   <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 1. Obesity pathology</p>
                 </div>

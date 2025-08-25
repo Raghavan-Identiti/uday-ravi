@@ -73,11 +73,7 @@ const navItems = [
           path: '/services/varicose-veins',
           icon: NavbarIcon6,
         },
-        {
-          name: 'Breast Disease',
-          path: '/services/breast-disease',
-          icon: NavbarIcon7,
-        },
+        
         {
           name: 'Hydrocele',
           path: '/services/hydrocele',
@@ -87,6 +83,11 @@ const navItems = [
           name: 'Reconstructive Surgery',
           path: '/services/reconstructive-surgery',
           icon: NavbarIcon9,
+        },
+         {
+          name: 'Circumcision',
+          path: '/services/circumcision',
+          icon: NavbarIcon13,
         },
         {
           name: 'Pilonidal Sinus',
@@ -101,6 +102,11 @@ const navItems = [
           icon: NavbarIcon10,
         },
         {
+          name: 'Breast Disease',
+          path: '/services/breast-disease',
+          icon: NavbarIcon7,
+        },
+        {
           name: 'Gallbladder Stones',
           path: '/services/gastroenterology-and-gi-surgery',
           icon: NavbarIcon11,
@@ -110,11 +116,7 @@ const navItems = [
           path: '/services/appendicitis',
           icon: NavbarIcon12,
         },
-        {
-          name: 'Circumcision',
-          path: '/services/circumcision',
-          icon: NavbarIcon13,
-        },
+       
         {
           name: 'Cysts & Swelling',
           path: '/services/cysts-swelling',
@@ -135,6 +137,18 @@ const navItems = [
         <Link className="navbar-brand" href="/">
           <Image src={logo} alt="Logo" className={`d-inline-block align-text-top ${styles.NavLogo}`} />
         </Link>
+        {pathname.startsWith("/services/") && (
+            <div className="">
+              <button
+                type="button"
+                className={`${styles.navbarbtnPrimary} d-lg-none`}
+                onClick={() => setShowPopup(true)}
+              >
+                Appointment
+              </button>
+            </div>
+          )}
+
 
         <div className={`d-none d-lg-flex flex-row align-items-center gap-lg-4 ${styles.NavbarItemsdiv}`}>
           {navItems.map((item, i) => (
@@ -235,8 +249,9 @@ const navItems = [
       </nav>
 
       <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
-        <div className={`offcanvas-header ${styles.NavLogo} d-flex flex-row align-items-center row-gap-5`}>
+        <div className={`offcanvas-header ${styles.NavLogo} d-flex flex-row align-items-center`}>
           <Image src={logo} alt="Logo" />
+          
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div className={`offcanvas-body d-flex flex-column gap-4 ${styles.offcanvasBodyMobile}`}>

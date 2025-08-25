@@ -9,8 +9,10 @@ export default function Section4() {
     const [openIndex, setOpenIndex] = useState(0);
     const FAQDatas = [
         {
-            question: "What happens if you don't treat your piles?",
-            answer: "Dr. Ravi's minimally invasive techniques significantly reduce pain compared to traditional surgery. Most patients experience only mild discomfort that can be managed with regular pain medication. Recovery times vary by procedure, but many patients return to light activities within 24-48 hours and resume normal routines within 1-2 weeks—considerably faster than conventional surgery.",
+            question: "What are piles?",
+            answer: `<p>
+                        Internal hemorrhoids that go untreated might cause bleeding. External hemorrhoids can cause thrombosis (blood clotting), leading to hemorrhoidal strangulation and extreme pain. It could indicate thrombosed hemorrhoids if you know you have hemorrhoids and are experiencing acute and severe anal pain.
+                    </p>`
         },
         {
             question: "Is surgery the only option to treat piles?",
@@ -18,15 +20,15 @@ export default function Section4() {
         },
         {
             question: "Can Piles Burst?",
-            answer: "Most patients qualify for minimally invasive options, but factors like your medical history, previous surgeries, and specific condition determine eligibility. During your consultation, Dr. Ravi thoroughly evaluates your case and discusses all appropriate treatment options, explaining the benefits and limitations of each approach for your unique situation.",
+            answer: "Thrombosed hemorrhoids can occur in both external and internal hemorrhoids. A blood clot forms inside the vein as a result of this. Hemorrhoids that have thrombosed are not harmful, but they can cause a lot of pain and inflammation. Hemorrhoids can burst if they become too full of blood.",
         },
         {
             question: "Can stress cause piles?",
-            answer: "Minimally invasive procedures typically cause less pain and offer faster recovery. Most patients resume normal activities within a few days.",
+            answer: "Constipation and diarrhea can cause hemorrhoids to flare up, and stress can create digestive difficulties. When people are agitated, their sphincter muscles tighten, and the rectum is compressed. Hemorrhoids might flare up as a result of this pressure.",
         },
         {
             question: "Is piles 100% curable?",
-            answer: "Minimally invasive procedures typically cause less pain and offer faster recovery. Most patients resume normal activities within a few days.",
+            answer: "Piles can be effectively treated and managed, but a complete cure may vary depending on the individual case and the severity of the condition.",
         },
     ];
 

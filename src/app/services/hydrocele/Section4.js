@@ -32,14 +32,7 @@ export default function Section4() {
             question: "Can hydrocele recur after treatment?",
             answer: "If the cause of the hydrocele is not treated, like an infection filariasis or some kind of lymph obstruction, then a hydrocele can recur after treatment.",
         },
-        {
-            question: "Is laser surgery for hydrocele Painful?",
-            answer: "Hydrocele laser surgery is a painless operation. Surgery is done under local anaesthesia, so the patient feels neither pain or discomfort during the laser operation. Aside from being a painless treatment, laser hydrocele surgery does not require stitches and results in no bleeding. The surgery takes 30 min to 1 hour and same-day discharge from the hospital.",
-        },
-        {
-            question: "What can happen if a hydrocele is not treated?",
-            answer: "If a communicating hydrocele does not resolve on its own and is not treated, it might lead to an inguinal hernia. In this disorder, a part of the intestine pushes through a groin region.",
-        },
+        
     ];
 
     const toggleIndex = (index) => {

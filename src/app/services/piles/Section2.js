@@ -340,6 +340,11 @@ useEffect(() => {
                     </ul>
                   </li>
                 </ul>
+                <p><b>Laser procedure for piles </b></p>
+
+<p>Laser haemorrhoidopexy also referred to as haemorrhoid laser treatment, represents an innovative surgical technique designed to address the piles.</p>
+<p>This advanced method utilises a highly-focused laser device that emits precise and potent light energy, targeting the problematic tissue. By either vaporising or coagulating the haemorrhoidal tissue with high-intensity light, the procedure effectively reduces the size of the haemorrhoids, providing significant relief to patients.
+                </p>
                 <p>
                   Dr. Uday Ravi, a highly skilled piles doctor in Bengaluru, possesses extensive expertise in providing exceptional care to his patients. Dr. Uday Ravi provides the best laser treatment for piles in Bengaluru. He prioritizes safety, ethical practices, and confidentiality, employing state-of-the-art technology and innovative approaches to ensure optimal outcomes for every individual he treats
                 </p>
