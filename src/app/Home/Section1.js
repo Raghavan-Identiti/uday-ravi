@@ -241,7 +241,7 @@ export default function Section1() {
               <div className="row align-items-center flex-column-reverse flex-md-row mx-4">
                 <div className={`col-md-6  ${styles.HeroSectionText}`} style={{ position: "relative", zIndex: 10 }} data-aos="fade-right" data-aos-delay="300">
                   <h1 className={`${styles.heroTitle}`} >
-                    World-Class<br />Surgical Precision<br />Compassion In Care.
+                    World-Class<br />Surgical Precision<br />Compassion & Care.
                   </h1>
                   <p className={`${styles.HeroSectionPara}`} >
                     Discover the difference when precision meets empathy.<br />
