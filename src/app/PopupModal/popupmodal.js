@@ -61,9 +61,10 @@ export default function PopupForm({ showPopup, setShowPopup, selectedLocation })
     if (!formData.email) errs.email = "Email is required.";
     if (!formData.location) errs.location = "Location is required.";
 
-    if (formData.comment && formData.comment.length < 11) {
-      errs.comment = "Comment must be at least 11 characters if provided.";
-    }
+if (formData.comment && formData.comment.length < 1) {
+  errs.comment = "Comment must not be empty if provided.";
+}
+
 
     return errs;
   };
@@ -104,25 +105,26 @@ export default function PopupForm({ showPopup, setShowPopup, selectedLocation })
   return (
     <div className={styles.overlay}>
       <div className={styles.popup}>
-        <button className={styles.closeBtn} onClick={() => setShowPopup(false)}>×</button>
+<button type="button" className={styles.closeBtn} onClick={() => setShowPopup(false)}>×</button>
         <h3 className={styles.heading}>Book a Consultation</h3>
         <form onSubmit={handleSubmit} className={styles.form}>
-          <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
-          <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
+          <input type="text" autoComplete="off" name="name" placeholder="Name" onChange={handleChange} required />
+          <input type="email" autoComplete="off" name="email" placeholder="Email" onChange={handleChange} required />
           <PhoneInput
             country={'in'}
-            value={formData.contact}
+            value={formData.contact || ""}
             onChange={handlePhoneChange}
             inputClass={styles.phoneInput}
           />
+
           {errors.contact && <div className="invalid-feedback">{errors.contact}</div>}
           <Select
             options={indianStates}
             placeholder="Preferred Location"
             onChange={handleLocationChange}
-            className={errors.location ? "is-invalid" : ""}
-            value={indianStates.find(option => option.value === formData.location)}
+            value={indianStates.find(option => option.value === formData.location) || null}
           />
+
 
           {errors.location && <div className="invalid-feedback">{errors.location}</div>}
 
@@ -135,10 +137,13 @@ export default function PopupForm({ showPopup, setShowPopup, selectedLocation })
           />
           <button className={styles.submitBtn} type="submit" disabled={isSaving}>
             <span className={styles.submitBtnText}>Submit</span>
-            {isSaving && <div className={`${styles.spinnerOverlay}`}>
-              <div className={`${styles.spinner}`}></div>
-            </div>}
+            {isSaving && (
+              <div className={`${styles.spinnerOverlay}`}>
+                <div className={`${styles.spinner}`}></div>
+              </div>
+            )}
           </button>
+
         </form>
       </div>
     </div>

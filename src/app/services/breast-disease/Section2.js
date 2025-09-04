@@ -390,7 +390,7 @@ export default function Section2() {
                 </ul>
                 <div className='d-flex flex-column align-items-center'>
                   <Image src={fibroadenomaImg9New} alt="fibroadenoma" className={styles.Section2PilesImage1New} />
-                    <p>Fig 4. Breast Cancer Diagnosed</p>
+                    <p>Fig 4. Surgical Treatment of Breast Cancer</p>
                 </div>
               </div>
               <div id="risk-reduction" className={styles.Section2Question5} data-aos="fade-up">

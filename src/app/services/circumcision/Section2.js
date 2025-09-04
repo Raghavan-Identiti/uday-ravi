@@ -18,6 +18,15 @@ export default function Section2() {
   const [activeId, setActiveId] = useState('');
   const [isMobile, setIsMobile] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+    const tocItems = [
+    { id: 'circumcision', label: 'Circumcision',type:"heading" },
+    { id: 'benefits', label: 'Benefits',type:"subheading" },
+    { id: 'conditions', label: 'Conditions',type:"subheading" },
+    { id: 'diagnosis', label: 'Diagnosis',type:"subheading" },
+    { id: 'treatment', label: 'Treatment',type:"subheading" },
+    { id: 'advantages', label: 'Advantages',type:"subheading" },
+  ];
+
 
     // Initialize AOS on component mount
   useEffect(() => {
@@ -62,14 +71,6 @@ export default function Section2() {
   }, []);
 
 
-  const tocItems = [
-    { id: 'circumcision', label: 'Circumcision',type:"heading" },
-    { id: 'benefits', label: 'Benefits',type:"subheading" },
-    { id: 'conditions', label: 'Conditions',type:"subheading" },
-    { id: 'diagnosis', label: 'Diagnosis',type:"subheading" },
-    { id: 'treatment', label: 'Treatment',type:"subheading" },
-    { id: 'advantages', label: 'Advantages',type:"subheading" },
-  ];
 
   
   const getBreadcrumbLabel = (id) => {
@@ -211,46 +212,45 @@ export default function Section2() {
           {/* Sticky Right Sidebar */}
           <div className="col-lg-3 col-md-12" data-aos="fade-up">
             {isMobile ? (
-              <div className={styles.Section2dropdownContainer}>
-                <div className={styles.Section2dropdownWrapper}>
-                  <select
-                    className={styles.Section2dropdownSelect}
-                    onChange={(e) => {
-                      const id = e.target.value;
-                      const section = document.getElementById(id);
-                      if (section) {
-                        const sectionHeight = section.offsetHeight;
-                        const viewportHeight = window.innerHeight;
-                        const stickyOffset = 80;
+  <div className={styles.Section2dropdownContainer}>
+    <div className={styles.Section2dropdownWrapper}>
+      <select
+        className={styles.Section2dropdownSelect}
+        onChange={(e) => {
+          const id = e.target.value;
+          const section = document.getElementById(id);
+          if (section) {
+            const sectionHeight = section.offsetHeight;
+            const viewportHeight = window.innerHeight;
+            const stickyOffset = 80;
 
-                        const scrollTo =
-                          section.offsetTop - (viewportHeight / 2 - sectionHeight / 2) - stickyOffset;
+            const scrollTo =
+              section.offsetTop - (viewportHeight / 2 - sectionHeight / 2) - stickyOffset;
 
-                        window.scrollTo({
-                          top: scrollTo,
-                          behavior: "smooth",
-                        });
+            window.scrollTo({
+              top: scrollTo,
+              behavior: "smooth",
+            });
 
-                        setActiveId(id);
-                      }
-                    }}
-                    value={activeId || ""}
-                  >
-                    <option value="" disabled>Select a section</option>
-                    {tocItems.map(({ id, label, type }) => (
-                      <option
-                        key={id}
-                        value={id}
-                        disabled={type === 'heading'} // optionally disable heading in mobile select
-                      >
-                        {type === 'heading' ? `-- ${label} --` : `  ${label}`}
-                      </option>
-                    ))}
-                  </select>
-                  <FaChevronDown className={styles.Section2dropdownIcon} />
-                </div>
-              </div>
-            ) : (
+            // force update activeId so dropdown reflects change
+            setActiveId(id);
+          }
+        }}
+        value={activeId || "placeholder"}  // 👈 fallback placeholder
+      >
+        <option value="placeholder" disabled>
+          Select a section
+        </option>
+        {tocItems.map(({ id, label }) => (
+          <option key={id} value={id}>
+            {label}
+          </option>
+        ))}
+      </select>
+      <FaChevronDown className={styles.Section2dropdownIcon} />
+    </div>
+  </div>
+): (
               // Sticky Wrapper for TOC + Card
               <div className={styles.stickyWrapper}>
                 <div className={styles.Section2sidebar}>

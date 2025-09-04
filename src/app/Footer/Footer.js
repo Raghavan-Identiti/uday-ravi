@@ -98,9 +98,7 @@ export default function Footer() {
                   <li>
                     <Link href={'/services/thyroid'} target="__blank">Thyroid Surgeries</Link>
                   </li>
-                  <li>
-                    <Link href={'/services/varicose-veins'} target="__blank">Vascular Surgeries</Link>
-                  </li>
+                  
 
 
                   <li>
@@ -123,6 +121,9 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link href={'/services/hydrocele'} target="__blank">Genito-Urinary & Men’s Health</Link>
+                  </li>
+                  <li>
+                    <Link href={'/services/varicose-veins'} target="__blank">Vascular and Varicose Veins Surgeries</Link>
                   </li>
                 </ul>
               </div>

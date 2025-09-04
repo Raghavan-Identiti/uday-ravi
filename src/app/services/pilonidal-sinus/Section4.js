@@ -10,7 +10,16 @@ export default function Section4() {
     const FAQDatas = [
         {
             question: "Why not delay Pilonidal Sinus treatment?",
-            answer: "The recovery of the gynecomastia surgery varies from person to person mostly patients return to work after a week light exercising can be resumed after two weeks of the surgery and more strenuous activities after four to six weeks of surgery.",
+            answer: `As an effect of pilonidal sinus, one can suffer from severe pain, swelling, and pus or blood discharge from the anal area. If left untreated, it can lead to complications such as:
+            <ul>
+                <li>If left untreated, a pilonidal sinus can lead to serious conditions</li>
+                <li>Can be extremely painful and make it challenging to sit or walk.</li>
+                <li>If an abscess bursts, it can lead to sepsis, a potentially life-threatening situation.</li>
+                <li>Pilonidal sinus conditions can also cause fever, chills, and fatigue.</li>
+                <li>Early Treatment for a pilonidal sinus is generally quick and easy, and can usually be done in an outpatient setting.</li>
+                <li>Delaying treatment can lead to more serious difficulties that may need hospitalization.</li>
+            </ul>
+            `,
         },
         {
             question: "Is pilonidal sinus curable?",
@@ -18,11 +27,16 @@ export default function Section4() {
         },
         {
             question: "What are the treatment options for pilonidal sinus?",
-            answer: `Exercise can reduce some excess stored fat from the chest, but it does not affect glandular tissues causing gynecomastia it does not matter, how hard you exercise but it doesn’t leave any effect on the enlarged breasts.`,
-        },
-        {
-            question: "What are the treatment options for pilonidal sinus?",
-            answer: "The check-ups will be continued after the surgery. There are only two to three checkups after the surgery and no further control is required. Dr. Uday Ravi is a professional in the field of gynecomastia. Patients are well satisfied with his service in hospitality, he has expertise in the field of gynecomastia surgery.",
+            answer: `
+            To relieve your signs, your doctor may suggest one of the following treatments:
+            <ul>
+                <li>Laser surgery</li>
+                <li>Excision: In some cases, the entire pilonidal sinus may need to be surgically removed. This is usually done under general anesthesia and may require a longer recovery time.</li>
+                <li>Use of antibiotics, anti-inflammatory drugs, and painkillers</li>
+                <li>Open surgery</li>
+                <li>Electrocautery</li>
+            </ul>
+            `,
         },
     ];
 

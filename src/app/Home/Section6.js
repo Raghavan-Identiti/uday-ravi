@@ -17,7 +17,7 @@ import { useState } from 'react';
 const featuresData = [
     {
         icon: tableicon1,
-        title: "Multi-Specialty Mastery",
+        title: "Multi-Speciality Mastery",
         description: "Comprehensive expertise across multiple surgical disciplines for even the most complex conditions.",
     },
     {

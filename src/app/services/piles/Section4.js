@@ -9,7 +9,7 @@ export default function Section4() {
     const [openIndex, setOpenIndex] = useState(0);
     const FAQDatas = [
         {
-            question: "What are piles?",
+            question: "What happens if you don't treat your piles?",
             answer: `<p>
                         Internal hemorrhoids that go untreated might cause bleeding. External hemorrhoids can cause thrombosis (blood clotting), leading to hemorrhoidal strangulation and extreme pain. It could indicate thrombosed hemorrhoids if you know you have hemorrhoids and are experiencing acute and severe anal pain.
                     </p>`

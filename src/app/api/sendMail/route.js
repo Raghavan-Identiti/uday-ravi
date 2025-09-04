@@ -1,3 +1,7 @@
+import fs from "fs";
+import path from "path";
+import * as XLSX from "xlsx";
+
 export async function POST(request) {
   try {
     const body = await request.json();
@@ -6,6 +10,32 @@ export async function POST(request) {
     if (!name || !email || !location) {
       return new Response(JSON.stringify({ success: false, error: 'Missing required fields.' }), { status: 400 });
     }
+
+    // -------- SAVE TO EXCEL ----------
+    const filePath = path.join("/tmp", "consultations.xlsx"); // ✅ fix
+
+    let workbook, worksheet;
+    if (fs.existsSync(filePath)) {
+      workbook = XLSX.readFile(filePath);
+      worksheet = workbook.Sheets[workbook.SheetNames[0]];
+    } else {
+      workbook = XLSX.utils.book_new();
+      worksheet = XLSX.utils.aoa_to_sheet([["Date", "Name", "Email", "Contact", "Location", "Comment"]]);
+      XLSX.utils.book_append_sheet(workbook, worksheet, "Consultations");
+    }
+
+    const newRow = [
+      new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
+      name,
+      email,
+      contact,
+      location,
+      comment || "",
+    ];
+
+    XLSX.utils.sheet_add_aoa(worksheet, [newRow], { origin: -1 });
+    XLSX.writeFile(workbook, filePath);
+
 
     const response = await fetch('https://api.brevo.com/v3/smtp/email', {
       method: 'POST',
@@ -20,7 +50,7 @@ export async function POST(request) {
         },
         to: [
           {
-            email: process.env.BREVO_RECEIVER, // your receiving email
+            email: 'raghavan@identitidesign.com', // your receiving email
             name: 'Doctor',
           },
         ],

@@ -21,20 +21,12 @@ export default function Section4() {
             answer: `Exercise can reduce some excess stored fat from the chest, but it does not affect glandular tissues causing gynecomastia it does not matter, how hard you exercise but it doesn’t leave any effect on the enlarged breasts.`,
         },
         {
-            question: "Will the check-ups be continued after the surgery?",
-            answer: "The check-ups will be continued after the surgery. There are only two to three checkups after the surgery and no further control is required. Dr. Uday Ravi is a professional in the field of gynecomastia. Patients are well satisfied with his service in hospitality, he has expertise in the field of gynecomastia surgery.",
-        },
-        {
             question: "What is the recovery period for liposuction surgery?",
             answer: "It is an outpatient procedure. The recovery time is relatively fast compared to any other cosmetic surgery. Many patients even start working after 3 to 10 days of recovery and start their normal routine after 2 to 5 weeks.",
         },
         {
             question: "Is liposuction surgery permanent?",
             answer: "Liposuction is permanent fat removal surgery, but weight gain can cause the surgery to fail and need to be done again.",
-        },
-        {
-            question: "What are the side effects of liposuction surgery?",
-            answer: "Side effects are like any other surgery, for example, hematoma, infection, irregular contouring, ARDS, fat embolus, cardiopulmonary injury, etc. Because of the latest advances in techniques and anaesthesia, now these complications are very rare.",
         },
         {
             question: "How is abdominoplasty different from liposuction?",

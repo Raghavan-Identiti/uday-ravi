@@ -25,10 +25,6 @@ export default function Section4() {
             answer: "The impact of circumcision on sexual drive is a complex phenomenon and results may vary individually. The findings are not consistent and sexual performance can be influenced by a variety of psychological & emotional factors. In a nutshell, circumcision per say if any has a very modest effect on performance.",
         },
         {
-            question: "What is the success rate for Diabetic Foot Ulcers treatment?",
-            answer: "31% of diabetic ulcers are cured after 20 weeks with proper wound management. Similarly, 24% of diabetic ulcers heal completely after 12 weeks of appropriate treatment.",
-        },
-        {
             question: "Is circumcision covered under insurance?",
             answer: "Almost all the insurance companies cover this procedure as a cashless facility. Our clinic is partnered with some of the best hospitals in Bangalore and provides cashless treatment with all the insurance companies.",
         },
@@ -38,7 +34,7 @@ export default function Section4() {
         },
         {
             question: "Does it affect penis size?",
-            answer: "The impact of circumcision on sexual sensitivity has always been a matter of debate and individual experience may vary. While some studies have documented decreased sensitivity in circumcised patients, other studies have found no significant t difference in sexual sensitivity between circumcised and uncircumcised individuals.",
+            answer: "No, it does not affect penis size. The impact of circumcision on sexual sensitivity has always been a matter of debate and individual experience may vary. While some studies have documented decreased sensitivity in circumcised patients, other studies have found no significant difference in sexual sensitivity between circumcised and uncircumcised individuals.",
         },
         {
             question: " Does it affect sperm production or overall fertility?",

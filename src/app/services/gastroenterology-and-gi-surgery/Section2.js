@@ -106,9 +106,9 @@ export default function Section2() {
                 <p>Gallbladder stones, also known as<strong> gallstones or cholelithiasis.</strong> Gallstones (cholelithiasis) are hard deposits that form in the gallbladder. The gallbladder is a small organ located below the liver that stores bile, a fluid that helps digest fats. Gallstones can be made of bilirubin, cholesterol, or a combination of both. These stones can vary in size and composition, and they can develop for several reasons. Gallbladder stones do not disappear by themselves.</p>
                 <p> <strong> Dr. Uday Ravi,</strong> a leading surgeon in Bengaluru <strong>who does Best Gallstone Surgery in Bengaluru </strong>may decide to remove your gallbladder if it begins to pain or causes other symptoms. Around 80% of people with gallbladder stones will require surgery. Cholecystectomy is one of the most common procedures performed by doctors to remove gallbladder stones.</p>
                 <div className='d-flex flex-column align-items-center'>
-                    <Image src={gallbladderImg1New} alt="gallbladderImg1" className={styles.Section2PilesImage1New} />
-                    <p>Fig 1. Gallbladder Stones</p>
-                  </div>
+                    <Image src={gallbladderImg2New} alt="gallbladderImg1" className={styles.Section2PilesImage1New} />
+                    <p>Fig 1. Anatomy of Liver and Gall Bladder</p>
+                </div>
               </div>
               <div id="types" className={styles.Section2Question2} data-aos="fade-up">
                 <h2 className="mt-5">Types of Gall-stones:</h2>
@@ -127,6 +127,10 @@ export default function Section2() {
                     <p>{"Mixed stones that contain both cholesterol and pigment components"}</p>
                   </li>
                 </ul>
+                <div className='d-flex flex-column align-items-center'>
+                    <Image src={gallbladderImg1New} alt="gallbladderImg1" className={styles.Section2PilesImage1New} />
+                    <p>Fig 2. Types of Gallbladder Stones</p>
+                </div>
               </div>
               <div id="symptoms" className={styles.Section2Question3} data-aos="fade-up">
                 <h2 className="mt-5">What are the symptoms of gallbladder stones?</h2>
@@ -226,10 +230,10 @@ export default function Section2() {
                 <p>
                   If you have gallstones, book an appointment soon with Dr. Uday Ravi for gallbladder stones treatment. These complications can be serious & even life-threatening.
                 </p>
-                <div className='d-flex flex-column align-items-center'>
+                {/* <div className='d-flex flex-column align-items-center'>
                     <Image src={gallbladderImg2New} alt="gallbladder" className={styles.Section2PilesImage1New} />
                     <p>Fig 2. Anatomy of liver and gall bladder</p>
-                </div>
+                </div> */}
               </div>
               <div id="diagnosis" className={styles.Section2Question5} data-aos="fade-up">
                 <h2 className="mt-5">How are gallbladder stones diagnosed?:</h2>

@@ -126,6 +126,8 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;  /* Match button's border radius */
+      pointer-events: none; /* ✅ so it won't block */
+
   }
   
   /* Small spinner style */

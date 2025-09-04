@@ -13,7 +13,7 @@ export default function HeroSection() {
               Cysts & <br/>Swellings
             </h1>
             <p className={styles.HeroSectionPara} data-aos="fade-right" data-aos-delay="300">
-              Safe removal of benign breast lumps with minimal scarring and excellent cosmetic results.
+              Safe removal of lipoma and sebaceous cysts with minimal scarring.
             </p>
           </div>
           <div className={`col-lg-6 col-12 ${styles.HeroSectionImgdiv}`} data-aos="fade-left">

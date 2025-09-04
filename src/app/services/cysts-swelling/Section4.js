@@ -9,60 +9,34 @@ export default function Section4() {
     const [openIndex, setOpenIndex] = useState(0);
     const FAQDatas = [
         {
-            question: "What are the risks associated with an appendix operation?",
+            question: "Can lipomas be dangerous?",
             answer: `
-            <p>Risks associated with an appendix operation:</p>
-            <ul>
-                <li>
-                    Wound infection
-                </li>
-                <li>
-                    Pus formation inside the gut
-                </li>
-                <li>
-                    Pneumonia
-                </li>
-                <li>
-                    Venous thromboembolism
-                </li>
-                <li>
-                    Anal fistula formation
-                </li>
-            </ul>
+            <p>Lipomas are generally not dangerous. However, lipomas that are rapidly growing must be removed immediately and sent for biopsy to assess if they are cancerous. If the lipomas are small and not increasing in size, they are usually harmless.</p>
+            
             `,
         },
         {
-            question: "Are there any risks involved in laparoscopic appendicectomy?",
-            answer: `Laparoscopic appendicectomy is one of the most common surgeries being performed today. It is safe and has a very low difficulty rate`,
+            question: "Can lipomas grow back at the same site?",
+            answer: `Proper and completely excised lipomas do not grow back in the same place. Lipomas that are large or hard in consistency when removed by liposuction can result in incomplete removal of lipomas, resulting in recurrence.`,
         },
         {
-            question: "Why laparoscopic appendix surgery?",
+            question: "Can lipomas dissolve on their own?",
             answer: `
-                <ul>
-                    <li>
-                        Painless
-                    </li>
-                    <li>
-                        45 minutes procedure
-                    </li>
-                    <li>
-                        Permanent cure
-                    </li>
-                    <li>
-                        No recurrence of appendicitis
-                    </li>
-                    <li>
-                        High success rate
-                    </li>
-                    <li>
-                        Less risk of infection
-                    </li>
-                </ul>
+                Lipomas can never disappear on their own. However, significantly reducing weight and maintaining a healthy lifestyle might reduce the size of lipomas to a certain extent.
+
             `,
         },
         {
-            question: "To delaying appendicitis treatment can cause the appendix to rupture?",
-            answer: "Yes. Consult the expert and highly experienced Dr. Uday Ravi in Bangalore to undergo appendix removal surgery through a safe and advanced minimally-invasive Laparoscopic/Robotic procedure",
+            question: "Are sebaceous cysts cancerous?",
+            answer: "Sebaceous cysts are typically benign and not cancerous. They are sac-like structures filled with keratin and usually develop in hair follicles. Removal may be necessary for cosmetic or discomfort reasons.",
+        },
+        {
+            question: "Can Sebaceous Cysts go away on their own without treatment?",
+            answer: "Sebaceous cysts may persist or even grow larger without treatment. They often do not resolve on their own and typically require medical intervention such as drainage or surgical removal.",
+        },
+        {
+            question: "Are foot corns or calluses contagious?",
+            answer: "No, foot corns or calluses are not contagious.",
         },
         
     ];

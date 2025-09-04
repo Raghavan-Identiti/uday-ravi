@@ -8,10 +8,13 @@ import Section6 from "./Section6";
 import Section7 from "./Section7";
 import Section8 from "./Section8";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './homesection.module.css';
+import Image from "next/image";
+import callIcon from '../assets/call-icon.png';
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.HomePage}>
       <Section1/>
       <Section2/>
       <Section3/>
@@ -20,6 +23,11 @@ export default function Home() {
       <Section6/>
       <Section7/>
       <Section8/>
+      <div className={styles.HomeCallNow}>
+        <a href="tel:+919886642222" className={styles.HomeCallLink}>
+          <Image src={callIcon} alt="call-icon" className={styles.HomeCallIcon}/>
+        </a>
+      </div>
     </div>
   );
 }

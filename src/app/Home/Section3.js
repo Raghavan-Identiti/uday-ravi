@@ -56,7 +56,7 @@ const cardData = [
         link : "/services/hydrocele"
     },
      {
-        title: "Vascular Surgery",
+        title: "Varicose Veins and Vascular Surgery",
         text: "Laser treatment to remove varicose veins, restore circulation, and help you walk pain-free.",
         img: card9,
         link : "/services/varicose-veins"
