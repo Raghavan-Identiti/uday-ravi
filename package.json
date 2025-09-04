@@ -12,6 +12,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.6",
     "framer-motion": "^12.16.0",
+    "googleapis": "^159.0.0",
     "indian-states-cities": "^1.0.2",
     "next": "15.3.2",
     "nodemailer": "^7.0.3",
