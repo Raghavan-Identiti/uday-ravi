@@ -98,6 +98,27 @@
         padding:15px 20px;
     } 
 }
+
+@media (min-width :1200px){
+  .HomeCallNow {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 70px;
+  height: 70px;
+}
+    .HomeCallNowButton {
+        top: 80%;             /* vertically center-ish */
+        right: -85px;         /* move it slightly outside the screen */
+        transform: rotate(-90deg); /* rotate the button text */
+        z-index: 1000;
+    }
+    .btnPrimary {
+        font-size: 22px;
+        padding:25px 30px;
+    } 
+
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
