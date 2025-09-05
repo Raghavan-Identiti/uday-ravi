@@ -88,8 +88,8 @@ export default function Section8() {
                         className={`img-fluid ${styles.Section8row1image}`}
                       />
                     </div>
-                    <div className={`${styles.Section8row1textwrapper} ms-3`}>
-                      <small className="text-muted">{card.title} • {card.date}</small>
+                    <div className={`${styles.Section8row1textwrapper} ms-sm-3 ms-1`}>
+                      <small className={`text-muted ${styles.Section8row1textwrappertextMuted}`}>{card.title} • {card.date}</small>
                       <h5 className={`fw-bold mt-1 mb-0 ${styles.Section8row1cardTitle}`}>
                         {card.feedback}
                       </h5>

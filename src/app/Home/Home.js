@@ -11,8 +11,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './homesection.module.css';
 import Image from "next/image";
 import callIcon from '../assets/call-icon.png';
+import PopupForm from '../PopupModal/popupmodal';
+import { useState } from "react";
 
 export default function Home() {
+    const [showPopup, setShowPopup] = useState(false);
+  
   return (
     <div className={styles.HomePage}>
       <Section1/>
@@ -28,6 +32,18 @@ export default function Home() {
           <Image src={callIcon} alt="call-icon" className={styles.HomeCallIcon}/>
         </a>
       </div>
+      <div className={styles.HomeCallNowButton}>
+  <button
+    type="button"
+    className={styles.btnPrimary}
+    onClick={() => setShowPopup(true)}
+  >
+    Book Appointment
+  </button>
+</div>
+
+          <PopupForm showPopup={showPopup} setShowPopup={setShowPopup} />
+        
     </div>
   );
 }

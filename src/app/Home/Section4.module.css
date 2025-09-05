@@ -15,7 +15,10 @@
 }
 
 .Section4colmd7 {
-    padding: 50px 50px;
+    padding: 0px 50px 50px 50px;
+}
+.Section4colmd7Heading {
+    padding: 50px 50px 0px 40px;
 }
 
 .Section4Title {
@@ -105,7 +108,7 @@
     }
 
     .Section4Row {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
@@ -116,8 +119,8 @@
     }
 
     .Section4Para {
-        /* padding-right: 20px ; */
         font-size: 18px;
+        text-wrap: nowrap;
     }
 
     .Section4colmd7 {
@@ -138,7 +141,7 @@
     }
 
     .Section4colmd5>.Section4colmd5Image2 {
-        width: 50%;
+        width: 70%;
         height: auto;
     }
 }

@@ -132,7 +132,7 @@ box-shadow: #D6D2FF 0px -3px 0px inset;
     line-height: 22px;
     letter-spacing: -2%;
     color: #223645;
-    margin-bottom: auto;
+    margin-bottom: 30px;
 }
 
 .Section3cardbtn {
@@ -171,7 +171,7 @@ box-shadow: #D6D2FF 0px -3px 0px inset;
 .Section3Row3colmd6 {
     background-color: #615efc;
     border-top-right-radius: 20px;
-    padding: 0px 30px 0px 50px !important;
+    padding: 0px 30px 0px 50px;
 }
 
 .Section3Row3cardbody {
@@ -257,7 +257,7 @@ box-shadow: #D6D2FF 0px -3px 0px inset;
 
     .Section3Row3colmd6 {
         border-radius: 0px 0px 20px 20px;
-        padding-bottom: 30px !important;
+        padding: 30px;
         margin-top: -5px;
     }
     .Section3Button{

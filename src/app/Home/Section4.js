@@ -9,8 +9,7 @@ export default function Section4() {
     return (
         <section id='about-doctor' className={`${styles.Section4}`}>
             <div className={`${styles.Section4container} container`}>
-                <div className={` row ${styles.Section4Row}`}>
-                    <div className={`col-lg-6 col-12 ${styles.Section4colmd7}`}>
+                    <div className={` ${styles.Section4colmd7Heading}`}>
                         <button className={`${styles.Section4Button} btn`} data-aos="fade-up" data-aos-delay="100">ABOUT Dr. RAVI</button>
                         <h1 className={`${styles.Section4Title}`} data-aos="fade-up" data-aos-delay="200">
                             Precision Surgery with Dr. Uday Ravi
@@ -18,6 +17,9 @@ export default function Section4() {
                         <p className={`${styles.Section4Para}`} data-aos="fade-up" data-aos-delay="200">
                             Expert Care, Faster Recovery
                         </p>
+                        </div>
+                <div className={` row ${styles.Section4Row}`}>
+                    <div className={`col-lg-6 col-12 ${styles.Section4colmd7}`}>
                         <div className={`row ${styles.Section4List}`} data-aos="fade-up" data-aos-delay="300">
                             <div className="col-md-12 ">
                                  <h3 className={`${styles.Section4subTitle}`} data-aos="fade-up" data-aos-delay="200">

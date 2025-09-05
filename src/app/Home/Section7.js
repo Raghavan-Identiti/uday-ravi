@@ -60,13 +60,10 @@ export default function Section7() {
                                 <div className={styles.Section7CardemailText}>
                                     {/* <p>info@drudayravi.in</p>
                                     <p>contact@drudayravi.in</p> */}
-                                    <Link href="mailto:info@drudayravi.in">
-                                        info@drudayravi.in
+                                    <Link href="mailto:drudayravi487@gmail.com" >
+                                        drudayravi487@gmail.com
                                     </Link>
-                                    <br />
-                                    <Link href="mailto:contact@drudayravi.in">
-                                        contact@drudayravi.in
-                                    </Link>
+                                    
                                 </div>
                             </div>
                         </div>

@@ -23,89 +23,89 @@ const cardData = [
         title: "Piles",
         text: "Minimally invasive laser surgery for piles, fissures, and fistulas - quick, painless, and stitch-free.",
         img: card1, // Replace with actual image path
-        link : "/services/piles"
+        link: "/services/piles"
     },
     {
         title: "Say Goodbye to Hernias",
         text: "Laparoscopic hernia surgery for long-term relief, minimal scarring, and quick healing.",
         img: card2,
-        link : "/services/hernia"
+        link: "/services/hernia"
     },
     {
         title: "Digestive & Stomach Surgery",
         text: "Keyhole surgery for gallstones, acid reflux, and digestive issues - fast relief, faster recovery.",
         img: card3,
-        link : "/services/appendicitis"
+        link: "/services/appendicitis"
     },
     {
         title: "Weight Loss & Metabolic Surgery",
         text: "Surgical and non-surgical weight loss solutions to help you lose weight and regain confidence.",
         img: card4,
-        link : "/services/weight-loss"
+        link: "/services/weight-loss"
     },
     {
         title: "Cosmetic & Reconstructive Surgery",
         text: "Sculpt your body with liposuction, tummy tucks, and gynecomastia treatment for a confident look.",
         img: card5,
-        link : "/services/reconstructive-surgery"
+        link: "/services/reconstructive-surgery"
     },
     {
         title: "Men's Health & Urology",
         text: "Safe, advanced treatments for kidney stones, hydrocele, and reproductive health issues.",
         img: card6,
-        link : "/services/hydrocele"
+        link: "/services/hydrocele"
     },
-     {
+    {
         title: "Varicose Veins and Vascular Surgery",
         text: "Laser treatment to remove varicose veins, restore circulation, and help you walk pain-free.",
         img: card9,
-        link : "/services/varicose-veins"
+        link: "/services/varicose-veins"
 
     },
-     {
+    {
         title: "Diabetic Foot, Wound Care and Podiatry",
         text: "Specialized care for diabetic wounds and ulcers to prevent complications and promote healing.",
         img: card10,
-        link : "/services/diabetes"
+        link: "/services/diabetes"
     },
-     {
+    {
         title: "Removal of Lumps, Cysts & Growths",
         text: "Quick, safe removal of lipomas, cysts, and skin growths for a healthier you.",
         img: card11,
-        link : "/services/cysts-swelling"
+        link: "/services/cysts-swelling"
     },
     {
         title: "Gallbladder Stones",
         text: "Precision laparoscopic surgeries for gallstones, reflux, hernias, and GI cancers",
         img: card12,
-        link : "/services/gastroenterology-and-gi-surgery"
+        link: "/services/gastroenterology-and-gi-surgery"
     },
-     {
+    {
         title: "Breast Diseases",
         text: "Safe removal of benign breast lumps with minimal scarring and excellent cosmetic results.",
         img: card13,
-        link : "/services/breast-disease"
+        link: "/services/breast-disease"
     },
-     {
+    {
         title: "Thyroid Health",
         text: "Expert surgery for thyroid conditions and breast health, ensuring early diagnosis and care.",
         img: card7,
-        link : "/services/thyroid"
+        link: "/services/thyroid"
     },
 ];
 
 export default function Section3() {
 
-  const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    handleResize(); // initial
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        handleResize(); // initial
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     return (
         <section className={`${styles.Section3}`}>
@@ -124,14 +124,20 @@ export default function Section3() {
                 <div className={` row ${styles.Section3Row}`} data-aos="fade-up" data-aos-delay="300">
                     {cardData.map((card, index) => (
                         <div className={`col-xl-4 col-lg-6 col-12 mb-4`} key={index} data-aos="fade-up" data-aos-delay="300">
-                            <div className={` ${styles.Section3card}`}>
-                                <Image src={card.img} className={`${styles.Section3cardImg} card-img-top`} alt={card.title} />
-                                <div className={`card-body ${styles.Section3cardbody}`}>
+                            <div className={`${styles.Section3card} d-flex flex-column h-100`}>
+                                <div className={`${styles.Section3cardImgWrapper}`}>
+                                    <Image
+                                        src={card.img}
+                                        alt={card.title}
+                                        className={`${styles.Section3cardImg}`}
+                                    />
+                                </div>
+                                <div className={`card-body d-flex flex-column flex-grow-1 ${styles.Section3cardbody}`}>
                                     <h5 className={`card-title text-primary ${styles.Section3cardtitle}`}>{card.title}</h5>
-                                    <p className={`card-text  ${styles.Section3cardpara}`}>{card.text}</p>
-                                    <div>
-                                        <Link href={card.link || "#"} target="__blank">
-                                            <button className={` ${styles.Section3cardbtn} `}>Learn More</button>
+                                    <p className={`card-text ${styles.Section3cardpara} flex-grow-1`}>{card.text}</p>
+                                    <div className="mt-auto">
+                                        <Link href={card.link || "#"} target="_blank">
+                                            <button className={`${styles.Section3cardbtn}`}>Learn More</button>
                                         </Link>
                                     </div>
                                 </div>
@@ -154,14 +160,14 @@ export default function Section3() {
                             </div>
                         </div>
                     </div> */}
-                        <div className={`col-xl-8 col-12 d-flex  ${styles.Section3Row4}`}>
-                    <div className={`row mb-4`}>
+                    <div className={`col-xl-8 col-12 d-flex  ${styles.Section3Row4}`}>
+                        <div className={`row mb-4`}>
                             <div className='row w-100'>
                                 <div
                                     className={`col-md-6 ${styles.Section3Row3firstcolmd6}`}
                                     data-aos={isMobile ? "fade-down" : "fade-right"}
                                     data-aos-delay="100"
-                                >                                    
+                                >
                                     <Image src={card8} className={`${styles.Section3Row3cardImge} card-img-top`} alt="title" />
                                 </div>
                                 <div

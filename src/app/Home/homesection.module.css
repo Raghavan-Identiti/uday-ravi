@@ -5,7 +5,7 @@
 .HomeCallNow {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 5px;
   width: 60px;
   height: 60px;
   z-index: 1000;
@@ -24,6 +24,54 @@
 
 .HomeCallNow:hover {
   transform: scale(1.1);
+}
+
+.HomeCallLink{
+    text-decoration: none;
+}
+/* .btnPrimary {
+  background-color: #5E4AE3;
+  text-align: left !important;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #382d83;
+  color: white;
+} */
+.HomeCallNowButton {
+  position: fixed;
+  top: 80%;             /* vertically center-ish */
+  right: -75px;         /* move it slightly outside the screen */
+  transform: rotate(-90deg); /* rotate the button text */
+  z-index: 1000;
+}
+
+.btnPrimary {
+  background-color: #5E4AE3;
+  color: white;
+  padding:20px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #382d83;
+  /* transform: scale(1.05); */
+}
+
+.HomeCallNowButton:hover {
+  transform: rotate(-90deg); /* rotate the button text */
+  z-index: 1000;
+  /* transform: scale(1.1); */
 }
 
 .HomeCallLink{

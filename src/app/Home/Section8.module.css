@@ -81,6 +81,10 @@ font-family: var(--font-inter);
     flex-direction: column;
     gap: 0.5rem;
 }
+.Section8row1textwrappertextMuted{
+  font-size: 0.7rem;
+  text-wrap: nowrap;
+}
 .Section8row1imageWrapper {
   position: relative;
   width: 110px;
@@ -97,7 +101,7 @@ font-family: var(--font-inter);
     
 }
 .Section8row1cardTitle {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.4;
 }
 
@@ -177,6 +181,12 @@ font-family: var(--font-inter);
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+    }
+    .faqHeader h5{
+      font-size: 0.9rem;
+    }
+    .faqBody{
+      font-size: 0.8rem;
     }
 }
 
