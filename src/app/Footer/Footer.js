@@ -41,7 +41,7 @@ export default function Footer() {
               </div>
             </Col>
             <Col md={3} sm={6} data-aos="fade-up" data-aos-delay="250">
-              <div className={`${styles.brandBlock} d-flex align-items-center`}>
+              <div className={`${styles.brandBlock} d-flex align-items-start`}>
                 <h6 className={`${styles.footerlinkheadings} fw-bold mb-3`}>Quick Links</h6>
                 <ul className={`list-unstyled text-white-50   ${styles.listquickLinks}`}>
 
@@ -142,7 +142,7 @@ export default function Footer() {
               <span className="me-3">Terms of Use</span>
               <span>Sitemap</span>
             </Col>
-            <Col md={3} className="text-end text-white-50 small">
+            <Col md={3} className="text-white-50 small">
               Digital Partner: <span className="text-white"><Link className="text-decoration-none text-white" href={"http://identitidesign.com/"} target="__blank">identitidesign</Link></span>
             </Col>
           </Row>
