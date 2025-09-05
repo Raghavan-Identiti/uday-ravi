@@ -34,7 +34,7 @@ export default function Section4() {
         },
         {
             question: "Does it affect penis size?",
-            answer: "No, it does not affect penis size. The impact of circumcision on sexual sensitivity has always been a matter of debate and individual experience may vary. While some studies have documented decreased sensitivity in circumcised patients, other studies have found no significant difference in sexual sensitivity between circumcised and uncircumcised individuals.",
+            answer: "No, it does not affect penis size. ",
         },
         {
             question: " Does it affect sperm production or overall fertility?",

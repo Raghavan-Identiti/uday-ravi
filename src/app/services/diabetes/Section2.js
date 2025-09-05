@@ -198,7 +198,7 @@ export default function Section2() {
                 </ul>
                 <div className='d-flex flex-column align-items-center'>
                     <Image src={DiabeticFootUlcer1New1} alt="Diabetes Treatment" className={styles.Section2PilesImage1} />
-                    <p>Fig 1. Diabetic Foot Ulcer</p>
+                    <p>Fig 3. Stages of Diabetic Foot </p>
                 </div>
               </div>
               <div id="risk-factors" className={styles.Section2Question4} data-aos="fade-up">

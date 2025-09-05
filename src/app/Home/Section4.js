@@ -13,22 +13,34 @@ export default function Section4() {
                     <div className={`col-lg-6 col-12 ${styles.Section4colmd7}`}>
                         <button className={`${styles.Section4Button} btn`} data-aos="fade-up" data-aos-delay="100">ABOUT Dr. RAVI</button>
                         <h1 className={`${styles.Section4Title}`} data-aos="fade-up" data-aos-delay="200">
-                            Precision Surgery <br/>with Dr. Uday Ravi
+                            Precision Surgery with Dr. Uday Ravi
                         </h1>
                         <p className={`${styles.Section4Para}`} data-aos="fade-up" data-aos-delay="200">
                             Expert Care, Faster Recovery
                         </p>
                         <div className={`row ${styles.Section4List}`} data-aos="fade-up" data-aos-delay="300">
                             <div className="col-md-12 ">
+                                 <h3 className={`${styles.Section4subTitle}`} data-aos="fade-up" data-aos-delay="200">
+                            Academic
+                        </h3>
                                 <p>
                                     Dr. Uday Ravi, MBBS, MS, FMAS, FIAGES, FISCP, FARIS, FALS, DMAS (France), is a highly accomplished General, Laser, Laparoscopic, Robotic, and Bariatric Surgeon with over 15 years of surgical experience. He completed his MBBS from VIMS, Bellary, and went on to pursue his MS in General Surgery from the prestigious Bangalore Medical College (BMC), Bangalore. His passion for advancing surgical care led him to earn multiple fellowships in minimally invasive, advanced laparoscopic, and robotic surgery, including international training in France.
                                 </p>
+                                 <h3 className={`${styles.Section4subTitle}`} data-aos="fade-up" data-aos-delay="200">
+                            Specialization
+                        </h3>
                                  <p>
                                     Dr. Uday Ravi specializes in laser procedures for varicose veins and proctology conditions (piles, fissure, fistula, pilonidal sinus), minimally invasive laparoscopic surgeries for gallbladder, hernia, and appendicitis, and robotic-assisted surgeries that ensure precision, safety, and faster recovery. He is also an expert in bariatric and weight-loss procedures, offering advanced solutions such as intragastric ballooning and sleeve gastrectomy. His practice further extends to thyroid and breast surgeries, diabetic foot and wound management, as well as excision of cysts, swellings, corns, and lipomas.
                                 </p>
+                                 <h3 className={`${styles.Section4subTitle}`} data-aos="fade-up" data-aos-delay="200">
+                            Consultancy
+                        </h3>
                                 <p>
                                     As a visiting consultant at leading hospitals including Manipal, Fortis, Apollo, Sparsh, People Tree, BGS Hospital, and several other reputed nursing homes, Dr. Uday Ravi brings world-class expertise to a wide range of patients.
                                 </p>
+                                 <h3 className={`${styles.Section4subTitle}`} data-aos="fade-up" data-aos-delay="200">
+                            Approach
+                        </h3>
                                 <p>
                                     Renowned for his patient-centered approach, Dr. Uday Ravi combines cutting-edge surgical technology with compassion and precision. His focus on minimally invasive techniques ensures reduced pain, faster healing, minimal scarring, and lasting results—making him one of the most trusted names in modern surgical care.
                                 </p>

@@ -24,7 +24,7 @@ export default function Home() {
       <Section7/>
       <Section8/>
       <div className={styles.HomeCallNow}>
-        <a href="tel:+919886642222" className={styles.HomeCallLink}>
+        <a href="tel:+91 7353530505" className={styles.HomeCallLink}>
           <Image src={callIcon} alt="call-icon" className={styles.HomeCallIcon}/>
         </a>
       </div>

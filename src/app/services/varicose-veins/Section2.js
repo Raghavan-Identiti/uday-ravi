@@ -109,7 +109,7 @@ export default function Section2() {
                 <p>{"The veins of the lower limb have one way valves that keep the blood moving towards the heart and prevent its backflow. When these valves are damaged, blood starts pooling in the legs causing swelling of the legs, aching pain, heaviness, fatigue, skin discoloration, itching, varicosities (prominent vein) and if not treated it may develop non-healing ulcers in leg. Over time, the continuous pooling cause the veins to become stretched, swollen and tortuous. Raised pressure in these veins also causes development of spider veins and discoloured areas which look like bruises."}</p>
                 <div className='d-flex flex-column align-items-center'>
                   <Image src={VaricoseVeinsImg6New} alt="VaricoseVeinsImg1" className={styles.Section2PilesImage1New} />
-                  <p>Fig 1. Endovenous Laser Treatment</p>
+                  <p>Fig 1. Varicose Veins</p>
                 </div>
               </div>
               <div className={styles.Section2Question7} data-aos="fade-up">

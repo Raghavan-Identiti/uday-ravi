@@ -1,7 +1,7 @@
 "use client";
 import styles from './Section1.module.css';
 import Image from 'next/image';
-import doctorImage from '../assets/Model-1.png'; // Replace with your actual image
+import doctorImage from '../assets/raviNew.png'; // Replace with your actual image
 import OldParents from '../assets/Model-2alt.png'; // Replace with your actual image
 import doctorImage2 from '../assets/Model-3alt.png'; // Replace with your actual image
 import bubble1 from '../assets/Group 41.png'; // Replace with your actual image
@@ -9,7 +9,6 @@ import bubble2 from '../assets/Group 40.png'; // Replace with your actual image
 import bubble3 from '../assets/Group 39.png'; // Replace with your actual image
 import bubble4 from '../assets/Vector.svg'; // Replace with your actual image
 import bubble5 from '../assets/Vector-2.svg'; // Replace with your actual image
-// import PurpleDots from '../assets/Purpledots.png'; // Replace with your actual image
 import { FaChevronDown } from 'react-icons/fa';
 import Navbar from '../Navbar/Navbar'; // Adjust the path as necessary
 import LeftArrow from '../assets/LeftArrow.png'; // Replace with your actual image
@@ -284,7 +283,7 @@ export default function Section1() {
                     15+ Years Of <br /> Surgical Expertise</div>
                   <div className={`${styles.infoBubble} ${styles.bottomLeft}  ${styles.Slide1bottomLeft}`} data-aos="fade-left">
                     <Image src={bubble2} alt="Logo" className={`${styles.logoImage} img-fluid`} />
-                    Pioneering Laser<br /> & Laparoscopy</div>
+                    Pioneering Laser<br /> & Laparoscopy</div>                      
                   <div className={`${styles.infoBubble} ${styles.bottomRight} ${styles.Slide1bottomRight}`} data-aos="fade-left">
                     <Image src={bubble3} alt="Logo" className={`${styles.logoImage} img-fluid`} />
                     Trusted By<br /> 5,000+ Patients</div>
