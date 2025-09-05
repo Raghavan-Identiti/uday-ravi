@@ -46,11 +46,13 @@
 } */
 .HomeCallNowButton {
   position: fixed;
-  top: 80%;             /* vertically center-ish */
-  right: -75px;         /* move it slightly outside the screen */
-  transform: rotate(-90deg); /* rotate the button text */
+  top: 78%;
+  right: -75px;
+  transform: rotate(-90deg) translateX(0); /* lock position */
   z-index: 1000;
+  transition: none; /* stop entrance effect */
 }
+
 
 .btnPrimary {
   background-color: #5E4AE3;
@@ -60,7 +62,6 @@
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
-  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btnPrimary:hover {
@@ -78,7 +79,25 @@
     text-decoration: none;
 }
 
-
+@media (max-width :449px){
+  .HomeCallNow {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+}
+    .HomeCallNowButton {
+        top: 77%;             /* vertically center-ish */
+        right: -60px;         /* move it slightly outside the screen */
+        transform: rotate(-90deg); /* rotate the button text */
+        z-index: 1000;
+    }
+    .btnPrimary {
+        font-size: 16px;
+        padding:15px 20px;
+    } 
+}
 @keyframes pulse {
   0% {
     transform: scale(1);

@@ -15,35 +15,35 @@ import PopupForm from '../PopupModal/popupmodal';
 import { useState } from "react";
 
 export default function Home() {
-    const [showPopup, setShowPopup] = useState(false);
-  
+  const [showPopup, setShowPopup] = useState(false);
+
   return (
     <div className={styles.HomePage}>
-      <Section1/>
-      <Section2/>
-      <Section3/>
-      <Section4/>
-      <Section5/>
-      <Section6/>
-      <Section7/>
-      <Section8/>
-      <div className={styles.HomeCallNow}>
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+      <Section8 />
+      <div className={styles.HomeCallNow}  data-aos="none">
         <a href="tel:+91 7353530505" className={styles.HomeCallLink}>
-          <Image src={callIcon} alt="call-icon" className={styles.HomeCallIcon}/>
+          <Image src={callIcon} alt="call-icon" className={styles.HomeCallIcon} />
         </a>
       </div>
-      <div className={styles.HomeCallNowButton}>
-  <button
-    type="button"
-    className={styles.btnPrimary}
-    onClick={() => setShowPopup(true)}
-  >
-    Book Appointment
-  </button>
-</div>
+      <div className={styles.HomeCallNowButton}  data-aos="none">
+        <button
+          type="button"
+          className={styles.btnPrimary}
+          onClick={() => setShowPopup(true)}
+        >
+          Book Appointment
+        </button>
+      </div>
 
-          <PopupForm showPopup={showPopup} setShowPopup={setShowPopup} />
-        
+      <PopupForm showPopup={showPopup} setShowPopup={setShowPopup} />
+
     </div>
   );
 }
