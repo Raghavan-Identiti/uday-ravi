@@ -82,7 +82,7 @@ font-family: var(--font-inter);
     gap: 0.5rem;
 }
 .Section8row1textwrappertextMuted{
-  font-size: 0.7rem;
+
   text-wrap: nowrap;
 }
 .Section8row1imageWrapper {
@@ -101,7 +101,7 @@ font-family: var(--font-inter);
     
 }
 .Section8row1cardTitle {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -187,6 +187,12 @@ font-family: var(--font-inter);
     }
     .faqBody{
       font-size: 0.8rem;
+    }
+    .Section8row1textwrappertextMuted{
+        font-size: 0.7rem;
+    }
+    .Section8row1cardTitle {
+  font-size: 0.8rem;
     }
 }
 

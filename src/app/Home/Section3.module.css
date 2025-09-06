@@ -1,5 +1,5 @@
 .Section3 {
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 50px 50px 0px 0px;
     background-color: hsl(245, 100%, 91%, 0.4);
     padding: 100px;
 }
@@ -197,14 +197,18 @@ box-shadow: #D6D2FF 0px -3px 0px inset;
     letter-spacing: -3%;
     color: #fff;
 }
-
+.Section3Row5{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
 .Section3Row3cardImge {
     width: 100%;
     border-top-left-radius: 20px;
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 766px) {
     .Section3 {
         border-radius: 30px 30px 0px 0px;
         background-color: hsl(245, 100%, 91%, 0.4);
@@ -250,7 +254,7 @@ box-shadow: #D6D2FF 0px -3px 0px inset;
         align-items: center;
     }
     .Section3Row3firstcolmd6{
-        max-height: 200px;
+        max-height: 250px;
     }
 
     .Section3Row3cardImge {
@@ -270,6 +274,11 @@ box-shadow: #D6D2FF 0px -3px 0px inset;
     }
     .Section3Button{
         margin-left: 0px;
+    }
+    .Section3Row5{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (min-width: 992px) and (max-width: 1200px) {

@@ -61,7 +61,7 @@ export default function Section1() {
                   <p className={`${styles.HeroSectionPara}`} >
                     Discover the difference when precision meets empathy.Dr. Uday Ravi delivers advanced surgical care with superior outcomes and personalized support.
                   </p>
-                  <div className="d-none d-lg-flex align-items-center mt-4">
+                  {/* <div className="d-none d-lg-flex align-items-center mt-4">
 
                     <div className={styles.selectWrapper}>
                       <select
@@ -86,7 +86,7 @@ export default function Section1() {
                     >
                       Book Appointment
                     </button>
-                  </div>
+                  </div> */}
 
                 </div>
                 <div className="col-sm-12 col-md-6 text-center mt-4 mt-md-0 position-relative" >
@@ -117,7 +117,7 @@ export default function Section1() {
                   <p className={`${styles.HeroSectionPara}`}>
                     Experience care that extends beyond the operating room with personalized treatment plans, expert guidance, and ongoing support for your complete well-being.
                   </p>
-                  <div className="d-none d-lg-flex align-items-center mt-4 ">
+                  {/* <div className="d-none d-lg-flex align-items-center mt-4 ">
                     <div className={styles.selectWrapper}>
                       <select
                         className={`${styles.HeroSectiondropdown} form-select w-auto`}
@@ -141,7 +141,7 @@ export default function Section1() {
                     >
                       Book Appointment
                     </button>
-                  </div>
+                  </div> */}
                 </div>
                 <div className={`col-sm-12 col-md-7 text-center mt-4 mt-md-0 position-relative ${styles.HeroSectionImgdiv} `}>
                   <Image src={doctorImage2} alt="Dr. Uday Ravi" className={`${styles.HeroSectionImage} ${styles.HeroSectionImagealt} img-fluid`} />
@@ -172,7 +172,7 @@ export default function Section1() {
                   <p className={`${styles.HeroSectionPara}`}>
                     Benefit from minimally invasive surgery with less pain, faster healing, and better results.
                   </p>
-                  <div className="d-none d-lg-flex  align-items-center mt-4 ">
+                  {/* <div className="d-none d-lg-flex  align-items-center mt-4 ">
                     <div className={styles.selectWrapper}>
                       <select
                         className={`${styles.HeroSectiondropdown} form-select w-auto`}
@@ -196,7 +196,7 @@ export default function Section1() {
                     >
                       Book Appointment
                     </button>
-                  </div>
+                  </div> */}
 
                 </div>
                 <div className=" col-sm-12 col-md-6 text-center mt-4 mt-md-0 position-relative">
@@ -246,7 +246,7 @@ export default function Section1() {
                     Discover the difference when precision meets empathy.<br />
                     Dr. Uday Ravi delivers advanced surgical care with superior outcomes and personalized support.
                   </p>
-                  <div className="d-none d-lg-flex align-items-center mt-4">
+                  {/* <div className="d-none d-lg-flex align-items-center mt-4">
                     <div className={styles.selectWrapper}>
                       <select
                         className={`${styles.HeroSectiondropdown} form-select`}
@@ -270,7 +270,7 @@ export default function Section1() {
                     >
                       Book Appointment
                     </button>
-                  </div>
+                  </div> */}
 
                 </div>
                 <div className="col-md-6 text-center mt-4 mt-md-0 position-relative" >
@@ -301,7 +301,7 @@ export default function Section1() {
                   <p className={`${styles.HeroSectionPara}`}>
                     Experience care that extends beyond the operating room with personalized treatment plans, expert guidance, and ongoing support for your complete well-being.
                   </p>
-                  <div className="d-none d-lg-flex align-items-center mt-4 ">
+                  {/* <div className="d-none d-lg-flex align-items-center mt-4 ">
                     <div className={styles.selectWrapper}>
                       <select
                         className={`${styles.HeroSectiondropdown} form-select w-auto`}
@@ -325,7 +325,7 @@ export default function Section1() {
                     >
                       Book Appointment
                     </button>
-                  </div>
+                  </div> */}
                 </div>
                 <div className={` col-md-7 text-center mt-4 mt-md-0 position-relative ${styles.HeroSectionImgdiv} `}>
                   <Image src={doctorImage2} alt="Dr. Uday Ravi" className={`${styles.HeroSectionImage} ${styles.HeroSectionImagealt} img-fluid`} data-aos="fade-left" />
@@ -356,7 +356,7 @@ export default function Section1() {
                   <p className={`${styles.HeroSectionPara}`}>
                     Benefit from minimally invasive surgery with less pain, faster healing, and better results.
                   </p>
-                  <div className="d-none d-lg-flex  align-items-center mt-4 ">
+                  {/* <div className="d-none d-lg-flex  align-items-center mt-4 ">
                     <div className={styles.selectWrapper}>
                       <select
                         className={`${styles.HeroSectiondropdown} form-select w-auto`}
@@ -380,7 +380,7 @@ export default function Section1() {
                     >
                       Book Appointment
                     </button>
-                  </div>
+                  </div> */}
 
                 </div>
                 <div className="col-md-6 text-center mt-4 mt-md-0 position-relative">

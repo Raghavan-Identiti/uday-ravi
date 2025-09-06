@@ -137,7 +137,7 @@ const navItems = [
         <Link className="navbar-brand m-0" href="/">
           <Image src={logo} alt="Logo" className={`d-inline-block align-text-top ${styles.NavLogo}`} />
         </Link>
-        {pathname.startsWith("/services/") && (
+        {/* {pathname.startsWith("/services/") && (
             <div className="">
               <button
                 type="button"
@@ -147,7 +147,7 @@ const navItems = [
                 Appointment
               </button>
             </div>
-          )}
+          )} */}
 
 
         <div className={`d-none d-lg-flex flex-row align-items-center gap-lg-4 ${styles.NavbarItemsdiv}`}>

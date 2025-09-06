@@ -98,14 +98,14 @@ export default function Section3() {
 
     const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-        handleResize(); // initial
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+   useEffect(() => {
+  const mq = window.matchMedia("(max-width: 767px)");
+  setIsMobile(mq.matches);
+  const handler = (e) => setIsMobile(e.matches);
+  mq.addEventListener("change", handler);
+  return () => mq.removeEventListener("change", handler);
+}, []);
+
 
     return (
         <section className={`${styles.Section3}`}>
@@ -161,8 +161,8 @@ export default function Section3() {
                         </div>
                     </div> */}
                     <div className={`col-xl-8 col-12 d-flex  ${styles.Section3Row4}`}>
-                        <div className={`row mb-4`}>
-                            <div className='row'>
+                        <div className={`${styles.Section3Row5} row mb-4`}>
+                            <div className={` row `}>
                                 <div
                                     className={`col-md-6 col-12 ${styles.Section3Row3firstcolmd6}`}
                                     data-aos={isMobile ? "fade-down" : "fade-right"}
