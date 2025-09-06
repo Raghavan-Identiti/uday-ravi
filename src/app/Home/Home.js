@@ -8,6 +8,7 @@ import Section6 from "./Section6";
 import Section7 from "./Section7";
 import Section8 from "./Section8";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Cta from './CTA/cta';
 
 export default function Home() {
 
@@ -21,6 +22,8 @@ export default function Home() {
       <Section6 />
       <Section7 />
       <Section8 />
+      <Cta />
+      
     </div>
   );
 }

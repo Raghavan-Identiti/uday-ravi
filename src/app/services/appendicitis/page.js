@@ -7,6 +7,7 @@ import styles from './Section1.module.css';
 import Navbar from '../../Navbar/Navbar'; // Adjust the path as necessary
 import PopupForm from '@/app/PopupModal/popupmodal';
 import { useState } from "react";
+import Cta from '../../Home/CTA/cta';
 
 export default function Serivces() {
     const [showPopup, setShowPopup] = useState(false);
@@ -20,6 +21,7 @@ export default function Serivces() {
       <Section2 setShowPopup={setShowPopup}/>
       <Section6/>
       <Footer/>
+      <Cta/>
       <PopupForm showPopup={showPopup} setShowPopup={setShowPopup} />
 
     </section>
