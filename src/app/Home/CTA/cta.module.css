@@ -1,0 +1,112 @@
+.HomeActions {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px; /* space between button and icon */
+  z-index: 1000;
+}
+
+/* Appointment button (vertical, pill shape) */
+.HomeCtaBtnPrimary {
+  background-color: #5E4AE3;
+  color: white;
+  padding: 20px 14px; /* Adjusted padding for vertical text */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  white-space: nowrap;
+  transform: rotate(-180deg); /* Rotates the entire button */
+  transform-origin: center;
+  writing-mode: vertical-lr; /* Makes text flow vertically */
+  text-orientation: mixed; /* Keeps characters upright */
+  min-height: 120px; /* Ensures button is tall enough for text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(94, 74, 227, 0.3);
+  transition: all 0.3s ease;
+}
+
+.HomeCtaBtnPrimary:hover {
+  background-color: #4A3BC1;
+  box-shadow: 0 6px 20px rgba(94, 74, 227, 0.4);
+}
+
+/* Call icon */
+.HomeCallNow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: linear-gradient(135deg, #5E4AE3, #4A3BC1);
+  box-shadow: 0 4px 15px rgba(94, 74, 227, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.HomeCallNow:hover {
+  transform: scale(1.1);
+}
+
+.HomeCallLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.HomeCallIcon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Pulse animation for call button */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(94, 74, 227, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(94, 74, 227, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(94, 74, 227, 0);
+  }
+}
+
+.HomeCallNow {
+  animation: pulse 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .HomeActions {
+    bottom: 15px;
+    right: 10px;
+    gap: 12px;
+  }
+  
+  .HomeCtaBtnPrimary {
+    font-size: 14px;
+    padding: 16px 12px;
+
+  }
+  
+  .HomeCallNow {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .HomeCallIcon {
+    width: 50px;
+    height: 50px;
+  }
+}

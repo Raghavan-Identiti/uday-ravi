@@ -162,16 +162,16 @@ export default function Section3() {
                     </div> */}
                     <div className={`col-xl-8 col-12 d-flex  ${styles.Section3Row4}`}>
                         <div className={`row mb-4`}>
-                            <div className='row w-100'>
+                            <div className='row'>
                                 <div
-                                    className={`col-md-6 ${styles.Section3Row3firstcolmd6}`}
+                                    className={`col-md-6 col-12 ${styles.Section3Row3firstcolmd6}`}
                                     data-aos={isMobile ? "fade-down" : "fade-right"}
                                     data-aos-delay="100"
                                 >
                                     <Image src={card8} className={`${styles.Section3Row3cardImge} card-img-top`} alt="title" />
                                 </div>
                                 <div
-                                    className={`col-md-6 ${styles.Section3Row3colmd6} d-flex flex-column justify-content-center`}
+                                    className={`col-md-6 col-12 ${styles.Section3Row3colmd6} d-flex flex-column justify-content-center`}
                                     data-aos={isMobile ? "fade-up" : "fade-left"}
                                     data-aos-delay="100"
                                 >

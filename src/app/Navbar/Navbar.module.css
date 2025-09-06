@@ -290,6 +290,12 @@
 }
 
 /* Responsive */
+@media (max-width: 400px) {
+  .NavLogo{
+    width: 150px;
+    height: auto;
+  }
+}
 @media (max-width: 991.98px) {
   .customMegaMenu {
     position: static;

@@ -6,7 +6,7 @@
 }
 
 .Section2container {
-  border-radius: 50px;
+  border-radius: 30px;
   box-shadow: 0 2px 50px 0px #d5d2ec;
 
 }
@@ -99,7 +99,7 @@
   }
 
   .Section2container {
-    border-radius: 50px;
+    border-radius: 30px;
     /* padding: 50px 30px; */
     box-shadow: 0 2px 50px 0px #d5d2ec;
 

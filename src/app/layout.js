@@ -1,6 +1,7 @@
 import { Inter, DM_Serif_Display, Radio_Canada_Big } from 'next/font/google';
 import './globals.css';
 import BootstrapClient from './BootstrapClient';
+import Cta from './Home/CTA/cta';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -175,6 +176,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter?.variable || ''} ${dmSerif?.variable || ''} ${radioCanadaBig?.variable || ''}`}>
         <BootstrapClient />
         {children}
+        <Cta/>
       </body>
     </html>
   );

@@ -44,7 +44,7 @@ export default function Section7() {
                             4 Convenient Locations. <br />One Trusted Name.
                         </h1>
                         <p className={`${styles.Section7Para}`}>
-                            Choose the clinic closest to you and experience<br />world-class care wherever you are.
+                            Choose the clinic closest to you and experience world-class care wherever you are.
                         </p>
                     </div>
                     <div className={`col-lg-6 ${styles.Section7secondcolmd6}`} data-aos="fade-up" data-aos-delay="200">

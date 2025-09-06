@@ -134,7 +134,7 @@ const navItems = [
   return (
     <div>
       <nav className={`navbar navbar-expand-lg bg-white d-lg-flex flex-lg-row justify-content-between px-xl-5 p-3 ${styles.navbar}`}>
-        <Link className="navbar-brand" href="/">
+        <Link className="navbar-brand m-0" href="/">
           <Image src={logo} alt="Logo" className={`d-inline-block align-text-top ${styles.NavLogo}`} />
         </Link>
         {pathname.startsWith("/services/") && (
@@ -243,7 +243,7 @@ const navItems = [
           </button>
         </div>
 
-        <button className="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+        <button className="navbar-toggler d-lg-none border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
           <span className="navbar-toggler-icon"></span>
         </button>
       </nav>

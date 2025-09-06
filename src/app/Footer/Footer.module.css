@@ -6,8 +6,8 @@
   background-repeat: no-repeat;
   color: white;
   padding-top: 4rem;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 .brandBlock{
     display: flex;
