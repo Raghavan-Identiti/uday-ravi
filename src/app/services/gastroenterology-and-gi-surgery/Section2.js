@@ -272,13 +272,13 @@ export default function Section2() {
                 <strong>Laparoscopic cholecystectomy:</strong>
                 <div className='d-flex flex-column align-items-center mt-5'>
                     <Image src={gallbladderImg3New} alt="gallbladder" className={styles.Section2PilesImage1New} />
-                    <p className='mt-4'>Fig 2. Galbladder Stones</p>
+                    <p className='mt-4'>Fig 3. Galbladder Stones</p>
                 </div>
                 <p>Laparoscopic cholecystectomy is the most common treatment for gallbladder stones. It is a minimally invasive surgery that involves making a few small incisions in the abdomen. The surgeon then inserts a laparoscope, a thin tube with a camera on the end, into one of the incisions. This permits the surgeon to see inside the abdomen and work on the gallbladder.</p>
                 <p>During a laparoscopic cholecystectomy, the surgeon will remove the gallbladder along with any gallstones. The surgery usually takes about 12 hours and most individuals are able to go home the same day. Laparoscopic cholecystectomy is a safe and adequate treatment for gallbladder stones. It has a lower risk of complications than open surgery, and most individuals recover quickly.</p>
                 <div className='d-flex flex-column align-items-center'>
                     <Image src={gallbladderImg2} alt="gallbladderImg2" className={styles.Section2PilesImage2} />
-                    <p>Fig 3. Laparoscopic Cholecystectomy</p>
+                    <p>Fig 4. Laparoscopic Cholecystectomy</p>
                 </div>
                 <strong>Open cholecystectomy:</strong>
                 <p>Open cholecystectomy is a surgery to remove the gallbladder stones. It is a larger incision than laparoscopic cholecystectomy, and it is typically used when laparoscopic surgery is not possible or when there are difficulties with laparoscopic surgery. During an open cholecystectomy, the surgeon makes a 4- to 6-inch incision in the abdomen below the ribs on the right side. The muscle and tissue are pulled back to show the liver and gallbladder.</p>
@@ -287,7 +287,7 @@ export default function Section2() {
                 <p>Utilizing the state-of-the-art Da Vinci Robotic Surgical System, this advanced technique allows for greater precision and control during surgery. Dr. Uday Ravi, a highly experienced Surgeon, specializes in robotic GI surgeries. The robotic system enhances visualization and allows for intricate movements that can result in less tissue damage and quicker recovery.</p>
                 <div className='d-flex flex-column align-items-center'>
                     <Image src={gallbladderImg3} alt="gallbladderImg3" className={styles.Section2PilesImage2} />
-                    <p>Fig 3. Robotic Cholecystectomy</p>
+                    <p>Fig 5. Robotic Cholecystectomy</p>
                 </div>
                 <strong>Oral Medication :</strong>
                 <p>Oral medication is a non-surgical treatment option for gallbladder stones. Medications to dissolve gallbladder stones are rarely utilized and are reserved for those unable to undergo surgery due to other medical issues. Oral medication is not always successful in dissolving gallstones. If the stones do not dissolve, or if they cause symptoms, surgery may be necessary. If you have gallstones, it is important to talk to your doctor about the best treatment options for you. The best gallbladder stone treatment in Bengaluru, depends on the severity of your symptoms and the size and location of the gallstones.</p>

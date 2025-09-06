@@ -221,7 +221,7 @@ export default function Section2() {
                 </ul>
                 <div className='d-flex flex-column align-items-center mt-4'>
                   <Image src={FissureSymtomsimg} alt="FissureSymtomsimg" className={styles.Section2PilesTreatment} />
-                  <p>Fig 2. Anal Fissure</p>
+                  <p>Fig 3. Anal Fissure</p>
                 </div>
               </div>
               <div id="diagnosis" className={styles.Section2Question8} data-aos="fade-up">

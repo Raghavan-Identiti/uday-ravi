@@ -174,7 +174,7 @@ useEffect(() => {
                 </ul>
                 <div className='d-flex flex-column align-items-center my-4'>
                   <Image src={weightLossmindmapimg2New} alt="Weight Loss" className={`${styles.Section2PilesImage1} mb-3 `} />
-                  <p>Fig 1. Gastric balloon</p>
+                  <p>Fig 2. Gastric balloon</p>
                 </div>
               </div>
               <div id="intragastric-balloon-work" className={styles.Section2Question5} data-aos="fade-up">
@@ -223,7 +223,7 @@ useEffect(() => {
                 </p>
                 <div className={` d-flex flex-column align-items-center gap-3`}>
                   <Image src={weightLossmindmapimg4New} alt='weightLossmindmapimg1' className={styles.Section2PilesImage1}/>
-                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 1. Obesity pathology</p>
+                  <p >Fig 3. Obesity</p>
                 </div>
               </div>
               <div id="pathology" className={styles.Section2Question4} data-aos="fade-up">
@@ -363,7 +363,7 @@ useEffect(() => {
                     </li>
                   </ul>
                   <Image src={weightLossmindmapimg5New} alt="weightLoss" className={styles.Section2PilesImage1} />
-                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 2. Vertical Sleeve Gastrectomy</p>
+                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 4. Vertical Sleeve Gastrectomy</p>
                 </div>
               </div>
               <div id="types-bariatric" className={styles.Section2Question9} data-aos="fade-up">
@@ -378,7 +378,7 @@ useEffect(() => {
                 </ul>
                 <div className='d-flex flex-column align-items-center'>
                   <Image src={weightLossmindmapimg6New} alt="weightLoss" className={styles.Section2PilesImage1} />
-                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 2. Bariatric surgery procedures</p>
+                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 5. Bariatric surgery procedures</p>
                 </div>
               </div>
               {/* <div id="eligibility" className={styles.Section2Question9} data-aos="fade-up">

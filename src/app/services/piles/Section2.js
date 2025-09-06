@@ -315,7 +315,7 @@ useEffect(() => {
                 </p>
                 <div className='d-flex flex-column align-items-center'>
                   <Image src={HemorrhoidLigation} alt="Hemorrhoid ligation with elastic band." className={styles.Section2PilesTreatment} />
-                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 4. Hemorrhoid Treatment with Elastic Band Ligation</p>
+                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 3. Hemorrhoid Treatment with Elastic Band Ligation</p>
                 </div>
 
                 <ul className="">
@@ -351,15 +351,15 @@ useEffect(() => {
                 <div className={`row mt-4 ${styles.Section2PilesTreatmentImages}`}>
                   <div className="col-12 col-sm-6 col-lg-4 mb-4">
                     <Image src={pilesTreatment1} alt="pilesTreatment1" className={`${styles.Section2PilesTreatment1} img-fluid`} />
-                    <p className={`mt-3 ${styles.pilesTreatment1sub}`}>Fig 5. Stapler Surgery</p>
+                    <p className={`mt-3 ${styles.pilesTreatment1sub}`}>Fig 4. Stapler Surgery</p>
                   </div>
                   <div className="col-12 col-sm-6 col-lg-4 mb-4">
                     <Image src={pilesTreatment2} alt="pilesTreatment2" className={`${styles.Section2PilesTreatment2} img-fluid`} />
-                    <p className={`mt-3 ${styles.pilesTreatment2sub}`}>Fig 6. Infrared Coagulation</p>
+                    <p className={`mt-3 ${styles.pilesTreatment2sub}`}>Fig 5. Infrared Coagulation</p>
                   </div>
                   <div className="col-12 col-sm-6 col-lg-4 mb-4">
                     <Image src={pilesTreatment3} alt="pilesTreatment3" className={`${styles.Section2PilesTreatment3} img-fluid`} />
-                    <p className={`mt-3 ${styles.pilesTreatment2sub}`}>Fig 7. Laser Treatment</p>
+                    <p className={`mt-3 ${styles.pilesTreatment2sub}`}>Fig 6. Laser Treatment</p>
                   </div>
                 </div>
               </div>

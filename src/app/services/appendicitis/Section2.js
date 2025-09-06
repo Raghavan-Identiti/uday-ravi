@@ -174,7 +174,7 @@ const tocItems = [
                 <strong style={{color:"#5c47dc"}}>Step by step procedure for laparoscopic appendectomy:</strong>
                 <div className={`mt-4 d-flex flex-column align-items-center gap-3`}>
                   <Image src={AppendicitisImg2New} alt='weightLossmindmapimg1' className={styles.Section2PilesImage1New}/>
-                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 1. Laparoscopic Appendectomy</p>
+                  <p className={`${styles.Section2PilesTreatmentPara}`}>Fig 3. Laparoscopic Appendectomy</p>
                 </div>
                 <ul className='d-flex flex-column row-gap-2 mt-3'>
                   <li>

@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="row mx-3 align-items-center">
           <div className={`col-lg-6 col-12 ${styles.HeroSectionText}`}>
             <h1 className={styles.heroTitle} data-aos="fade-right">
-              Varicose Venis and Vascular Surgery
+              Varicose Veins and Vascular Surgery
             </h1>
             <p className={styles.HeroSectionPara} data-aos="fade-right" data-aos-delay="300">
               Advanced laser and RFA treatments for varicose veins and arterial bypass procedures.

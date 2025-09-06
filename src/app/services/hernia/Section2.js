@@ -117,7 +117,7 @@ export default function Section2() {
                     <strong style={{color:"#5c47dc"}}>Umbilical hernia: </strong><p>Umbilical hernias, a distinct form of hernia, manifest in the vicinity of the belly button. They stem from a weakening of the abdominal wall near the navel.</p>
                     <div className='d-flex flex-column align-items-center'>
                     <Image src={HerniaImg3New} alt="Hernia" className={styles.Section2PilesImage3New} />
-                    <p>Fig 2. Umbilical Hernia</p>
+                    <p>Fig 1. Umbilical Hernia</p>
                 </div>
                   </li>
                   <li>
@@ -129,7 +129,7 @@ export default function Section2() {
                 </ul>
                 <div className='d-flex flex-column align-items-center'>
                     <Image src={HerniaImg2New} alt="Hernia" className={styles.Section2PilesImage2New} />
-                    <p>Fig 1. Types of Abdominal Hernias</p>
+                    <p>Fig 2. Types of Abdominal Hernias</p>
                 </div>
                 <strong >Am I at a Risk of Developing a Hernia?</strong>
                 <p>
@@ -199,7 +199,7 @@ export default function Section2() {
                 <div className={` ${styles.Section2PilesImgdiv}`}>
                   <div className='d-flex flex-column align-items-center'>
                     <Image src={HerniaImg1New} alt="HerniaImg1" className={styles.Section2PilesImage1New} />
-                    <p>Fig 2. Strangulated hernia</p>
+                    <p>Fig 3. Strangulated hernia</p>
                   </div>
                 </div>
               </div>
